@@ -1,0 +1,4 @@
+# Add necessary entries to .gitignore, such as:
+# venv/
+# __pycache__/ 
+# *.pyc
