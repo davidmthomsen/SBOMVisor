@@ -6,10 +6,28 @@ from graphviz import Digraph
 import requests
 
 def process_sbom(sbom):
-    # Extract data necessary for dependency tree and vulnerability check
-    # This will depend on the structure of your SBOM
-    # e.g., list of dependencies, versions, etc
-    pass
+    """
+    Process the SBOM data to extract necessary information for dependency tree and vulnerability checks.
+    This implementation assumes a certain structure of the SBOM. You may need to modify it based on your SBOM format.
+    """
+    dependencies = []
+    
+    # Example SBOM structure processing
+    # Assuming sbom is a dictionary that contains a list of dependencies
+    # Each dependency might have a structure like: {'name': 'lib_name', 'version': '1.0', 'dependencies': [...]}
+    # Modify the structure based on your SBOM
+
+    if 'dependencies' in sbom:
+        for dep in sbom['dependencies']:
+            dep_info = {
+                'name': dep['name'],
+                'version': dep.get('version', 'unknown'),
+                'dependencies': []
+            }
+            if 'dependencies' in dep:
+                dep_info['dependencies'] = process_sbom(dep)  # Recursive call for nested dependencies
+            dependencies.append(dep_info)
+    return dependencies
 
 def get_file_type(file_path)
     _, file_extension = os.path.splitext(file_path)
