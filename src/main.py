@@ -29,7 +29,7 @@ def process_sbom(sbom):
             dependencies.append(dep_info)
     return dependencies
 
-def get_file_type(file_path)
+def get_file_type(file_path):
     _, file_extension = os.path.splitext(file_path)
     return file_extension.lower()
 
