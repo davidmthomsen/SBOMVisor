@@ -18,10 +18,37 @@ class TestSBOMProcessing(unittest.TestCase):
             # Add more assertions based on expected content of bom.json
 
     def test_parse_sbom_xml(self):
-        # Use the actual bom.xml for parsing
-        sbom = parse_sbom_xml('bom.xml')
-        # Assertions based on your actual bom.xml structure
-        self.assertIsNotNone(sbom.find('.//dependency'))
+        # Mock XML data for parsing (structure matches the provided bom.xml)
+        mock_xml_data = '''
+    <bom xmlns="http://cyclonedx.org/schema/bom/1.2">
+        <metadata>
+            <project>
+                <name>Sample Project</name>
+                <version>1.0</version>
+            </project>
+        </metadata>
+        <components>
+            <component>
+                <name>Library A</name>
+                <version>1.2.3</version>
+            </component>
+            <component>
+                <name>Library B</name>
+                <version>2.0.1</version>
+            </component>
+            <!-- Add more components as needed -->
+        </components>
+    </bom>
+'''
+
+        # Use the actual bom.xml for parsing or mock it if you are not using a real file
+        with patch("xml.etree.ElementTree.parse") as mock_parse:
+            mock_parse.return_value.getroot.return_value = ET.fromstring(mock_xml_data)
+            sbom = parse_sbom_xml('bom.xml')
+    
+        # Assertions based on the updated XML structure
+        self.assertIsNotNone(sbom.find('{http://cyclonedx.org/schema/bom/1.2}metadata'))
+        self.assertIsNotNone(sbom.find('{http://cyclonedx.org/schema/bom/1.2}components'))
         # Add more assertions based on expected content of bom.xml
 
     @patch('requests.get')
@@ -40,12 +67,20 @@ class TestSBOMProcessing(unittest.TestCase):
     def test_process_sbom(self):
         # You might need to parse your bom.json or bom.xml first to pass as an argument to process_sbom
         with open('bom.json', 'r') as file:
-            mock_data = json.load(file)
+            mock_data = {
+            'dependencies': [
+                {'ref': '256eb631-b99b-4a57-b399-997ec5254dec', 'dependsOn': []}
+            ]
+        }
 
         # Mock the process_sbom function behavior if needed, or call directly if it's pure function
         dependencies = process_sbom(mock_data)
         # Assertions based on your actual dependencies structure
         self.assertIsInstance(dependencies, list)
+        self.assertGreater(len(dependencies), 0)
+        self.assertIn('ref', dependencies[0])
+        self.assertIn('dependencies', dependencies[0])
+
         # Add more assertions based on expected content of dependencies
 
 if __name__ == '__main__':

@@ -20,12 +20,11 @@ def process_sbom(sbom):
     if 'dependencies' in sbom:
         for dep in sbom['dependencies']:
             dep_info = {
-                'name': dep['name'],
-                'version': dep.get('version', 'unknown'),
+                'ref': dep['ref'],
                 'dependencies': []
             }
-            if 'dependencies' in dep:
-                dep_info['dependencies'] = process_sbom(dep)  # Recursive call for nested dependencies
+            if 'dependsOn' in dep:
+                dep_info['dependencies'] = [{'ref': d} for d in dep['dependsOn']]
             dependencies.append(dep_info)
     return dependencies
 
