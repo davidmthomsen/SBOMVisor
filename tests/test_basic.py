@@ -2,6 +2,7 @@
 import json
 import unittest
 from unittest.mock import patch, MagicMock, mock_open
+import xml.etree.ElementTree as ET
 from src.main import parse_sbom_json, parse_sbom_xml, check_vulnerabilities, process_sbom
 
 class TestSBOMProcessing(unittest.TestCase):
