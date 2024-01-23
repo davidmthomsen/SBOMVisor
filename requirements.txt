@@ -1,3 +1,5 @@
 pandas
 matplotlib
 xmltodict
+graphviz
+requests
