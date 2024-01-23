@@ -45,15 +45,28 @@ def parse_sbom_xml(file_path):
     return root
 
 def generate_dependency_tree(sbom):
+    """
+    Generate a dependency tree graph using Graphviz.
+    Args:
+        sbom (list of dict): The structured representation of the components and their dependencies.
+    Returns:
+        Digraph: The Graphviz Digraph representing the dependency tree.
+    """
     dot = Digraph(comment='Dependency Tree')
-    for dep in dependencies:
-        dot.node(dep['name'], dep['name'])
-        if 'dependencies' in dep:
-            for child in dep['dependencies']:
-                dot.edge(dep['name'], child['name'])
-    # Add nodes and edges based on SBOM Structure
-    # dot.node('A', 'Library A')
-    # dog.edge('A', 'B')
+
+    # Iterate through the components and their dependencies
+    for component in sbom:
+        component_name = component['name']
+        component_version = component.get('version', 'Unknown')
+
+        # Add the component node with its name and version as label
+        dot.node(component_name, label=f"{component_name}\nVersion: {component_version}")
+
+        if 'dependencies' in component:
+            # Add edges for dependencies
+            for dependency in component['dependencies']:
+                dependency_name = dependency['name']
+                dot.edge(component_name, dependency_name)
     return dot
 
 def check_all_vulnerabilites(dependencies):
