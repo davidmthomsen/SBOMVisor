@@ -107,18 +107,16 @@ def process_sbom(sbom, sbom_format):
     Process the SBOM data to extract necessary information for dependency tree and vulnerability checks.
     This implementation assumes a certain structure of the SBOM. You may need to modify it based on your SBOM format.
     """
-    dependencies = []
-
     if sbom_format == 'cyclonedx':
-        # Process CycloneDX format
-        # ...
         dependencies = process_cyclonedx_sbom(sbom)
-
     elif sbom_format == 'spdx':
         # Process SPDX format
         # ...
+        dependencies = []
+    else:
+        dependencies = []
     
-        return dependencies
+    return dependencies
 
 def get_file_type(file_path):
     _, file_extension = os.path.splitext(file_path)
@@ -219,14 +217,19 @@ def main():
 
     sbom = parse_sbom(args.file, args.format)
     
-    if sbom:
+    if sbom is not None:
         # Pass both sbom and the format to process_sbom
         dependencies = process_sbom(sbom, args.format)
-        tree = generate_dependency_tree(dependencies)
-        tree.render('dependency_tree.gv', view=True)    # Saves and closes the dependency tree
+        if dependencies:
+            tree = generate_dependency_tree(dependencies)
+            tree.render('dependency_tree.gv', view=True)    # Saves and closes the dependency tree
 
-        vulnerabilites = check_all_vulnerabilites(dependencies)
-        print("Vulnerabilities Report:", vulnerabilites)
+            vulnerabilites = check_all_vulnerabilites(dependencies)
+            print("Vulnerabilities Report:", vulnerabilites)
+        else:
+            print("No dependencies found.")
+    else:
+        print("Failed to parse SBOM")
 
 if __name__ == "__main__":
     main()
