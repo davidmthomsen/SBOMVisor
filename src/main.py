@@ -112,11 +112,37 @@ def process_sbom(sbom, sbom_format):
         dependencies = process_cyclonedx_sbom(sbom)
     elif sbom_format == 'spdx':
         # Process SPDX format
-        # ...
-        dependencies = []
+        dependencies = process_spdx_sbom(sbom)
     else:
         dependencies = []
     
+    return dependencies
+
+def process_spdx_sbom(sbom):
+    """
+    Process SPDX SBOM in JSON format
+    Args:
+        sbom (dict): Parsed SBOM data
+    Returns:
+        list of dict: Processed dependencies.
+    """
+    dependencies = []
+
+    # SPDX SBOMs have a 'packages' section listing all components
+    if 'packages' in sbom:
+        for package in sbom['packages']:
+            dep_info = {
+                'name': package.get('name', 'Unknown'),
+                'version': package.get('versionInfo', 'Unknown'),
+                'supplier': package.get('supplier', 'Unknown'),
+                'downloadLocation': package.get('downloadLocation', 'Unknown'),
+                'filesAnalyzed': package.get('filesAnalyzed', False),
+                'licenseConcluded': package.get('licenseConcluded', 'Unknown'),
+                'licenseDeclared': package.get('licenseDeclared', 'Unknown'),
+                # Add more fields as necessary
+            }
+            dependencies.append(dep_info)
+
     return dependencies
 
 def get_file_type(file_path):
