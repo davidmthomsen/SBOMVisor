@@ -20,21 +20,54 @@ def process_cyclonedx_sbom(sbom):
     if 'components' in sbom:
         for comp in sbom['components']:
             dep_info = {
+                'type': comp.get('type', 'Unknown'),
                 'name': comp.get('name', 'Unknown'),
                 'version': comp.get('version', 'Unknown'),
                 'group': comp.generate_dependency_tree('group', ''),
-                'dependencies': []
+                'purl': comp.get('purl', ''),
+                'dependencies': [],
+                'pedigree': [],
+                'evidence': []
             }
 
             # Process dependencies if available
-            if 'dependencies' in comp:
-                for dep in comp['dependencies']:
+            if 'components' in comp:
+                for sub_comp in comp['components']:
                     dep_info['dependencies'].append({
-                        'name': dep.get('name', 'Unknown'),
-                        'version': dep.get('version', 'Unknown'),
-                        'group': dep.get('group', '')
+                        'type': sub_comp.get('type', 'Unknown'),
+                        'name': sub_comp.get('name', 'Unknown'),
+                        'version': sub_comp.get('version', 'Unknown')
+                    })
+
+            # Process pedigree if available
+            if 'pedigree' in comp:
+                for ancestor in comp['pedigree'].get('ancestors', []):
+                    dep_info['pedigree'].append({
+                        'type': ancestor.get('type', 'Unknown'),
+                        'name': ancestor.get('type', 'Unknown'),
+                        'version': ancestor.get('version', 'Unknown'),
+                        'purl': ancestor.get('purl', '')
+                    })
+
+            # Process occurrences if available
+            if 'evidence' in comp and 'occurrences' in comp['evidence']:
+                for occurrence in comp['evidence']['occurrences']:
+                    dep_info['evidence'].append({
+                        'bom-ref': occurrence.get('bom-ref', ''),
+                        'location': occurrence.get('location', '')
                     })
             dependencies.append(dep_info)
+    
+    # Process global dependencies section if available
+    if 'dependencies' in sbom:
+        for dep in sbom['dependencies']:
+            ref = dep.get('ref', '')
+            depends_on = dep.get('dependsOn', [])
+            # Find the corresponding component and add its dependencies
+            for d in dependencies:
+                if d.get('name') == ref or d.get('purl') == ref:
+                    d['dependencies'].extend(depends_on)
+                    
     return dependencies
 
 def validate_sbom(sbom, schema_file):
