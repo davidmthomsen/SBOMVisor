@@ -191,9 +191,11 @@ def parse_sbom(file_path, sbom_format):
 def main():
     parser = argparse.ArgumentParser(description='SBOMVisor is up and running!')
     parser.add_argument('file', help='Path to SBOM file')
+    parser.add_argument('format', help='Format of SBOM (e.g., cyclonedx, spdx)',
+                        choices=['cyclonedx', 'spdx'])
     args = parser.parse_args()
 
-    sbom = parse_sbom(args.file)
+    sbom = parse_sbom(args.fil, args.format)
     
     if sbom:
         dependencies = process_sbom(sbom)
