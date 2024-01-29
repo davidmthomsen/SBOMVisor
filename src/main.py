@@ -67,7 +67,7 @@ def process_cyclonedx_sbom(sbom):
             for d in dependencies:
                 if d.get('name') == ref or d.get('purl') == ref:
                     d['dependencies'].extend(depends_on)
-                    
+
     return dependencies
 
 def validate_sbom(sbom, schema_file):
@@ -167,8 +167,13 @@ def check_vulnerabilities(library):
     try:
         response = requests.get(f'https://vuldb.com/api/{library}')
         if response.status_code == 200:
+            # Process the response and extract relevant information
+            # Fornow, just returning the staus code for simplicity
             return response.status_code
-    return {}
+    except requests.RequestException as e:
+        # Handle exceptions related to the request
+        print(f"Error while checking vulnerabilities for {library}: {e}")
+        return {}
 
 def parse_sbom(file_path, sbom_format):
     file_type = get_file_type(file_path)
