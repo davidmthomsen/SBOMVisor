@@ -220,7 +220,8 @@ def main():
     sbom = parse_sbom(args.file, args.format)
     
     if sbom:
-        dependencies = process_sbom(sbom)
+        # Pass both sbom and the format to process_sbom
+        dependencies = process_sbom(sbom, args.format)
         tree = generate_dependency_tree(dependencies)
         tree.render('dependency_tree.gv', view=True)    # Saves and closes the dependency tree
 
