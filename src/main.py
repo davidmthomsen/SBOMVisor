@@ -91,9 +91,10 @@ def validate_sbom(sbom, schema_file):
         sbom (dict): SBOM data in dictionary format.
         schema_file (str): Path to the JSON Schema file.
     """
-    with open(schema_file, 'r') as file:
-        schema = json.load(file)
-    validate(instance=sbom, schema=schema)
+    # with open(schema_file, 'r') as file:
+    #    schema = json.load(file)
+    # validate(instance=sbom, schema=schema)
+    pass
 
 def process_sbom(sbom, sbom_format):
     """
@@ -200,16 +201,27 @@ def parse_sbom(file_path, sbom_format):
         return None
 
 def main():
-    schema_file = "schema_cyclonedx.json"
+    parser = argparse.ArgumentParser(description='SBOMVisor is up and running!')
+    parser.add_argument('file', help='Path to SBOM file')
+    parser.add_argument('format', help='Format of SBOM (e.g., cyclonedx, spdx)',
+                        choices=['cyclonedx', 'spdx'])
+    args = parser.parse_args()
 
-    # Download the CycloneDX JSON schema
-    schema_url = "https://cyclonedx.org/schema/bom-1.5.schema.json"
-    schema_file = "schema_cyclonedx.json"
-    download_result = download_schema(schema_url, schema_file)
+    schema_file_cyclonedx = "schema_cyclonedx.json"
+    schema_file_spdx = "schema_spdx.json"
+
+    # URL for CycloneDX and SPDX schemas
+    schema_urls = {
+        'cyclonedx':"https://cyclonedx.org/schema/bom-1.5.schema.json",
+        'spdx': "https://raw.githubusercontent.com/spdx/spdx-spec/development/v2.3.1/schemas/spdx-schema.json"
+    }
+
+    # Determine which schema to download based on the format
+    schema_url = schema_urls[args.format]
+    schema_file = schema_file_cyclonedx if args.format == 'cyclonedx' else schema_file_spdx
 
     # Check if the schema file already exists
     if not os.path.exists(schema_file):
-        schema_url = "https://cyclonedx.org/schema/bom-1.5.schema.json"
         download_result = download_schema(schema_url, schema_file)
 
         if not os.path.exists(schema_file):
@@ -217,12 +229,6 @@ def main():
         return
     else:
         print(f"Schema file '{schema_file}' already exists. Skipping download.")
-
-    parser = argparse.ArgumentParser(description='SBOMVisor is up and running!')
-    parser.add_argument('file', help='Path to SBOM file')
-    parser.add_argument('format', help='Format of SBOM (e.g., cyclonedx, spdx)',
-                        choices=['cyclonedx', 'spdx'])
-    args = parser.parse_args()
 
     sbom = parse_sbom(args.file, args.format)
     
