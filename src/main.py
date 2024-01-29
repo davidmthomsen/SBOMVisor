@@ -195,7 +195,7 @@ def main():
                         choices=['cyclonedx', 'spdx'])
     args = parser.parse_args()
 
-    sbom = parse_sbom(args.fil, args.format)
+    sbom = parse_sbom(args.file, args.format)
     
     if sbom:
         dependencies = process_sbom(sbom)
