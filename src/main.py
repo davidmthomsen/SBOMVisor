@@ -200,14 +200,23 @@ def parse_sbom(file_path, sbom_format):
         return None
 
 def main():
+    schema_file = "schema_cyclonedx.json"
+
     # Download the CycloneDX JSON schema
     schema_url = "https://cyclonedx.org/schema/bom-1.5.schema.json"
     schema_file = "schema_cyclonedx.json"
     download_result = download_schema(schema_url, schema_file)
 
+    # Check if the schema file already exists
     if not os.path.exists(schema_file):
-        print(f"Failed to download schema: {download_result}")
+        schema_url = "https://cyclonedx.org/schema/bom-1.5.schema.json"
+        download_result = download_schema(schema_url, schema_file)
+
+        if not os.path.exists(schema_file):
+            print(f"Failed to download schema: {download_result}")
         return
+    else:
+        print(f"Schema file '{schema_file}' already exists. Skipping download.")
 
     parser = argparse.ArgumentParser(description='SBOMVisor is up and running!')
     parser.add_argument('file', help='Path to SBOM file')
