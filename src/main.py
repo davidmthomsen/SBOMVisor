@@ -1,32 +1,78 @@
 import argparse
+from jsonschema import validate
 import json
 import os
 import xml.etree.ElementTree as ET 
 from graphviz import Digraph
 import requests
+from requests.exceptions import ConnectionError
+
+def process_cyclonedx_sbom(sbom):
+    """
+    Process CycloneDX SBOM in JSON format
+    Args:
+        sbom (dict): Parsed SBOM data
+    Returns:
+        list of dict: Processed dependencies.
+    """
+    dependencies = []
+
+    if 'components' in sbom:
+        for comp in sbom['components']:
+            dep_info = {
+                'name': comp.get('name', 'Unknown'),
+                'version': comp.get('version', 'Unknown'),
+                'group': comp.generate_dependency_tree('group', ''),
+                'dependencies': []
+            }
+
+            # Process dependencies if available
+            if 'dependencies' in comp:
+                for dep in comp['dependencies']:
+                    dep_info['dependencies'].append({
+                        'name': dep.get('name', 'Unknown'),
+                        'version': dep.get('version', 'Unknown'),
+                        'group': dep.get('group', '')
+                    })
+            dependencies.append(dep_info)
+    return dependencies
+
+def validate_sbom(sbom, schema_file):
+
+    """
+    Validate SBOM agaisnt its JSON Schema.
+    Args:
+        sbom (dict): SBOM data in dictionary format.
+        schema_file (str): Path to the JSON Schema file.
+    """
+    with open(schema_file, 'r') as file:
+        schema = json.load(file)
+    validate(instance=sbom, schema=schema)
 
 def process_sbom(sbom):
     """
+    Updated function to handle different SBOM formats.
+    Args:
+        sbom (dict): SBOM data.
+        sbom_format (str): Format of the SBOM, e.g., 'cyclonedx', 'spdx'.
+    Returns: 
+        list of dict: Processed dependencies.
+
     Process the SBOM data to extract necessary information for dependency tree and vulnerability checks.
     This implementation assumes a certain structure of the SBOM. You may need to modify it based on your SBOM format.
     """
     dependencies = []
-    
-    # Example SBOM structure processing
-    # Assuming sbom is a dictionary that contains a list of dependencies
-    # Each dependency might have a structure like: {'name': 'lib_name', 'version': '1.0', 'dependencies': [...]}
-    # Modify the structure based on your SBOM
 
-    if 'dependencies' in sbom:
-        for dep in sbom['dependencies']:
-            dep_info = {
-                'ref': dep['ref'],
-                'dependencies': []
-            }
-            if 'dependsOn' in dep:
-                dep_info['dependencies'] = [{'ref': d} for d in dep['dependsOn']]
-            dependencies.append(dep_info)
-    return dependencies
+    if sbom_format == 'cyclonedx':
+        # Process CycloneDX format
+        # ...
+        dependencies = process_cyclonedx_sbom(sbom)
+
+    elif sbom_format == 'spdx':
+        # Process SPDX format
+        # ...
+    
+        return dependencies
 
 def get_file_type(file_path):
     _, file_extension = os.path.splitext(file_path)
@@ -56,17 +102,24 @@ def generate_dependency_tree(sbom):
 
     # Iterate through the components and their dependencies
     for component in sbom:
-        component_name = component['name']
-        component_version = component.get('version', 'Unknown')
+        # Check if 'name' key exists
+        if 'name' in component:
+            component_name = component['name']
+            component_version = component.get('version', 'Unknown')
 
-        # Add the component node with its name and version as label
-        dot.node(component_name, label=f"{component_name}\nVersion: {component_version}")
+            # Add the component node with its name and version as label
+            dot.node(component_name, label=f"{component_name}\nVersion: {component_version}")
 
-        if 'dependencies' in component:
             # Add edges for dependencies
-            for dependency in component['dependencies']:
-                dependency_name = dependency['name']
-                dot.edge(component_name, dependency_name)
+            if 'dependencies' in component:
+                for dependency in component['dependencies']:
+                    if 'name' in dependency:  # Ensure dependency also has 'name'
+                        dependency_name = dependency['name']
+                        dot.edge(component_name, dependency_name)
+        else:
+            # Handle components without a name, e.g., log a warning
+            pass
+
     return dot
 
 def check_all_vulnerabilites(dependencies):
@@ -78,34 +131,32 @@ def check_all_vulnerabilites(dependencies):
 
 def check_vulnerabilities(library):
     # Make a request to vulnerability database
-    response = requests.get(f'https://vulndb.com/api/{library}')
-    if response.status_code == 200:
-        vulnerabilities = response.json()
-        return vulnerabilities
+    try:
+        response = requests.get(f'https://vuldb.com/api/{library}')
+        if response.status_code == 200:
+            return response.status_code
     return {}
+
+def parse_sbom(file_path, sbom_format):
+    file_type = get_file_type(file_path)
+    if file_type == '.json':
+        with open(file_path, 'r') as file:
+            sbom = json.load(file)
+            validate_sbom(sbom, f'schema_{sbom_format}.json') # Assuming you have a corresponding schema file
+            return sbom
+    elif file_type == '.xml':
+        return parse_sbom_xml(file_path)
+    else:
+        print("Unsupported file type")
+        return None
 
 def main():
     parser = argparse.ArgumentParser(description='SBOMVisor is up and running!')
     parser.add_argument('file', help='Path to SBOM file')
     args = parser.parse_args()
 
-    # Depending on file type, call parse_sbom_json or parse_sbom_xml
-    file_type = get_file_type(args.file)
-    if file_type == '.json':
-        sbom = parse_sbom_json(args.file)
-    elif file_type == '.xml':
-        sbom = parse_sbom_xml(args.file)
-    else:
-        print("Unsupported file type")
-        return
-    # Generate dependency tree and check for vulnerabilities
-    # Output results
-    sbom = None
-    if file_type == '.json':
-        sbom = parse_sbom_json(args.file)
-    elif file_type == '.xml':
-        sbom = parse_sbom_xml(args.file)
-
+    sbom = parse_sbom(args.file)
+    
     if sbom:
         dependencies = process_sbom(sbom)
         tree = generate_dependency_tree(dependencies)

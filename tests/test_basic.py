@@ -52,6 +52,35 @@ class TestSBOMProcessing(unittest.TestCase):
         self.assertIsNotNone(sbom.find('{http://cyclonedx.org/schema/bom/1.2}components'))
         # Add more assertions based on expected content of bom.xml
 
+    def test_generate_dependency_tree(self):
+        # Prepare sample SBOM data (replace with your actual data structure)
+        sample_sbom = [
+            {
+                'name': 'Library A',
+                'version': '1.0',
+                'dependencies': [
+                    {'name': 'Library B'},
+                    {'name': 'Library C'},
+                ]
+            },
+            {
+                'name': 'Library B',
+                'version': '2.0',
+                'dependencies': [
+                    {'name': 'Library D'},
+                ]
+            },
+        ]
+
+        # Call the generate_dependency_tree function with the sample data
+        dependency_tree = generate_dependency_tree(sample_sbom)
+
+        # Add assertions to check if the generated tree matches your expectations
+        # For example, you can check if specific nodes and edges exist:
+        self.assertTrue(dependency_tree.node('Library A'))
+        self.assertTrue(dependency_tree.node('Library B'))
+        self.assertTrue(dependency_tree.edge('Library A', 'Library B'))
+
     @patch('requests.get')
     def test_check_vulnerabilities(self, mock_get):
         # Example response from a vulnerability check
