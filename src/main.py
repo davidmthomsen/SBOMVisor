@@ -204,7 +204,7 @@ def parse_sbom(file_path, sbom_format):
 def main():
     # Download the CycloneDX JSON schema
     schema_url = "https://cyclonedx.org/schema/bom-1.5.schema.json"
-    schema_file = "cyclonedx_schema_1.5.json"
+    schema_file = "schema_cyclonedx.json"
     download_result = download_schema(schema_url, schema_file)
 
     if not os.path.exists(schema_file):
