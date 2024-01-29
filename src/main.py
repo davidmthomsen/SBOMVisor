@@ -7,6 +7,19 @@ from graphviz import Digraph
 import requests
 from requests.exceptions import ConnectionError
 
+def download_schema(url, file_name):
+
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            with open(file_name, 'w') as file:
+                file.write(response.text)
+            return file_name
+        else:
+            return f"Error: Unable to download the schema. HTTP status code: {response.status_code}"
+    except Exception as e:
+        return f"Error: {e}"
+
 def process_cyclonedx_sbom(sbom):
     """
     Process CycloneDX SBOM in JSON format
@@ -23,7 +36,7 @@ def process_cyclonedx_sbom(sbom):
                 'type': comp.get('type', 'Unknown'),
                 'name': comp.get('name', 'Unknown'),
                 'version': comp.get('version', 'Unknown'),
-                'group': comp.generate_dependency_tree('group', ''),
+                'group': comp.get('group', ''),
                 'purl': comp.get('purl', ''),
                 'dependencies': [],
                 'pedigree': [],
@@ -82,7 +95,7 @@ def validate_sbom(sbom, schema_file):
         schema = json.load(file)
     validate(instance=sbom, schema=schema)
 
-def process_sbom(sbom):
+def process_sbom(sbom, sbom_format):
     """
     Updated function to handle different SBOM formats.
     Args:
@@ -189,6 +202,15 @@ def parse_sbom(file_path, sbom_format):
         return None
 
 def main():
+    # Download the CycloneDX JSON schema
+    schema_url = "https://cyclonedx.org/schema/bom-1.5.schema.json"
+    schema_file = "cyclonedx_schema_1.5.json"
+    download_result = download_schema(schema_url, schema_file)
+
+    if not os.path.exists(schema_file):
+        print(f"Failed to download schema: {download_result}")
+        return
+
     parser = argparse.ArgumentParser(description='SBOMVisor is up and running!')
     parser.add_argument('file', help='Path to SBOM file')
     parser.add_argument('format', help='Format of SBOM (e.g., cyclonedx, spdx)',
