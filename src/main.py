@@ -162,82 +162,46 @@ def parse_sbom_xml(file_path):
     return root
 
 def generate_dependency_tree(sbom):
-    """
-    Generate a dependency tree graph using Graphviz.
-    Args:
-        sbom (list of dict): The structured representation of the components and their dependencies.
-    Returns:
-        Digraph: The Graphviz Digraph representing the dependency tree.
-    """
     dot = Digraph(comment='Dependency Tree', format='pdf')
-    dot.attr(rankdir='LR', dpi='300') # Set graph orientation and size
+    dot.attr(rankdir='LR', dpi='300')  # High resolution for clarity
 
-    # Set global node attributes
-    dot.node_attr.update(fontsize='12')  # Increase font size for readability
-
-        # Define a dictionary to hold subgraph clusters
+    # Define a dictionary to hold subgraph clusters
     clusters = {}
-
-
-    # Define styles for different types of nodes
-    # styles = {
-    #     'app':     {'shape': 'rectangle', 'style': 'filled', 'color': 'lightblue'},
-    #     'library': {'shape': 'rectangle', 'style': 'filled', 'color': 'lightgrey'},
-    #     'os':      {'shape': 'ellipse',   'style': 'filled', 'color': 'tan'},
-    #     'package': {'shape': 'diamond',   'style': 'filled', 'color': 'lightyellow'},
-    # }
 
     # Iterate through the components and their dependencies
     for component in sbom:
-        # Check if 'name' key exists
         if 'name' in component:
             component_name = component['name']
             component_version = component.get('version', 'Unknown')
-            component_label = f"{component_name}\n{component_version}"
             component_cluster = component.get('cluster', 'default')  # Assume there is a 'cluster' key
-            # style = styles.get(component_type, styles['library']) # Get the style based on type or default to 'library'
 
             # If the cluster does not exist, create it
             if component_cluster not in clusters:
                 clusters[component_cluster] = Digraph(name=f'cluster_{component_cluster}')
-                clusters[component_cluster].attr(label=component_cluster)
-            
+                clusters[component_cluster].attr(label=component_cluster, color='lightgrey')
+
+            # Create a label for the node with the name and version
+            component_label = f"{component_name}\n{component_version}"
+
             # Add the node to the appropriate cluster
             clusters[component_cluster].node(component_name, label=component_label)
 
-            # Additional Information to Display in Node Labels
-            # component_info = f"{component_name}\n{component_version}"
-
-            # # Check if additional information is available (e.g., license, supplier)
-            # if 'licenseConcluded' in component:
-            #     component_info += f"\nLicense: {component['licenseConcluded']}"
-            # if 'supplier' in component:
-            #     component_info += f"\nSupplier: {component['supplier']}"
-            # if 'filesAnalyzed' in component:
-            #     component_info += f"\nFiles Analyzed: {component['filesAnalyzed']}"
-
-            # Add the component node with extended label
-            # dot.node(component_name, label=component_info)
-
-            # Add edges for dependencies
+            # Add edges for dependencies within the same cluster
             if 'dependencies' in component:
                 for dependency in component['dependencies']:
-                    if 'name' in dependency:  # Ensure dependency also has 'name'
+                    if 'name' in dependency:
                         dependency_name = dependency['name']
-                        clusters[component_cluster].edge(component_name, dependency_name)
-                        
-                        dependency_version = dependency.get('verson', 'Unknown')
-                        dependency_type = dependency.get('type', 'Unknown')
+                        dependency_version = dependency.get('version', 'Unknown')
+                        edge_label = f"Version: {dependency_version}"
+                        clusters[component_cluster].edge(component_name, dependency_name, label=edge_label)
 
-                        # Additional Information to Display in Edge Labels 
-                        edge_info = f"Type: {dependency_type}\nVersion: {dependency_version}"
+    # Add all clusters to the main graph
+    for cluster in clusters.values():
+        dot.subgraph(cluster)
 
-                        # Add the edge with extended label
-                        dot.edge(component_name, dependency_name)
-        else:
-            # Handle components without a name, e.g., log a warning
-            pass
-    dot.node_attr.update(style='filled', color='white')
+    # Remove global node attributes that override individual settings
+    dot.node_attr.clear()
+
     return dot
 
 def check_all_vulnerabilites(dependencies):
