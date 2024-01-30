@@ -170,6 +170,15 @@ def generate_dependency_tree(sbom):
         Digraph: The Graphviz Digraph representing the dependency tree.
     """
     dot = Digraph(comment='Dependency Tree')
+    dot.attr(rankdir='LR', size='8,5') # Set graph orientation and size
+
+    # Define styles for different types of nodes
+    styles = {
+        'app':     {'shape': 'rectangle', 'style': 'filled', 'color': 'lightblue'},
+        'library': {'shape': 'rectangle', 'style': 'filled', 'color': 'lightgrey'},
+        'os':      {'shape': 'ellipse',   'style': 'filled', 'color': 'tan'},
+        'package': {'shape': 'diamond',   'style': 'filled', 'color': 'lightyellow'},
+    }
 
     # Iterate through the components and their dependencies
     for component in sbom:
@@ -177,9 +186,11 @@ def generate_dependency_tree(sbom):
         if 'name' in component:
             component_name = component['name']
             component_version = component.get('version', 'Unknown')
+            component_type = component.get('type', 'library').lower() # Default type is 'library'
+            style = styles.get(component_type, styles['library']) # Get the style based on type or default to 'library'
 
             # Additional Information to Display in Node Labels
-            component_info = f"Name: {component_name}\nVersion: {component_version}"
+            component_info = f"{component_name}\n{component_version}"
 
             # Check if additional information is available (e.g., license, supplier)
             if 'licenseConcluded' in component:
@@ -208,7 +219,7 @@ def generate_dependency_tree(sbom):
         else:
             # Handle components without a name, e.g., log a warning
             pass
-
+    dot.node_attr.update(style='filled', color='white')
     return dot
 
 def check_all_vulnerabilites(dependencies):
