@@ -178,14 +178,32 @@ def generate_dependency_tree(sbom):
             component_name = component['name']
             component_version = component.get('version', 'Unknown')
 
-            # Add the component node with its name and version as label
-            dot.node(component_name, label=f"{component_name}\nVersion: {component_version}")
+            # Additional Information to Display in Node Labels
+            component_info = f"Name: {component_name}\nVersion: {component_version}"
+
+            # Check if additional information is available (e.g., license, supplier)
+            if 'licenseConcluded' in component:
+                component_info += f"\nLicense: {component['licenseConcluded']}"
+            if 'supplier' in component:
+                component_info += f"\nSupplier: {component['supplier']}"
+            if 'filesAnalyzed' in component:
+                component_info += f"\nFiles Analyzed: {component['filesAnalyzed']}"
+
+            # Add the component node with extended label
+            dot.node(component_name, label=component_info)
 
             # Add edges for dependencies
             if 'dependencies' in component:
                 for dependency in component['dependencies']:
                     if 'name' in dependency:  # Ensure dependency also has 'name'
                         dependency_name = dependency['name']
+                        dependency_version = dependency.get('verson', 'Unknown')
+                        dependency_type = dependency.get('type', 'Unknown')
+
+                        # Additional Information to Display in Edge Labels 
+                        edge_info = f"Type: {dependency_type}\nVersion: {dependency_version}"
+
+                        # Add the edge with extended label
                         dot.edge(component_name, dependency_name)
         else:
             # Handle components without a name, e.g., log a warning
