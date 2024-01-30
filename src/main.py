@@ -169,16 +169,23 @@ def generate_dependency_tree(sbom):
     Returns:
         Digraph: The Graphviz Digraph representing the dependency tree.
     """
-    dot = Digraph(comment='Dependency Tree')
-    dot.attr(rankdir='LR', size='8,5') # Set graph orientation and size
+    dot = Digraph(comment='Dependency Tree', format='pdf')
+    dot.attr(rankdir='LR', dpi='300') # Set graph orientation and size
+
+    # Set global node attributes
+    dot.node_attr.update(fontsize='12')  # Increase font size for readability
+
+        # Define a dictionary to hold subgraph clusters
+    clusters = {}
+
 
     # Define styles for different types of nodes
-    styles = {
-        'app':     {'shape': 'rectangle', 'style': 'filled', 'color': 'lightblue'},
-        'library': {'shape': 'rectangle', 'style': 'filled', 'color': 'lightgrey'},
-        'os':      {'shape': 'ellipse',   'style': 'filled', 'color': 'tan'},
-        'package': {'shape': 'diamond',   'style': 'filled', 'color': 'lightyellow'},
-    }
+    # styles = {
+    #     'app':     {'shape': 'rectangle', 'style': 'filled', 'color': 'lightblue'},
+    #     'library': {'shape': 'rectangle', 'style': 'filled', 'color': 'lightgrey'},
+    #     'os':      {'shape': 'ellipse',   'style': 'filled', 'color': 'tan'},
+    #     'package': {'shape': 'diamond',   'style': 'filled', 'color': 'lightyellow'},
+    # }
 
     # Iterate through the components and their dependencies
     for component in sbom:
@@ -186,28 +193,39 @@ def generate_dependency_tree(sbom):
         if 'name' in component:
             component_name = component['name']
             component_version = component.get('version', 'Unknown')
-            component_type = component.get('type', 'library').lower() # Default type is 'library'
-            style = styles.get(component_type, styles['library']) # Get the style based on type or default to 'library'
+            component_label = f"{component_name}\n{component_version}"
+            component_cluster = component.get('cluster', 'default')  # Assume there is a 'cluster' key
+            # style = styles.get(component_type, styles['library']) # Get the style based on type or default to 'library'
+
+            # If the cluster does not exist, create it
+            if component_cluster not in clusters:
+                clusters[component_cluster] = Digraph(name=f'cluster_{component_cluster}')
+                clusters[component_cluster].attr(label=component_cluster)
+            
+            # Add the node to the appropriate cluster
+            clusters[component_cluster].node(component_name, label=component_label)
 
             # Additional Information to Display in Node Labels
-            component_info = f"{component_name}\n{component_version}"
+            # component_info = f"{component_name}\n{component_version}"
 
-            # Check if additional information is available (e.g., license, supplier)
-            if 'licenseConcluded' in component:
-                component_info += f"\nLicense: {component['licenseConcluded']}"
-            if 'supplier' in component:
-                component_info += f"\nSupplier: {component['supplier']}"
-            if 'filesAnalyzed' in component:
-                component_info += f"\nFiles Analyzed: {component['filesAnalyzed']}"
+            # # Check if additional information is available (e.g., license, supplier)
+            # if 'licenseConcluded' in component:
+            #     component_info += f"\nLicense: {component['licenseConcluded']}"
+            # if 'supplier' in component:
+            #     component_info += f"\nSupplier: {component['supplier']}"
+            # if 'filesAnalyzed' in component:
+            #     component_info += f"\nFiles Analyzed: {component['filesAnalyzed']}"
 
             # Add the component node with extended label
-            dot.node(component_name, label=component_info)
+            # dot.node(component_name, label=component_info)
 
             # Add edges for dependencies
             if 'dependencies' in component:
                 for dependency in component['dependencies']:
                     if 'name' in dependency:  # Ensure dependency also has 'name'
                         dependency_name = dependency['name']
+                        clusters[component_cluster].edge(component_name, dependency_name)
+                        
                         dependency_version = dependency.get('verson', 'Unknown')
                         dependency_type = dependency.get('type', 'Unknown')
 
