@@ -1,0 +1,4259 @@
+// Dependency Tree
+digraph {
+	dpi=300 rankdir=LR
+	subgraph cluster_default {
+		color=lightgrey label=default
+		"@ampproject/remapping" [label="@ampproject/remapping
+1.0.2"]
+		"@ampproject/remapping" [label="@ampproject/remapping
+1.0.2"]
+		"@ampproject/remapping" [label="@ampproject/remapping
+1.0.2"]
+		"@ampproject/remapping" [label="@ampproject/remapping
+1.0.2"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1301.2"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1301.2"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1303.7"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1303.7"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1301.4"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1301.4"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1301.4"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1303.9"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1303.9"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1303.9"]
+		"@angular-devkit/architect" [label="@angular-devkit/architect
+0.1500.0"]
+		"@angular-devkit/build-angular" [label="@angular-devkit/build-angular
+13.1.2"]
+		"@angular-devkit/build-angular" [label="@angular-devkit/build-angular
+13.1.4"]
+		"@angular-devkit/build-angular" [label="@angular-devkit/build-angular
+13.1.4"]
+		"@angular-devkit/build-angular" [label="@angular-devkit/build-angular
+13.1.4"]
+		"@angular-devkit/build-webpack" [label="@angular-devkit/build-webpack
+0.1301.2"]
+		"@angular-devkit/build-webpack" [label="@angular-devkit/build-webpack
+0.1301.4"]
+		"@angular-devkit/build-webpack" [label="@angular-devkit/build-webpack
+0.1301.4"]
+		"@angular-devkit/build-webpack" [label="@angular-devkit/build-webpack
+0.1301.4"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.1.2"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.7"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.7"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.7"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.7"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.7"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.1.4"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.1.4"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.1.4"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.9"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.9"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.9"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.9"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.9"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.9"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.9"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.9"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+13.3.9"]
+		"@angular-devkit/core" [label="@angular-devkit/core
+15.0.0"]
+		"@angular-devkit/schematics" [label="@angular-devkit/schematics
+13.3.7"]
+		"@angular-devkit/schematics" [label="@angular-devkit/schematics
+13.3.7"]
+		"@angular-devkit/schematics" [label="@angular-devkit/schematics
+13.3.9"]
+		"@angular-devkit/schematics" [label="@angular-devkit/schematics
+13.3.9"]
+		"@angular-devkit/schematics" [label="@angular-devkit/schematics
+13.3.9"]
+		"@angular-devkit/schematics" [label="@angular-devkit/schematics
+15.0.0"]
+		"@angular/animations" [label="@angular/animations
+13.1.1"]
+		"@angular/animations" [label="@angular/animations
+13.1.1"]
+		"@angular/animations" [label="@angular/animations
+13.1.3"]
+		"@angular/animations" [label="@angular/animations
+13.1.3"]
+		"@angular/animations" [label="@angular/animations
+13.1.3"]
+		"@angular/animations" [label="@angular/animations
+13.1.3"]
+		"@angular/animations" [label="@angular/animations
+13.1.3"]
+		"@angular/animations" [label="@angular/animations
+13.1.3"]
+		"@angular/cli" [label="@angular/cli
+13.3.7"]
+		"@angular/cli" [label="@angular/cli
+13.3.7"]
+		"@angular/cli" [label="@angular/cli
+13.3.9"]
+		"@angular/cli" [label="@angular/cli
+13.3.9"]
+		"@angular/cli" [label="@angular/cli
+13.3.9"]
+		"@angular/cli" [label="@angular/cli
+15.0.0"]
+		"@angular/common" [label="@angular/common
+13.1.1"]
+		"@angular/common" [label="@angular/common
+13.1.1"]
+		"@angular/common" [label="@angular/common
+13.1.3"]
+		"@angular/common" [label="@angular/common
+13.1.3"]
+		"@angular/common" [label="@angular/common
+13.1.3"]
+		"@angular/common" [label="@angular/common
+13.1.3"]
+		"@angular/common" [label="@angular/common
+13.1.3"]
+		"@angular/common" [label="@angular/common
+13.1.3"]
+		"@angular/compiler" [label="@angular/compiler
+13.1.1"]
+		"@angular/compiler" [label="@angular/compiler
+13.1.1"]
+		"@angular/compiler" [label="@angular/compiler
+13.1.3"]
+		"@angular/compiler" [label="@angular/compiler
+13.1.3"]
+		"@angular/compiler" [label="@angular/compiler
+13.1.3"]
+		"@angular/compiler" [label="@angular/compiler
+13.1.3"]
+		"@angular/compiler" [label="@angular/compiler
+13.1.3"]
+		"@angular/compiler" [label="@angular/compiler
+13.1.3"]
+		"@angular/compiler-cli" [label="@angular/compiler-cli
+13.1.1"]
+		"@angular/compiler-cli" [label="@angular/compiler-cli
+13.1.3"]
+		"@angular/compiler-cli" [label="@angular/compiler-cli
+13.1.3"]
+		"@angular/compiler-cli" [label="@angular/compiler-cli
+13.1.3"]
+		"@angular/core" [label="@angular/core
+13.1.1"]
+		"@angular/core" [label="@angular/core
+13.1.1"]
+		"@angular/core" [label="@angular/core
+13.1.3"]
+		"@angular/core" [label="@angular/core
+13.1.3"]
+		"@angular/core" [label="@angular/core
+13.1.3"]
+		"@angular/core" [label="@angular/core
+13.1.3"]
+		"@angular/core" [label="@angular/core
+13.1.3"]
+		"@angular/core" [label="@angular/core
+13.1.3"]
+		"@angular/forms" [label="@angular/forms
+13.1.1"]
+		"@angular/forms" [label="@angular/forms
+13.1.1"]
+		"@angular/forms" [label="@angular/forms
+13.1.3"]
+		"@angular/forms" [label="@angular/forms
+13.1.3"]
+		"@angular/forms" [label="@angular/forms
+13.1.3"]
+		"@angular/forms" [label="@angular/forms
+13.1.3"]
+		"@angular/forms" [label="@angular/forms
+13.1.3"]
+		"@angular/forms" [label="@angular/forms
+13.1.3"]
+		"@angular/platform-browser" [label="@angular/platform-browser
+13.1.1"]
+		"@angular/platform-browser" [label="@angular/platform-browser
+13.1.1"]
+		"@angular/platform-browser" [label="@angular/platform-browser
+13.1.3"]
+		"@angular/platform-browser" [label="@angular/platform-browser
+13.1.3"]
+		"@angular/platform-browser" [label="@angular/platform-browser
+13.1.3"]
+		"@angular/platform-browser" [label="@angular/platform-browser
+13.1.3"]
+		"@angular/platform-browser" [label="@angular/platform-browser
+13.1.3"]
+		"@angular/platform-browser" [label="@angular/platform-browser
+13.1.3"]
+		"@angular/platform-browser-dynamic" [label="@angular/platform-browser-dynamic
+13.1.1"]
+		"@angular/platform-browser-dynamic" [label="@angular/platform-browser-dynamic
+13.1.1"]
+		"@angular/platform-browser-dynamic" [label="@angular/platform-browser-dynamic
+13.1.3"]
+		"@angular/platform-browser-dynamic" [label="@angular/platform-browser-dynamic
+13.1.3"]
+		"@angular/platform-browser-dynamic" [label="@angular/platform-browser-dynamic
+13.1.3"]
+		"@angular/platform-browser-dynamic" [label="@angular/platform-browser-dynamic
+13.1.3"]
+		"@angular/platform-browser-dynamic" [label="@angular/platform-browser-dynamic
+13.1.3"]
+		"@angular/platform-browser-dynamic" [label="@angular/platform-browser-dynamic
+13.1.3"]
+		"@angular/platform-server" [label="@angular/platform-server
+13.1.1"]
+		"@angular/platform-server" [label="@angular/platform-server
+13.1.1"]
+		"@angular/platform-server" [label="@angular/platform-server
+13.1.3"]
+		"@angular/platform-server" [label="@angular/platform-server
+13.1.3"]
+		"@angular/platform-server" [label="@angular/platform-server
+13.1.3"]
+		"@angular/platform-server" [label="@angular/platform-server
+13.1.3"]
+		"@angular/platform-server" [label="@angular/platform-server
+13.1.3"]
+		"@angular/platform-server" [label="@angular/platform-server
+13.1.3"]
+		"@angular/router" [label="@angular/router
+13.1.1"]
+		"@angular/router" [label="@angular/router
+13.1.1"]
+		"@angular/router" [label="@angular/router
+13.1.3"]
+		"@angular/router" [label="@angular/router
+13.1.3"]
+		"@angular/router" [label="@angular/router
+13.1.3"]
+		"@angular/router" [label="@angular/router
+13.1.3"]
+		"@angular/router" [label="@angular/router
+13.1.3"]
+		"@angular/router" [label="@angular/router
+13.1.3"]
+		"@assemblyscript/loader" [label="@assemblyscript/loader
+0.10.1"]
+		"@assemblyscript/loader" [label="@assemblyscript/loader
+0.10.1"]
+		"@assemblyscript/loader" [label="@assemblyscript/loader
+0.10.1"]
+		"@assemblyscript/loader" [label="@assemblyscript/loader
+0.10.1"]
+		"@auth0/angular-jwt" [label="@auth0/angular-jwt
+5.0.2"]
+		"@auth0/angular-jwt" [label="@auth0/angular-jwt
+5.0.2"]
+		"@auth0/angular-jwt" [label="@auth0/angular-jwt
+5.0.2"]
+		"@auth0/angular-jwt" [label="@auth0/angular-jwt
+5.0.2"]
+		"@auth0/angular-jwt" [label="@auth0/angular-jwt
+5.0.2"]
+		"@auth0/angular-jwt" [label="@auth0/angular-jwt
+5.0.2"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.5.5"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.5.5"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.16.7"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.5.5"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.5.5"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.5.5"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.5.5"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.5.5"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.5.5"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.5.5"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.18.6"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.18.6"]
+		"@babel/code-frame" [label="@babel/code-frame
+7.18.6"]
+		"@babel/compat-data" [label="@babel/compat-data
+7.16.8"]
+		"@babel/core" [label="@babel/core
+7.7.7"]
+		"@babel/core" [label="@babel/core
+7.16.0"]
+		"@babel/core" [label="@babel/core
+7.7.7"]
+		"@babel/core" [label="@babel/core
+7.7.7"]
+		"@babel/generator" [label="@babel/generator
+7.7.2"]
+		"@babel/generator" [label="@babel/generator
+7.7.7"]
+		"@babel/generator" [label="@babel/generator
+7.16.0"]
+		"@babel/generator" [label="@babel/generator
+7.16.8"]
+		"@babel/generator" [label="@babel/generator
+7.7.2"]
+		"@babel/generator" [label="@babel/generator
+7.7.2"]
+		"@babel/generator" [label="@babel/generator
+7.7.2"]
+		"@babel/generator" [label="@babel/generator
+7.7.2"]
+		"@babel/generator" [label="@babel/generator
+7.7.7"]
+		"@babel/generator" [label="@babel/generator
+7.7.2"]
+		"@babel/generator" [label="@babel/generator
+7.7.7"]
+		"@babel/helper-annotate-as-pure" [label="@babel/helper-annotate-as-pure
+7.7.4"]
+		"@babel/helper-annotate-as-pure" [label="@babel/helper-annotate-as-pure
+7.16.0"]
+		"@babel/helper-annotate-as-pure" [label="@babel/helper-annotate-as-pure
+7.16.7"]
+		"@babel/helper-annotate-as-pure" [label="@babel/helper-annotate-as-pure
+7.16.7"]
+		"@babel/helper-annotate-as-pure" [label="@babel/helper-annotate-as-pure
+7.16.7"]
+		"@babel/helper-annotate-as-pure" [label="@babel/helper-annotate-as-pure
+7.16.7"]
+		"@babel/helper-annotate-as-pure" [label="@babel/helper-annotate-as-pure
+7.16.7"]
+		"@babel/helper-annotate-as-pure" [label="@babel/helper-annotate-as-pure
+7.7.4"]
+		"@babel/helper-annotate-as-pure" [label="@babel/helper-annotate-as-pure
+7.7.4"]
+		"@babel/helper-builder-binary-assignment-operator-visitor" [label="@babel/helper-builder-binary-assignment-operator-visitor
+7.7.4"]
+		"@babel/helper-builder-binary-assignment-operator-visitor" [label="@babel/helper-builder-binary-assignment-operator-visitor
+7.16.7"]
+		"@babel/helper-builder-binary-assignment-operator-visitor" [label="@babel/helper-builder-binary-assignment-operator-visitor
+7.7.4"]
+		"@babel/helper-builder-binary-assignment-operator-visitor" [label="@babel/helper-builder-binary-assignment-operator-visitor
+7.7.4"]
+		"@babel/helper-builder-react-jsx" [label="@babel/helper-builder-react-jsx
+7.7.4"]
+		"@babel/helper-builder-react-jsx" [label="@babel/helper-builder-react-jsx
+7.7.4"]
+		"@babel/helper-builder-react-jsx" [label="@babel/helper-builder-react-jsx
+7.7.4"]
+		"@babel/helper-call-delegate" [label="@babel/helper-call-delegate
+7.7.4"]
+		"@babel/helper-call-delegate" [label="@babel/helper-call-delegate
+7.7.4"]
+		"@babel/helper-call-delegate" [label="@babel/helper-call-delegate
+7.7.4"]
+		"@babel/helper-compilation-targets" [label="@babel/helper-compilation-targets
+7.16.7"]
+		"@babel/helper-create-class-features-plugin" [label="@babel/helper-create-class-features-plugin
+7.7.4"]
+		"@babel/helper-create-class-features-plugin" [label="@babel/helper-create-class-features-plugin
+7.16.7"]
+		"@babel/helper-create-class-features-plugin" [label="@babel/helper-create-class-features-plugin
+7.7.4"]
+		"@babel/helper-create-class-features-plugin" [label="@babel/helper-create-class-features-plugin
+7.7.4"]
+		"@babel/helper-create-regexp-features-plugin" [label="@babel/helper-create-regexp-features-plugin
+7.7.4"]
+		"@babel/helper-create-regexp-features-plugin" [label="@babel/helper-create-regexp-features-plugin
+7.16.7"]
+		"@babel/helper-create-regexp-features-plugin" [label="@babel/helper-create-regexp-features-plugin
+7.7.4"]
+		"@babel/helper-create-regexp-features-plugin" [label="@babel/helper-create-regexp-features-plugin
+7.7.4"]
+		"@babel/helper-define-map" [label="@babel/helper-define-map
+7.7.4"]
+		"@babel/helper-define-map" [label="@babel/helper-define-map
+7.7.4"]
+		"@babel/helper-define-map" [label="@babel/helper-define-map
+7.7.4"]
+		"@babel/helper-define-polyfill-provider" [label="@babel/helper-define-polyfill-provider
+0.3.0"]
+		"@babel/helper-environment-visitor" [label="@babel/helper-environment-visitor
+7.16.7"]
+		"@babel/helper-explode-assignable-expression" [label="@babel/helper-explode-assignable-expression
+7.7.4"]
+		"@babel/helper-explode-assignable-expression" [label="@babel/helper-explode-assignable-expression
+7.16.7"]
+		"@babel/helper-explode-assignable-expression" [label="@babel/helper-explode-assignable-expression
+7.7.4"]
+		"@babel/helper-explode-assignable-expression" [label="@babel/helper-explode-assignable-expression
+7.7.4"]
+		"@babel/helper-function-name" [label="@babel/helper-function-name
+7.7.4"]
+		"@babel/helper-function-name" [label="@babel/helper-function-name
+7.16.7"]
+		"@babel/helper-function-name" [label="@babel/helper-function-name
+7.7.4"]
+		"@babel/helper-function-name" [label="@babel/helper-function-name
+7.7.4"]
+		"@babel/helper-get-function-arity" [label="@babel/helper-get-function-arity
+7.7.4"]
+		"@babel/helper-get-function-arity" [label="@babel/helper-get-function-arity
+7.16.7"]
+		"@babel/helper-get-function-arity" [label="@babel/helper-get-function-arity
+7.7.4"]
+		"@babel/helper-get-function-arity" [label="@babel/helper-get-function-arity
+7.7.4"]
+		"@babel/helper-hoist-variables" [label="@babel/helper-hoist-variables
+7.7.4"]
+		"@babel/helper-hoist-variables" [label="@babel/helper-hoist-variables
+7.16.7"]
+		"@babel/helper-hoist-variables" [label="@babel/helper-hoist-variables
+7.7.4"]
+		"@babel/helper-hoist-variables" [label="@babel/helper-hoist-variables
+7.7.4"]
+		"@babel/helper-member-expression-to-functions" [label="@babel/helper-member-expression-to-functions
+7.7.4"]
+		"@babel/helper-member-expression-to-functions" [label="@babel/helper-member-expression-to-functions
+7.16.7"]
+		"@babel/helper-member-expression-to-functions" [label="@babel/helper-member-expression-to-functions
+7.7.4"]
+		"@babel/helper-member-expression-to-functions" [label="@babel/helper-member-expression-to-functions
+7.7.4"]
+		"@babel/helper-module-imports" [label="@babel/helper-module-imports
+7.7.4"]
+		"@babel/helper-module-imports" [label="@babel/helper-module-imports
+7.16.7"]
+		"@babel/helper-module-imports" [label="@babel/helper-module-imports
+7.7.4"]
+		"@babel/helper-module-imports" [label="@babel/helper-module-imports
+7.7.4"]
+		"@babel/helper-module-transforms" [label="@babel/helper-module-transforms
+7.7.5"]
+		"@babel/helper-module-transforms" [label="@babel/helper-module-transforms
+7.16.7"]
+		"@babel/helper-module-transforms" [label="@babel/helper-module-transforms
+7.7.5"]
+		"@babel/helper-module-transforms" [label="@babel/helper-module-transforms
+7.7.5"]
+		"@babel/helper-optimise-call-expression" [label="@babel/helper-optimise-call-expression
+7.7.4"]
+		"@babel/helper-optimise-call-expression" [label="@babel/helper-optimise-call-expression
+7.16.7"]
+		"@babel/helper-optimise-call-expression" [label="@babel/helper-optimise-call-expression
+7.7.4"]
+		"@babel/helper-optimise-call-expression" [label="@babel/helper-optimise-call-expression
+7.7.4"]
+		"@babel/helper-plugin-utils" [label="@babel/helper-plugin-utils
+7.0.0"]
+		"@babel/helper-plugin-utils" [label="@babel/helper-plugin-utils
+7.0.0"]
+		"@babel/helper-plugin-utils" [label="@babel/helper-plugin-utils
+7.16.7"]
+		"@babel/helper-plugin-utils" [label="@babel/helper-plugin-utils
+7.0.0"]
+		"@babel/helper-regex" [label="@babel/helper-regex
+7.5.5"]
+		"@babel/helper-regex" [label="@babel/helper-regex
+7.5.5"]
+		"@babel/helper-regex" [label="@babel/helper-regex
+7.5.5"]
+		"@babel/helper-remap-async-to-generator" [label="@babel/helper-remap-async-to-generator
+7.7.4"]
+		"@babel/helper-remap-async-to-generator" [label="@babel/helper-remap-async-to-generator
+7.16.8"]
+		"@babel/helper-remap-async-to-generator" [label="@babel/helper-remap-async-to-generator
+7.7.4"]
+		"@babel/helper-remap-async-to-generator" [label="@babel/helper-remap-async-to-generator
+7.7.4"]
+		"@babel/helper-replace-supers" [label="@babel/helper-replace-supers
+7.7.4"]
+		"@babel/helper-replace-supers" [label="@babel/helper-replace-supers
+7.16.7"]
+		"@babel/helper-replace-supers" [label="@babel/helper-replace-supers
+7.7.4"]
+		"@babel/helper-replace-supers" [label="@babel/helper-replace-supers
+7.7.4"]
+		"@babel/helper-simple-access" [label="@babel/helper-simple-access
+7.7.4"]
+		"@babel/helper-simple-access" [label="@babel/helper-simple-access
+7.16.7"]
+		"@babel/helper-simple-access" [label="@babel/helper-simple-access
+7.7.4"]
+		"@babel/helper-simple-access" [label="@babel/helper-simple-access
+7.7.4"]
+		"@babel/helper-skip-transparent-expression-wrappers" [label="@babel/helper-skip-transparent-expression-wrappers
+7.16.0"]
+		"@babel/helper-split-export-declaration" [label="@babel/helper-split-export-declaration
+7.7.4"]
+		"@babel/helper-split-export-declaration" [label="@babel/helper-split-export-declaration
+7.16.7"]
+		"@babel/helper-split-export-declaration" [label="@babel/helper-split-export-declaration
+7.7.4"]
+		"@babel/helper-split-export-declaration" [label="@babel/helper-split-export-declaration
+7.7.4"]
+		"@babel/helper-validator-identifier" [label="@babel/helper-validator-identifier
+7.16.7"]
+		"@babel/helper-validator-option" [label="@babel/helper-validator-option
+7.16.7"]
+		"@babel/helper-wrap-function" [label="@babel/helper-wrap-function
+7.7.4"]
+		"@babel/helper-wrap-function" [label="@babel/helper-wrap-function
+7.16.8"]
+		"@babel/helper-wrap-function" [label="@babel/helper-wrap-function
+7.7.4"]
+		"@babel/helper-wrap-function" [label="@babel/helper-wrap-function
+7.7.4"]
+		"@babel/helpers" [label="@babel/helpers
+7.7.4"]
+		"@babel/helpers" [label="@babel/helpers
+7.16.7"]
+		"@babel/helpers" [label="@babel/helpers
+7.7.4"]
+		"@babel/helpers" [label="@babel/helpers
+7.7.4"]
+		"@babel/highlight" [label="@babel/highlight
+7.5.0"]
+		"@babel/highlight" [label="@babel/highlight
+7.5.0"]
+		"@babel/highlight" [label="@babel/highlight
+7.16.7"]
+		"@babel/highlight" [label="@babel/highlight
+7.5.0"]
+		"@babel/highlight" [label="@babel/highlight
+7.5.0"]
+		"@babel/highlight" [label="@babel/highlight
+7.5.0"]
+		"@babel/highlight" [label="@babel/highlight
+7.5.0"]
+		"@babel/highlight" [label="@babel/highlight
+7.5.0"]
+		"@babel/highlight" [label="@babel/highlight
+7.5.0"]
+		"@babel/highlight" [label="@babel/highlight
+7.5.0"]
+		"@babel/parser" [label="@babel/parser
+7.7.3"]
+		"@babel/parser" [label="@babel/parser
+7.7.7"]
+		"@babel/parser" [label="@babel/parser
+7.16.8"]
+		"@babel/parser" [label="@babel/parser
+7.7.3"]
+		"@babel/parser" [label="@babel/parser
+7.7.3"]
+		"@babel/parser" [label="@babel/parser
+7.7.3"]
+		"@babel/parser" [label="@babel/parser
+7.7.3"]
+		"@babel/parser" [label="@babel/parser
+7.7.7"]
+		"@babel/parser" [label="@babel/parser
+7.7.3"]
+		"@babel/parser" [label="@babel/parser
+7.7.7"]
+		"@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression" [label="@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression
+7.16.7"]
+		"@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining" [label="@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining
+7.16.7"]
+		"@babel/plugin-proposal-async-generator-functions" [label="@babel/plugin-proposal-async-generator-functions
+7.7.4"]
+		"@babel/plugin-proposal-async-generator-functions" [label="@babel/plugin-proposal-async-generator-functions
+7.16.4"]
+		"@babel/plugin-proposal-async-generator-functions" [label="@babel/plugin-proposal-async-generator-functions
+7.7.4"]
+		"@babel/plugin-proposal-async-generator-functions" [label="@babel/plugin-proposal-async-generator-functions
+7.7.4"]
+		"@babel/plugin-proposal-class-properties" [label="@babel/plugin-proposal-class-properties
+7.7.4"]
+		"@babel/plugin-proposal-class-properties" [label="@babel/plugin-proposal-class-properties
+7.16.7"]
+		"@babel/plugin-proposal-class-properties" [label="@babel/plugin-proposal-class-properties
+7.7.4"]
+		"@babel/plugin-proposal-class-properties" [label="@babel/plugin-proposal-class-properties
+7.7.4"]
+		"@babel/plugin-proposal-class-static-block" [label="@babel/plugin-proposal-class-static-block
+7.16.7"]
+		"@babel/plugin-proposal-dynamic-import" [label="@babel/plugin-proposal-dynamic-import
+7.7.4"]
+		"@babel/plugin-proposal-dynamic-import" [label="@babel/plugin-proposal-dynamic-import
+7.16.7"]
+		"@babel/plugin-proposal-dynamic-import" [label="@babel/plugin-proposal-dynamic-import
+7.7.4"]
+		"@babel/plugin-proposal-dynamic-import" [label="@babel/plugin-proposal-dynamic-import
+7.7.4"]
+		"@babel/plugin-proposal-export-namespace-from" [label="@babel/plugin-proposal-export-namespace-from
+7.16.7"]
+		"@babel/plugin-proposal-json-strings" [label="@babel/plugin-proposal-json-strings
+7.7.4"]
+		"@babel/plugin-proposal-json-strings" [label="@babel/plugin-proposal-json-strings
+7.16.7"]
+		"@babel/plugin-proposal-json-strings" [label="@babel/plugin-proposal-json-strings
+7.7.4"]
+		"@babel/plugin-proposal-json-strings" [label="@babel/plugin-proposal-json-strings
+7.7.4"]
+		"@babel/plugin-proposal-logical-assignment-operators" [label="@babel/plugin-proposal-logical-assignment-operators
+7.16.7"]
+		"@babel/plugin-proposal-nullish-coalescing-operator" [label="@babel/plugin-proposal-nullish-coalescing-operator
+7.7.4"]
+		"@babel/plugin-proposal-nullish-coalescing-operator" [label="@babel/plugin-proposal-nullish-coalescing-operator
+7.16.7"]
+		"@babel/plugin-proposal-nullish-coalescing-operator" [label="@babel/plugin-proposal-nullish-coalescing-operator
+7.7.4"]
+		"@babel/plugin-proposal-nullish-coalescing-operator" [label="@babel/plugin-proposal-nullish-coalescing-operator
+7.7.4"]
+		"@babel/plugin-proposal-numeric-separator" [label="@babel/plugin-proposal-numeric-separator
+7.16.7"]
+		"@babel/plugin-proposal-object-rest-spread" [label="@babel/plugin-proposal-object-rest-spread
+7.7.7"]
+		"@babel/plugin-proposal-object-rest-spread" [label="@babel/plugin-proposal-object-rest-spread
+7.16.7"]
+		"@babel/plugin-proposal-object-rest-spread" [label="@babel/plugin-proposal-object-rest-spread
+7.7.7"]
+		"@babel/plugin-proposal-object-rest-spread" [label="@babel/plugin-proposal-object-rest-spread
+7.7.7"]
+		"@babel/plugin-proposal-optional-catch-binding" [label="@babel/plugin-proposal-optional-catch-binding
+7.7.4"]
+		"@babel/plugin-proposal-optional-catch-binding" [label="@babel/plugin-proposal-optional-catch-binding
+7.16.7"]
+		"@babel/plugin-proposal-optional-catch-binding" [label="@babel/plugin-proposal-optional-catch-binding
+7.7.4"]
+		"@babel/plugin-proposal-optional-catch-binding" [label="@babel/plugin-proposal-optional-catch-binding
+7.7.4"]
+		"@babel/plugin-proposal-optional-chaining" [label="@babel/plugin-proposal-optional-chaining
+7.7.5"]
+		"@babel/plugin-proposal-optional-chaining" [label="@babel/plugin-proposal-optional-chaining
+7.16.7"]
+		"@babel/plugin-proposal-optional-chaining" [label="@babel/plugin-proposal-optional-chaining
+7.7.5"]
+		"@babel/plugin-proposal-optional-chaining" [label="@babel/plugin-proposal-optional-chaining
+7.7.5"]
+		"@babel/plugin-proposal-private-methods" [label="@babel/plugin-proposal-private-methods
+7.16.7"]
+		"@babel/plugin-proposal-private-property-in-object" [label="@babel/plugin-proposal-private-property-in-object
+7.16.7"]
+		"@babel/plugin-proposal-unicode-property-regex" [label="@babel/plugin-proposal-unicode-property-regex
+7.7.7"]
+		"@babel/plugin-proposal-unicode-property-regex" [label="@babel/plugin-proposal-unicode-property-regex
+7.16.7"]
+		"@babel/plugin-proposal-unicode-property-regex" [label="@babel/plugin-proposal-unicode-property-regex
+7.7.7"]
+		"@babel/plugin-proposal-unicode-property-regex" [label="@babel/plugin-proposal-unicode-property-regex
+7.7.7"]
+		"@babel/plugin-syntax-async-generators" [label="@babel/plugin-syntax-async-generators
+7.7.4"]
+		"@babel/plugin-syntax-async-generators" [label="@babel/plugin-syntax-async-generators
+7.7.4"]
+		"@babel/plugin-syntax-async-generators" [label="@babel/plugin-syntax-async-generators
+7.8.4"]
+		"@babel/plugin-syntax-async-generators" [label="@babel/plugin-syntax-async-generators
+7.7.4"]
+		"@babel/plugin-syntax-class-properties" [label="@babel/plugin-syntax-class-properties
+7.12.13"]
+		"@babel/plugin-syntax-class-static-block" [label="@babel/plugin-syntax-class-static-block
+7.14.5"]
+		"@babel/plugin-syntax-dynamic-import" [label="@babel/plugin-syntax-dynamic-import
+7.7.4"]
+		"@babel/plugin-syntax-dynamic-import" [label="@babel/plugin-syntax-dynamic-import
+7.7.4"]
+		"@babel/plugin-syntax-dynamic-import" [label="@babel/plugin-syntax-dynamic-import
+7.8.3"]
+		"@babel/plugin-syntax-dynamic-import" [label="@babel/plugin-syntax-dynamic-import
+7.7.4"]
+		"@babel/plugin-syntax-export-namespace-from" [label="@babel/plugin-syntax-export-namespace-from
+7.8.3"]
+		"@babel/plugin-syntax-json-strings" [label="@babel/plugin-syntax-json-strings
+7.7.4"]
+		"@babel/plugin-syntax-json-strings" [label="@babel/plugin-syntax-json-strings
+7.7.4"]
+		"@babel/plugin-syntax-json-strings" [label="@babel/plugin-syntax-json-strings
+7.8.3"]
+		"@babel/plugin-syntax-json-strings" [label="@babel/plugin-syntax-json-strings
+7.7.4"]
+		"@babel/plugin-syntax-jsx" [label="@babel/plugin-syntax-jsx
+7.7.4"]
+		"@babel/plugin-syntax-jsx" [label="@babel/plugin-syntax-jsx
+7.7.4"]
+		"@babel/plugin-syntax-jsx" [label="@babel/plugin-syntax-jsx
+7.7.4"]
+		"@babel/plugin-syntax-logical-assignment-operators" [label="@babel/plugin-syntax-logical-assignment-operators
+7.10.4"]
+		"@babel/plugin-syntax-nullish-coalescing-operator" [label="@babel/plugin-syntax-nullish-coalescing-operator
+7.7.4"]
+		"@babel/plugin-syntax-nullish-coalescing-operator" [label="@babel/plugin-syntax-nullish-coalescing-operator
+7.7.4"]
+		"@babel/plugin-syntax-nullish-coalescing-operator" [label="@babel/plugin-syntax-nullish-coalescing-operator
+7.8.3"]
+		"@babel/plugin-syntax-nullish-coalescing-operator" [label="@babel/plugin-syntax-nullish-coalescing-operator
+7.7.4"]
+		"@babel/plugin-syntax-numeric-separator" [label="@babel/plugin-syntax-numeric-separator
+7.10.4"]
+		"@babel/plugin-syntax-object-rest-spread" [label="@babel/plugin-syntax-object-rest-spread
+7.7.4"]
+		"@babel/plugin-syntax-object-rest-spread" [label="@babel/plugin-syntax-object-rest-spread
+7.7.4"]
+		"@babel/plugin-syntax-object-rest-spread" [label="@babel/plugin-syntax-object-rest-spread
+7.8.3"]
+		"@babel/plugin-syntax-object-rest-spread" [label="@babel/plugin-syntax-object-rest-spread
+7.7.4"]
+		"@babel/plugin-syntax-optional-catch-binding" [label="@babel/plugin-syntax-optional-catch-binding
+7.7.4"]
+		"@babel/plugin-syntax-optional-catch-binding" [label="@babel/plugin-syntax-optional-catch-binding
+7.7.4"]
+		"@babel/plugin-syntax-optional-catch-binding" [label="@babel/plugin-syntax-optional-catch-binding
+7.8.3"]
+		"@babel/plugin-syntax-optional-catch-binding" [label="@babel/plugin-syntax-optional-catch-binding
+7.7.4"]
+		"@babel/plugin-syntax-optional-chaining" [label="@babel/plugin-syntax-optional-chaining
+7.7.4"]
+		"@babel/plugin-syntax-optional-chaining" [label="@babel/plugin-syntax-optional-chaining
+7.7.4"]
+		"@babel/plugin-syntax-optional-chaining" [label="@babel/plugin-syntax-optional-chaining
+7.8.3"]
+		"@babel/plugin-syntax-optional-chaining" [label="@babel/plugin-syntax-optional-chaining
+7.7.4"]
+		"@babel/plugin-syntax-private-property-in-object" [label="@babel/plugin-syntax-private-property-in-object
+7.14.5"]
+		"@babel/plugin-syntax-top-level-await" [label="@babel/plugin-syntax-top-level-await
+7.7.4"]
+		"@babel/plugin-syntax-top-level-await" [label="@babel/plugin-syntax-top-level-await
+7.14.5"]
+		"@babel/plugin-syntax-top-level-await" [label="@babel/plugin-syntax-top-level-await
+7.7.4"]
+		"@babel/plugin-syntax-top-level-await" [label="@babel/plugin-syntax-top-level-await
+7.7.4"]
+		"@babel/plugin-transform-arrow-functions" [label="@babel/plugin-transform-arrow-functions
+7.7.4"]
+		"@babel/plugin-transform-arrow-functions" [label="@babel/plugin-transform-arrow-functions
+7.16.7"]
+		"@babel/plugin-transform-arrow-functions" [label="@babel/plugin-transform-arrow-functions
+7.7.4"]
+		"@babel/plugin-transform-arrow-functions" [label="@babel/plugin-transform-arrow-functions
+7.7.4"]
+		"@babel/plugin-transform-async-to-generator" [label="@babel/plugin-transform-async-to-generator
+7.7.4"]
+		"@babel/plugin-transform-async-to-generator" [label="@babel/plugin-transform-async-to-generator
+7.16.0"]
+		"@babel/plugin-transform-async-to-generator" [label="@babel/plugin-transform-async-to-generator
+7.7.4"]
+		"@babel/plugin-transform-async-to-generator" [label="@babel/plugin-transform-async-to-generator
+7.7.4"]
+		"@babel/plugin-transform-block-scoped-functions" [label="@babel/plugin-transform-block-scoped-functions
+7.7.4"]
+		"@babel/plugin-transform-block-scoped-functions" [label="@babel/plugin-transform-block-scoped-functions
+7.16.7"]
+		"@babel/plugin-transform-block-scoped-functions" [label="@babel/plugin-transform-block-scoped-functions
+7.7.4"]
+		"@babel/plugin-transform-block-scoped-functions" [label="@babel/plugin-transform-block-scoped-functions
+7.7.4"]
+		"@babel/plugin-transform-block-scoping" [label="@babel/plugin-transform-block-scoping
+7.7.4"]
+		"@babel/plugin-transform-block-scoping" [label="@babel/plugin-transform-block-scoping
+7.16.7"]
+		"@babel/plugin-transform-block-scoping" [label="@babel/plugin-transform-block-scoping
+7.7.4"]
+		"@babel/plugin-transform-block-scoping" [label="@babel/plugin-transform-block-scoping
+7.7.4"]
+		"@babel/plugin-transform-classes" [label="@babel/plugin-transform-classes
+7.7.4"]
+		"@babel/plugin-transform-classes" [label="@babel/plugin-transform-classes
+7.16.7"]
+		"@babel/plugin-transform-classes" [label="@babel/plugin-transform-classes
+7.7.4"]
+		"@babel/plugin-transform-classes" [label="@babel/plugin-transform-classes
+7.7.4"]
+		"@babel/plugin-transform-computed-properties" [label="@babel/plugin-transform-computed-properties
+7.7.4"]
+		"@babel/plugin-transform-computed-properties" [label="@babel/plugin-transform-computed-properties
+7.16.7"]
+		"@babel/plugin-transform-computed-properties" [label="@babel/plugin-transform-computed-properties
+7.7.4"]
+		"@babel/plugin-transform-computed-properties" [label="@babel/plugin-transform-computed-properties
+7.7.4"]
+		"@babel/plugin-transform-destructuring" [label="@babel/plugin-transform-destructuring
+7.7.4"]
+		"@babel/plugin-transform-destructuring" [label="@babel/plugin-transform-destructuring
+7.16.7"]
+		"@babel/plugin-transform-destructuring" [label="@babel/plugin-transform-destructuring
+7.7.4"]
+		"@babel/plugin-transform-destructuring" [label="@babel/plugin-transform-destructuring
+7.7.4"]
+		"@babel/plugin-transform-dotall-regex" [label="@babel/plugin-transform-dotall-regex
+7.7.7"]
+		"@babel/plugin-transform-dotall-regex" [label="@babel/plugin-transform-dotall-regex
+7.16.7"]
+		"@babel/plugin-transform-dotall-regex" [label="@babel/plugin-transform-dotall-regex
+7.7.7"]
+		"@babel/plugin-transform-dotall-regex" [label="@babel/plugin-transform-dotall-regex
+7.7.7"]
+		"@babel/plugin-transform-duplicate-keys" [label="@babel/plugin-transform-duplicate-keys
+7.7.4"]
+		"@babel/plugin-transform-duplicate-keys" [label="@babel/plugin-transform-duplicate-keys
+7.16.7"]
+		"@babel/plugin-transform-duplicate-keys" [label="@babel/plugin-transform-duplicate-keys
+7.7.4"]
+		"@babel/plugin-transform-duplicate-keys" [label="@babel/plugin-transform-duplicate-keys
+7.7.4"]
+		"@babel/plugin-transform-exponentiation-operator" [label="@babel/plugin-transform-exponentiation-operator
+7.7.4"]
+		"@babel/plugin-transform-exponentiation-operator" [label="@babel/plugin-transform-exponentiation-operator
+7.16.7"]
+		"@babel/plugin-transform-exponentiation-operator" [label="@babel/plugin-transform-exponentiation-operator
+7.7.4"]
+		"@babel/plugin-transform-exponentiation-operator" [label="@babel/plugin-transform-exponentiation-operator
+7.7.4"]
+		"@babel/plugin-transform-for-of" [label="@babel/plugin-transform-for-of
+7.7.4"]
+		"@babel/plugin-transform-for-of" [label="@babel/plugin-transform-for-of
+7.16.7"]
+		"@babel/plugin-transform-for-of" [label="@babel/plugin-transform-for-of
+7.7.4"]
+		"@babel/plugin-transform-for-of" [label="@babel/plugin-transform-for-of
+7.7.4"]
+		"@babel/plugin-transform-function-name" [label="@babel/plugin-transform-function-name
+7.7.4"]
+		"@babel/plugin-transform-function-name" [label="@babel/plugin-transform-function-name
+7.16.7"]
+		"@babel/plugin-transform-function-name" [label="@babel/plugin-transform-function-name
+7.7.4"]
+		"@babel/plugin-transform-function-name" [label="@babel/plugin-transform-function-name
+7.7.4"]
+		"@babel/plugin-transform-literals" [label="@babel/plugin-transform-literals
+7.7.4"]
+		"@babel/plugin-transform-literals" [label="@babel/plugin-transform-literals
+7.16.7"]
+		"@babel/plugin-transform-literals" [label="@babel/plugin-transform-literals
+7.7.4"]
+		"@babel/plugin-transform-literals" [label="@babel/plugin-transform-literals
+7.7.4"]
+		"@babel/plugin-transform-member-expression-literals" [label="@babel/plugin-transform-member-expression-literals
+7.7.4"]
+		"@babel/plugin-transform-member-expression-literals" [label="@babel/plugin-transform-member-expression-literals
+7.16.7"]
+		"@babel/plugin-transform-member-expression-literals" [label="@babel/plugin-transform-member-expression-literals
+7.7.4"]
+		"@babel/plugin-transform-member-expression-literals" [label="@babel/plugin-transform-member-expression-literals
+7.7.4"]
+		"@babel/plugin-transform-modules-amd" [label="@babel/plugin-transform-modules-amd
+7.7.5"]
+		"@babel/plugin-transform-modules-amd" [label="@babel/plugin-transform-modules-amd
+7.16.7"]
+		"@babel/plugin-transform-modules-amd" [label="@babel/plugin-transform-modules-amd
+7.7.5"]
+		"@babel/plugin-transform-modules-amd" [label="@babel/plugin-transform-modules-amd
+7.7.5"]
+		"@babel/plugin-transform-modules-commonjs" [label="@babel/plugin-transform-modules-commonjs
+7.7.5"]
+		"@babel/plugin-transform-modules-commonjs" [label="@babel/plugin-transform-modules-commonjs
+7.16.8"]
+		"@babel/plugin-transform-modules-commonjs" [label="@babel/plugin-transform-modules-commonjs
+7.7.5"]
+		"@babel/plugin-transform-modules-commonjs" [label="@babel/plugin-transform-modules-commonjs
+7.7.5"]
+		"@babel/plugin-transform-modules-systemjs" [label="@babel/plugin-transform-modules-systemjs
+7.7.4"]
+		"@babel/plugin-transform-modules-systemjs" [label="@babel/plugin-transform-modules-systemjs
+7.16.7"]
+		"@babel/plugin-transform-modules-systemjs" [label="@babel/plugin-transform-modules-systemjs
+7.7.4"]
+		"@babel/plugin-transform-modules-systemjs" [label="@babel/plugin-transform-modules-systemjs
+7.7.4"]
+		"@babel/plugin-transform-modules-umd" [label="@babel/plugin-transform-modules-umd
+7.7.4"]
+		"@babel/plugin-transform-modules-umd" [label="@babel/plugin-transform-modules-umd
+7.16.7"]
+		"@babel/plugin-transform-modules-umd" [label="@babel/plugin-transform-modules-umd
+7.7.4"]
+		"@babel/plugin-transform-modules-umd" [label="@babel/plugin-transform-modules-umd
+7.7.4"]
+		"@babel/plugin-transform-named-capturing-groups-regex" [label="@babel/plugin-transform-named-capturing-groups-regex
+7.7.4"]
+		"@babel/plugin-transform-named-capturing-groups-regex" [label="@babel/plugin-transform-named-capturing-groups-regex
+7.16.8"]
+		"@babel/plugin-transform-named-capturing-groups-regex" [label="@babel/plugin-transform-named-capturing-groups-regex
+7.7.4"]
+		"@babel/plugin-transform-named-capturing-groups-regex" [label="@babel/plugin-transform-named-capturing-groups-regex
+7.7.4"]
+		"@babel/plugin-transform-new-target" [label="@babel/plugin-transform-new-target
+7.7.4"]
+		"@babel/plugin-transform-new-target" [label="@babel/plugin-transform-new-target
+7.16.7"]
+		"@babel/plugin-transform-new-target" [label="@babel/plugin-transform-new-target
+7.7.4"]
+		"@babel/plugin-transform-new-target" [label="@babel/plugin-transform-new-target
+7.7.4"]
+		"@babel/plugin-transform-object-super" [label="@babel/plugin-transform-object-super
+7.7.4"]
+		"@babel/plugin-transform-object-super" [label="@babel/plugin-transform-object-super
+7.16.7"]
+		"@babel/plugin-transform-object-super" [label="@babel/plugin-transform-object-super
+7.7.4"]
+		"@babel/plugin-transform-object-super" [label="@babel/plugin-transform-object-super
+7.7.4"]
+		"@babel/plugin-transform-parameters" [label="@babel/plugin-transform-parameters
+7.7.7"]
+		"@babel/plugin-transform-parameters" [label="@babel/plugin-transform-parameters
+7.16.7"]
+		"@babel/plugin-transform-parameters" [label="@babel/plugin-transform-parameters
+7.7.7"]
+		"@babel/plugin-transform-parameters" [label="@babel/plugin-transform-parameters
+7.7.7"]
+		"@babel/plugin-transform-property-literals" [label="@babel/plugin-transform-property-literals
+7.7.4"]
+		"@babel/plugin-transform-property-literals" [label="@babel/plugin-transform-property-literals
+7.16.7"]
+		"@babel/plugin-transform-property-literals" [label="@babel/plugin-transform-property-literals
+7.7.4"]
+		"@babel/plugin-transform-property-literals" [label="@babel/plugin-transform-property-literals
+7.7.4"]
+		"@babel/plugin-transform-react-display-name" [label="@babel/plugin-transform-react-display-name
+7.7.4"]
+		"@babel/plugin-transform-react-display-name" [label="@babel/plugin-transform-react-display-name
+7.7.4"]
+		"@babel/plugin-transform-react-display-name" [label="@babel/plugin-transform-react-display-name
+7.7.4"]
+		"@babel/plugin-transform-react-jsx" [label="@babel/plugin-transform-react-jsx
+7.7.7"]
+		"@babel/plugin-transform-react-jsx" [label="@babel/plugin-transform-react-jsx
+7.7.7"]
+		"@babel/plugin-transform-react-jsx" [label="@babel/plugin-transform-react-jsx
+7.7.7"]
+		"@babel/plugin-transform-react-jsx-self" [label="@babel/plugin-transform-react-jsx-self
+7.7.4"]
+		"@babel/plugin-transform-react-jsx-self" [label="@babel/plugin-transform-react-jsx-self
+7.7.4"]
+		"@babel/plugin-transform-react-jsx-self" [label="@babel/plugin-transform-react-jsx-self
+7.7.4"]
+		"@babel/plugin-transform-react-jsx-source" [label="@babel/plugin-transform-react-jsx-source
+7.7.4"]
+		"@babel/plugin-transform-react-jsx-source" [label="@babel/plugin-transform-react-jsx-source
+7.7.4"]
+		"@babel/plugin-transform-react-jsx-source" [label="@babel/plugin-transform-react-jsx-source
+7.7.4"]
+		"@babel/plugin-transform-regenerator" [label="@babel/plugin-transform-regenerator
+7.7.5"]
+		"@babel/plugin-transform-regenerator" [label="@babel/plugin-transform-regenerator
+7.16.7"]
+		"@babel/plugin-transform-regenerator" [label="@babel/plugin-transform-regenerator
+7.7.5"]
+		"@babel/plugin-transform-regenerator" [label="@babel/plugin-transform-regenerator
+7.7.5"]
+		"@babel/plugin-transform-reserved-words" [label="@babel/plugin-transform-reserved-words
+7.7.4"]
+		"@babel/plugin-transform-reserved-words" [label="@babel/plugin-transform-reserved-words
+7.16.7"]
+		"@babel/plugin-transform-reserved-words" [label="@babel/plugin-transform-reserved-words
+7.7.4"]
+		"@babel/plugin-transform-reserved-words" [label="@babel/plugin-transform-reserved-words
+7.7.4"]
+		"@babel/plugin-transform-runtime" [label="@babel/plugin-transform-runtime
+7.7.6"]
+		"@babel/plugin-transform-runtime" [label="@babel/plugin-transform-runtime
+7.16.4"]
+		"@babel/plugin-transform-runtime" [label="@babel/plugin-transform-runtime
+7.7.6"]
+		"@babel/plugin-transform-runtime" [label="@babel/plugin-transform-runtime
+7.7.6"]
+		"@babel/plugin-transform-shorthand-properties" [label="@babel/plugin-transform-shorthand-properties
+7.7.4"]
+		"@babel/plugin-transform-shorthand-properties" [label="@babel/plugin-transform-shorthand-properties
+7.16.7"]
+		"@babel/plugin-transform-shorthand-properties" [label="@babel/plugin-transform-shorthand-properties
+7.7.4"]
+		"@babel/plugin-transform-shorthand-properties" [label="@babel/plugin-transform-shorthand-properties
+7.7.4"]
+		"@babel/plugin-transform-spread" [label="@babel/plugin-transform-spread
+7.7.4"]
+		"@babel/plugin-transform-spread" [label="@babel/plugin-transform-spread
+7.16.7"]
+		"@babel/plugin-transform-spread" [label="@babel/plugin-transform-spread
+7.7.4"]
+		"@babel/plugin-transform-spread" [label="@babel/plugin-transform-spread
+7.7.4"]
+		"@babel/plugin-transform-sticky-regex" [label="@babel/plugin-transform-sticky-regex
+7.7.4"]
+		"@babel/plugin-transform-sticky-regex" [label="@babel/plugin-transform-sticky-regex
+7.16.7"]
+		"@babel/plugin-transform-sticky-regex" [label="@babel/plugin-transform-sticky-regex
+7.7.4"]
+		"@babel/plugin-transform-sticky-regex" [label="@babel/plugin-transform-sticky-regex
+7.7.4"]
+		"@babel/plugin-transform-template-literals" [label="@babel/plugin-transform-template-literals
+7.7.4"]
+		"@babel/plugin-transform-template-literals" [label="@babel/plugin-transform-template-literals
+7.16.7"]
+		"@babel/plugin-transform-template-literals" [label="@babel/plugin-transform-template-literals
+7.7.4"]
+		"@babel/plugin-transform-template-literals" [label="@babel/plugin-transform-template-literals
+7.7.4"]
+		"@babel/plugin-transform-typeof-symbol" [label="@babel/plugin-transform-typeof-symbol
+7.7.4"]
+		"@babel/plugin-transform-typeof-symbol" [label="@babel/plugin-transform-typeof-symbol
+7.16.7"]
+		"@babel/plugin-transform-typeof-symbol" [label="@babel/plugin-transform-typeof-symbol
+7.7.4"]
+		"@babel/plugin-transform-typeof-symbol" [label="@babel/plugin-transform-typeof-symbol
+7.7.4"]
+		"@babel/plugin-transform-unicode-escapes" [label="@babel/plugin-transform-unicode-escapes
+7.16.7"]
+		"@babel/plugin-transform-unicode-regex" [label="@babel/plugin-transform-unicode-regex
+7.7.4"]
+		"@babel/plugin-transform-unicode-regex" [label="@babel/plugin-transform-unicode-regex
+7.16.7"]
+		"@babel/plugin-transform-unicode-regex" [label="@babel/plugin-transform-unicode-regex
+7.7.4"]
+		"@babel/plugin-transform-unicode-regex" [label="@babel/plugin-transform-unicode-regex
+7.7.4"]
+		"@babel/polyfill" [label="@babel/polyfill
+7.7.0"]
+		"@babel/polyfill" [label="@babel/polyfill
+7.7.0"]
+		"@babel/polyfill" [label="@babel/polyfill
+7.7.0"]
+		"@babel/preset-env" [label="@babel/preset-env
+7.7.7"]
+		"@babel/preset-env" [label="@babel/preset-env
+7.16.4"]
+		"@babel/preset-env" [label="@babel/preset-env
+7.7.7"]
+		"@babel/preset-env" [label="@babel/preset-env
+7.7.7"]
+		"@babel/preset-modules" [label="@babel/preset-modules
+0.1.5"]
+		"@babel/preset-react" [label="@babel/preset-react
+7.7.4"]
+		"@babel/preset-react" [label="@babel/preset-react
+7.7.4"]
+		"@babel/preset-react" [label="@babel/preset-react
+7.7.4"]
+		"@babel/runtime" [label="@babel/runtime
+7.7.7"]
+		"@babel/runtime" [label="@babel/runtime
+7.16.3"]
+		"@babel/runtime" [label="@babel/runtime
+7.7.7"]
+		"@babel/runtime" [label="@babel/runtime
+7.7.7"]
+		"@babel/runtime-corejs3" [label="@babel/runtime-corejs3
+7.7.7"]
+		"@babel/runtime-corejs3" [label="@babel/runtime-corejs3
+7.7.7"]
+		"@babel/runtime-corejs3" [label="@babel/runtime-corejs3
+7.7.7"]
+		"@babel/template" [label="@babel/template
+7.7.0"]
+		"@babel/template" [label="@babel/template
+7.7.4"]
+		"@babel/template" [label="@babel/template
+7.16.0"]
+		"@babel/template" [label="@babel/template
+7.16.7"]
+		"@babel/template" [label="@babel/template
+7.16.7"]
+		"@babel/template" [label="@babel/template
+7.16.7"]
+		"@babel/template" [label="@babel/template
+7.16.7"]
+		"@babel/template" [label="@babel/template
+7.7.0"]
+		"@babel/template" [label="@babel/template
+7.7.0"]
+		"@babel/template" [label="@babel/template
+7.7.0"]
+		"@babel/template" [label="@babel/template
+7.7.0"]
+		"@babel/template" [label="@babel/template
+7.7.4"]
+		"@babel/template" [label="@babel/template
+7.7.0"]
+		"@babel/template" [label="@babel/template
+7.7.4"]
+		"@babel/traverse" [label="@babel/traverse
+7.7.4"]
+		"@babel/traverse" [label="@babel/traverse
+7.16.8"]
+		"@babel/traverse" [label="@babel/traverse
+7.7.4"]
+		"@babel/traverse" [label="@babel/traverse
+7.7.4"]
+		"@babel/types" [label="@babel/types
+7.7.2"]
+		"@babel/types" [label="@babel/types
+7.7.4"]
+		"@babel/types" [label="@babel/types
+7.16.8"]
+		"@babel/types" [label="@babel/types
+7.7.2"]
+		"@babel/types" [label="@babel/types
+7.7.2"]
+		"@babel/types" [label="@babel/types
+7.7.2"]
+		"@babel/types" [label="@babel/types
+7.7.2"]
+		"@babel/types" [label="@babel/types
+7.7.4"]
+		"@babel/types" [label="@babel/types
+7.7.2"]
+		"@babel/types" [label="@babel/types
+7.7.4"]
+		"@chopsui/batch-iterator" [label="@chopsui/batch-iterator
+0.1.0"]
+		"@chopsui/chops-button" [label="@chopsui/chops-button
+0.1.11"]
+		"@chopsui/chops-checkbox" [label="@chopsui/chops-checkbox
+0.1.11"]
+		"@chopsui/chops-header" [label="@chopsui/chops-header
+0.1.5"]
+		"@chopsui/chops-input" [label="@chopsui/chops-input
+0.1.11"]
+		"@chopsui/chops-loading" [label="@chopsui/chops-loading
+0.1.11"]
+		"@chopsui/chops-radio" [label="@chopsui/chops-radio
+0.1.11"]
+		"@chopsui/chops-radio-group" [label="@chopsui/chops-radio-group
+0.1.11"]
+		"@chopsui/chops-signin" [label="@chopsui/chops-signin
+0.1.5"]
+		"@chopsui/chops-switch" [label="@chopsui/chops-switch
+0.1.11"]
+		"@chopsui/chops-tab" [label="@chopsui/chops-tab
+0.1.11"]
+		"@chopsui/chops-tab-bar" [label="@chopsui/chops-tab-bar
+0.1.11"]
+		"@chopsui/chops-textarea" [label="@chopsui/chops-textarea
+0.1.11"]
+		"@chopsui/result-channel" [label="@chopsui/result-channel
+0.1.0"]
+		"@chopsui/tsmon-client" [label="@chopsui/tsmon-client
+0.0.1"]
+		"@colors/colors" [label="@colors/colors
+1.5.0"]
+		"@csstools/convert-colors" [label="@csstools/convert-colors
+1.4.0"]
+		"@discoveryjs/json-ext" [label="@discoveryjs/json-ext
+0.5.6"]
+		"@emotion/cache" [label="@emotion/cache
+10.0.27"]
+		"@emotion/cache" [label="@emotion/cache
+10.0.27"]
+		"@emotion/cache" [label="@emotion/cache
+10.0.27"]
+		"@emotion/core" [label="@emotion/core
+10.0.27"]
+		"@emotion/core" [label="@emotion/core
+10.0.27"]
+		"@emotion/core" [label="@emotion/core
+10.0.27"]
+		"@emotion/css" [label="@emotion/css
+10.0.27"]
+		"@emotion/css" [label="@emotion/css
+10.0.27"]
+		"@emotion/css" [label="@emotion/css
+10.0.27"]
+		"@emotion/hash" [label="@emotion/hash
+0.7.4"]
+		"@emotion/hash" [label="@emotion/hash
+0.7.4"]
+		"@emotion/hash" [label="@emotion/hash
+0.7.4"]
+		"@emotion/is-prop-valid" [label="@emotion/is-prop-valid
+0.8.6"]
+		"@emotion/is-prop-valid" [label="@emotion/is-prop-valid
+0.8.6"]
+		"@emotion/is-prop-valid" [label="@emotion/is-prop-valid
+0.8.6"]
+		"@emotion/memoize" [label="@emotion/memoize
+0.7.4"]
+		"@emotion/memoize" [label="@emotion/memoize
+0.7.4"]
+		"@emotion/memoize" [label="@emotion/memoize
+0.7.4"]
+		"@emotion/serialize" [label="@emotion/serialize
+0.11.15"]
+		"@emotion/serialize" [label="@emotion/serialize
+0.11.15"]
+		"@emotion/serialize" [label="@emotion/serialize
+0.11.15"]
+		"@emotion/sheet" [label="@emotion/sheet
+0.9.4"]
+		"@emotion/sheet" [label="@emotion/sheet
+0.9.4"]
+		"@emotion/sheet" [label="@emotion/sheet
+0.9.4"]
+		"@emotion/styled" [label="@emotion/styled
+10.0.27"]
+		"@emotion/styled" [label="@emotion/styled
+10.0.27"]
+		"@emotion/styled" [label="@emotion/styled
+10.0.27"]
+		"@emotion/styled-base" [label="@emotion/styled-base
+10.0.27"]
+		"@emotion/styled-base" [label="@emotion/styled-base
+10.0.27"]
+		"@emotion/styled-base" [label="@emotion/styled-base
+10.0.27"]
+		"@emotion/stylis" [label="@emotion/stylis
+0.8.5"]
+		"@emotion/stylis" [label="@emotion/stylis
+0.8.5"]
+		"@emotion/stylis" [label="@emotion/stylis
+0.8.5"]
+		"@emotion/unitless" [label="@emotion/unitless
+0.7.5"]
+		"@emotion/unitless" [label="@emotion/unitless
+0.7.5"]
+		"@emotion/unitless" [label="@emotion/unitless
+0.7.5"]
+		"@emotion/utils" [label="@emotion/utils
+0.11.3"]
+		"@emotion/utils" [label="@emotion/utils
+0.11.3"]
+		"@emotion/utils" [label="@emotion/utils
+0.11.3"]
+		"@emotion/weak-memoize" [label="@emotion/weak-memoize
+0.2.5"]
+		"@emotion/weak-memoize" [label="@emotion/weak-memoize
+0.2.5"]
+		"@emotion/weak-memoize" [label="@emotion/weak-memoize
+0.2.5"]
+		"@gar/promisify" [label="@gar/promisify
+1.1.3"]
+		"@gar/promisify" [label="@gar/promisify
+1.1.3"]
+		"@gar/promisify" [label="@gar/promisify
+1.1.3"]
+		"@gulp-sourcemaps/identity-map" [label="@gulp-sourcemaps/identity-map
+1.0.2"]
+		"@gulp-sourcemaps/map-sources" [label="@gulp-sourcemaps/map-sources
+1.0.0"]
+		"@hapi/address" [label="@hapi/address
+2.1.4"]
+		"@hapi/address" [label="@hapi/address
+2.1.4"]
+		"@hapi/address" [label="@hapi/address
+2.1.4"]
+		"@hapi/bourne" [label="@hapi/bourne
+1.3.2"]
+		"@hapi/bourne" [label="@hapi/bourne
+1.3.2"]
+		"@hapi/bourne" [label="@hapi/bourne
+1.3.2"]
+		"@hapi/hoek" [label="@hapi/hoek
+8.5.0"]
+		"@hapi/hoek" [label="@hapi/hoek
+8.5.0"]
+		"@hapi/hoek" [label="@hapi/hoek
+8.5.0"]
+		"@hapi/joi" [label="@hapi/joi
+15.1.1"]
+		"@hapi/joi" [label="@hapi/joi
+15.1.1"]
+		"@hapi/joi" [label="@hapi/joi
+15.1.1"]
+		"@hapi/topo" [label="@hapi/topo
+3.1.6"]
+		"@hapi/topo" [label="@hapi/topo
+3.1.6"]
+		"@hapi/topo" [label="@hapi/topo
+3.1.6"]
+		"@isaacs/string-locale-compare" [label="@isaacs/string-locale-compare
+1.1.0"]
+		"@istanbuljs/load-nyc-config" [label="@istanbuljs/load-nyc-config
+1.1.0"]
+		"@istanbuljs/schema" [label="@istanbuljs/schema
+0.1.3"]
+		"@jimp/bmp" [label="@jimp/bmp
+0.6.8"]
+		"@jimp/bmp" [label="@jimp/bmp
+0.6.8"]
+		"@jimp/bmp" [label="@jimp/bmp
+0.6.8"]
+		"@jimp/core" [label="@jimp/core
+0.6.8"]
+		"@jimp/core" [label="@jimp/core
+0.6.8"]
+		"@jimp/core" [label="@jimp/core
+0.6.8"]
+		"@jimp/custom" [label="@jimp/custom
+0.6.8"]
+		"@jimp/custom" [label="@jimp/custom
+0.6.8"]
+		"@jimp/custom" [label="@jimp/custom
+0.6.8"]
+		"@jimp/gif" [label="@jimp/gif
+0.6.8"]
+		"@jimp/gif" [label="@jimp/gif
+0.6.8"]
+		"@jimp/gif" [label="@jimp/gif
+0.6.8"]
+		"@jimp/jpeg" [label="@jimp/jpeg
+0.6.8"]
+		"@jimp/jpeg" [label="@jimp/jpeg
+0.6.8"]
+		"@jimp/jpeg" [label="@jimp/jpeg
+0.6.8"]
+		"@jimp/plugin-blit" [label="@jimp/plugin-blit
+0.6.8"]
+		"@jimp/plugin-blit" [label="@jimp/plugin-blit
+0.6.8"]
+		"@jimp/plugin-blit" [label="@jimp/plugin-blit
+0.6.8"]
+		"@jimp/plugin-blur" [label="@jimp/plugin-blur
+0.6.8"]
+		"@jimp/plugin-blur" [label="@jimp/plugin-blur
+0.6.8"]
+		"@jimp/plugin-blur" [label="@jimp/plugin-blur
+0.6.8"]
+		"@jimp/plugin-color" [label="@jimp/plugin-color
+0.6.8"]
+		"@jimp/plugin-color" [label="@jimp/plugin-color
+0.6.8"]
+		"@jimp/plugin-color" [label="@jimp/plugin-color
+0.6.8"]
+		"@jimp/plugin-contain" [label="@jimp/plugin-contain
+0.6.8"]
+		"@jimp/plugin-contain" [label="@jimp/plugin-contain
+0.6.8"]
+		"@jimp/plugin-contain" [label="@jimp/plugin-contain
+0.6.8"]
+		"@jimp/plugin-cover" [label="@jimp/plugin-cover
+0.6.8"]
+		"@jimp/plugin-cover" [label="@jimp/plugin-cover
+0.6.8"]
+		"@jimp/plugin-cover" [label="@jimp/plugin-cover
+0.6.8"]
+		"@jimp/plugin-crop" [label="@jimp/plugin-crop
+0.6.8"]
+		"@jimp/plugin-crop" [label="@jimp/plugin-crop
+0.6.8"]
+		"@jimp/plugin-crop" [label="@jimp/plugin-crop
+0.6.8"]
+		"@jimp/plugin-displace" [label="@jimp/plugin-displace
+0.6.8"]
+		"@jimp/plugin-displace" [label="@jimp/plugin-displace
+0.6.8"]
+		"@jimp/plugin-displace" [label="@jimp/plugin-displace
+0.6.8"]
+		"@jimp/plugin-dither" [label="@jimp/plugin-dither
+0.6.8"]
+		"@jimp/plugin-dither" [label="@jimp/plugin-dither
+0.6.8"]
+		"@jimp/plugin-dither" [label="@jimp/plugin-dither
+0.6.8"]
+		"@jimp/plugin-flip" [label="@jimp/plugin-flip
+0.6.8"]
+		"@jimp/plugin-flip" [label="@jimp/plugin-flip
+0.6.8"]
+		"@jimp/plugin-flip" [label="@jimp/plugin-flip
+0.6.8"]
+		"@jimp/plugin-gaussian" [label="@jimp/plugin-gaussian
+0.6.8"]
+		"@jimp/plugin-gaussian" [label="@jimp/plugin-gaussian
+0.6.8"]
+		"@jimp/plugin-gaussian" [label="@jimp/plugin-gaussian
+0.6.8"]
+		"@jimp/plugin-invert" [label="@jimp/plugin-invert
+0.6.8"]
+		"@jimp/plugin-invert" [label="@jimp/plugin-invert
+0.6.8"]
+		"@jimp/plugin-invert" [label="@jimp/plugin-invert
+0.6.8"]
+		"@jimp/plugin-mask" [label="@jimp/plugin-mask
+0.6.8"]
+		"@jimp/plugin-mask" [label="@jimp/plugin-mask
+0.6.8"]
+		"@jimp/plugin-mask" [label="@jimp/plugin-mask
+0.6.8"]
+		"@jimp/plugin-normalize" [label="@jimp/plugin-normalize
+0.6.8"]
+		"@jimp/plugin-normalize" [label="@jimp/plugin-normalize
+0.6.8"]
+		"@jimp/plugin-normalize" [label="@jimp/plugin-normalize
+0.6.8"]
+		"@jimp/plugin-print" [label="@jimp/plugin-print
+0.6.8"]
+		"@jimp/plugin-print" [label="@jimp/plugin-print
+0.6.8"]
+		"@jimp/plugin-print" [label="@jimp/plugin-print
+0.6.8"]
+		"@jimp/plugin-resize" [label="@jimp/plugin-resize
+0.6.8"]
+		"@jimp/plugin-resize" [label="@jimp/plugin-resize
+0.6.8"]
+		"@jimp/plugin-resize" [label="@jimp/plugin-resize
+0.6.8"]
+		"@jimp/plugin-rotate" [label="@jimp/plugin-rotate
+0.6.8"]
+		"@jimp/plugin-rotate" [label="@jimp/plugin-rotate
+0.6.8"]
+		"@jimp/plugin-rotate" [label="@jimp/plugin-rotate
+0.6.8"]
+		"@jimp/plugin-scale" [label="@jimp/plugin-scale
+0.6.8"]
+		"@jimp/plugin-scale" [label="@jimp/plugin-scale
+0.6.8"]
+		"@jimp/plugin-scale" [label="@jimp/plugin-scale
+0.6.8"]
+		"@jimp/plugins" [label="@jimp/plugins
+0.6.8"]
+		"@jimp/plugins" [label="@jimp/plugins
+0.6.8"]
+		"@jimp/plugins" [label="@jimp/plugins
+0.6.8"]
+		"@jimp/png" [label="@jimp/png
+0.6.8"]
+		"@jimp/png" [label="@jimp/png
+0.6.8"]
+		"@jimp/png" [label="@jimp/png
+0.6.8"]
+		"@jimp/tiff" [label="@jimp/tiff
+0.6.8"]
+		"@jimp/tiff" [label="@jimp/tiff
+0.6.8"]
+		"@jimp/tiff" [label="@jimp/tiff
+0.6.8"]
+		"@jimp/types" [label="@jimp/types
+0.6.8"]
+		"@jimp/types" [label="@jimp/types
+0.6.8"]
+		"@jimp/types" [label="@jimp/types
+0.6.8"]
+		"@jimp/utils" [label="@jimp/utils
+0.6.8"]
+		"@jimp/utils" [label="@jimp/utils
+0.6.8"]
+		"@jimp/utils" [label="@jimp/utils
+0.6.8"]
+		"@jridgewell/gen-mapping" [label="@jridgewell/gen-mapping
+0.3.2"]
+		"@jridgewell/resolve-uri" [label="@jridgewell/resolve-uri
+1.0.0"]
+		"@jridgewell/resolve-uri" [label="@jridgewell/resolve-uri
+3.1.0"]
+		"@jridgewell/set-array" [label="@jridgewell/set-array
+1.1.2"]
+		"@jridgewell/source-map" [label="@jridgewell/source-map
+0.3.2"]
+		"@jridgewell/sourcemap-codec" [label="@jridgewell/sourcemap-codec
+1.4.14"]
+		"@jridgewell/trace-mapping" [label="@jridgewell/trace-mapping
+0.3.14"]
+		"@microsoft/typescript-etw" [label="@microsoft/typescript-etw
+0.1.0"]
+		"@microsoft/typescript-etw" [label="@microsoft/typescript-etw
+0.1.0"]
+		"@microsoft/typescript-etw" [label="@microsoft/typescript-etw
+0.1.0"]
+		"@mikaelkristiansson/domready" [label="@mikaelkristiansson/domready
+1.0.9"]
+		"@mikaelkristiansson/domready" [label="@mikaelkristiansson/domready
+1.0.9"]
+		"@mikaelkristiansson/domready" [label="@mikaelkristiansson/domready
+1.0.9"]
+		"@mrmlnc/readdir-enhanced" [label="@mrmlnc/readdir-enhanced
+2.2.1"]
+		"@mrmlnc/readdir-enhanced" [label="@mrmlnc/readdir-enhanced
+2.2.1"]
+		"@mrmlnc/readdir-enhanced" [label="@mrmlnc/readdir-enhanced
+2.2.1"]
+		"@my-scope/package-a" [label="@my-scope/package-a
+0.0.0"]
+		"@my-scope/package-a" [label="@my-scope/package-a
+0.0.0"]
+		"@my-scope/package-a" [label="@my-scope/package-a
+0.0.0"]
+		"@my-scope/package-a" [label="@my-scope/package-a
+0.0.0"]
+		"@my-scope/package-a" [label="@my-scope/package-a
+0.0.0"]
+		"@my-scope/package-b" [label="@my-scope/package-b
+0.0.0"]
+		"@my-scope/package-b" [label="@my-scope/package-b
+0.0.0"]
+		"@my-scope/package-b" [label="@my-scope/package-b
+0.0.0"]
+		"@my-scope/package-b" [label="@my-scope/package-b
+0.0.0"]
+		"@my-scope/package-b" [label="@my-scope/package-b
+0.0.0"]
+		"@ngtools/webpack" [label="@ngtools/webpack
+13.1.2"]
+		"@ngxs/devtools-plugin" [label="@ngxs/devtools-plugin
+3.7.3"]
+		"@ngxs/devtools-plugin" [label="@ngxs/devtools-plugin
+3.7.3"]
+		"@ngxs/form-plugin" [label="@ngxs/form-plugin
+3.7.3"]
+		"@ngxs/form-plugin" [label="@ngxs/form-plugin
+3.7.3"]
+		"@ngxs/logger-plugin" [label="@ngxs/logger-plugin
+3.7.3"]
+		"@ngxs/logger-plugin" [label="@ngxs/logger-plugin
+3.7.3"]
+		"@ngxs/storage-plugin" [label="@ngxs/storage-plugin
+3.7.3"]
+		"@ngxs/storage-plugin" [label="@ngxs/storage-plugin
+3.7.3"]
+		"@ngxs/store" [label="@ngxs/store
+3.7.3"]
+		"@ngxs/store" [label="@ngxs/store
+3.7.3"]
+		"@nodelib/fs.scandir" [label="@nodelib/fs.scandir
+2.1.3"]
+		"@nodelib/fs.scandir" [label="@nodelib/fs.scandir
+2.1.3"]
+		"@nodelib/fs.scandir" [label="@nodelib/fs.scandir
+2.1.5"]
+		"@nodelib/fs.scandir" [label="@nodelib/fs.scandir
+2.1.3"]
+		"@nodelib/fs.stat" [label="@nodelib/fs.stat
+1.1.3"]
+		"@nodelib/fs.stat" [label="@nodelib/fs.stat
+2.0.3"]
+		"@nodelib/fs.stat" [label="@nodelib/fs.stat
+1.1.3"]
+		"@nodelib/fs.stat" [label="@nodelib/fs.stat
+2.0.3"]
+		"@nodelib/fs.stat" [label="@nodelib/fs.stat
+2.0.5"]
+		"@nodelib/fs.stat" [label="@nodelib/fs.stat
+1.1.3"]
+		"@nodelib/fs.stat" [label="@nodelib/fs.stat
+2.0.3"]
+		"@nodelib/fs.walk" [label="@nodelib/fs.walk
+1.2.4"]
+		"@nodelib/fs.walk" [label="@nodelib/fs.walk
+1.2.4"]
+		"@nodelib/fs.walk" [label="@nodelib/fs.walk
+1.2.8"]
+		"@nodelib/fs.walk" [label="@nodelib/fs.walk
+1.2.4"]
+		"@npmcli/arborist" [label="@npmcli/arborist
+5.2.0"]
+		"@npmcli/ci-detect" [label="@npmcli/ci-detect
+2.0.0"]
+		"@npmcli/config" [label="@npmcli/config
+4.1.0"]
+		"@npmcli/disparity-colors" [label="@npmcli/disparity-colors
+2.0.0"]
+		"@npmcli/fs" [label="@npmcli/fs
+1.1.0"]
+		"@npmcli/fs" [label="@npmcli/fs
+1.1.1"]
+		"@npmcli/fs" [label="@npmcli/fs
+2.1.0"]
+		"@npmcli/fs" [label="@npmcli/fs
+2.1.0"]
+		"@npmcli/fs" [label="@npmcli/fs
+2.1.1"]
+		"@npmcli/git" [label="@npmcli/git
+2.1.0"]
+		"@npmcli/git" [label="@npmcli/git
+2.1.0"]
+		"@npmcli/git" [label="@npmcli/git
+3.0.1"]
+		"@npmcli/installed-package-contents" [label="@npmcli/installed-package-contents
+1.0.7"]
+		"@npmcli/installed-package-contents" [label="@npmcli/installed-package-contents
+1.0.7"]
+		"@npmcli/installed-package-contents" [label="@npmcli/installed-package-contents
+1.0.7"]
+		"@npmcli/map-workspaces" [label="@npmcli/map-workspaces
+2.0.3"]
+		"@npmcli/metavuln-calculator" [label="@npmcli/metavuln-calculator
+3.1.0"]
+		"@npmcli/move-file" [label="@npmcli/move-file
+1.1.2"]
+		"@npmcli/move-file" [label="@npmcli/move-file
+1.1.2"]
+		"@npmcli/move-file" [label="@npmcli/move-file
+2.0.0"]
+		"@npmcli/move-file" [label="@npmcli/move-file
+2.0.0"]
+		"@npmcli/move-file" [label="@npmcli/move-file
+2.0.0"]
+		"@npmcli/name-from-folder" [label="@npmcli/name-from-folder
+1.0.1"]
+		"@npmcli/node-gyp" [label="@npmcli/node-gyp
+1.0.3"]
+		"@npmcli/node-gyp" [label="@npmcli/node-gyp
+1.0.3"]
+		"@npmcli/node-gyp" [label="@npmcli/node-gyp
+2.0.0"]
+		"@npmcli/package-json" [label="@npmcli/package-json
+2.0.0"]
+		"@npmcli/promise-spawn" [label="@npmcli/promise-spawn
+1.3.2"]
+		"@npmcli/promise-spawn" [label="@npmcli/promise-spawn
+1.3.2"]
+		"@npmcli/promise-spawn" [label="@npmcli/promise-spawn
+3.0.0"]
+		"@npmcli/run-script" [label="@npmcli/run-script
+2.0.0"]
+		"@npmcli/run-script" [label="@npmcli/run-script
+2.0.0"]
+		"@npmcli/run-script" [label="@npmcli/run-script
+3.0.2"]
+		"@pieh/friendly-errors-webpack-plugin" [label="@pieh/friendly-errors-webpack-plugin
+1.7.0-chalk-2"]
+		"@pieh/friendly-errors-webpack-plugin" [label="@pieh/friendly-errors-webpack-plugin
+1.7.0-chalk-2"]
+		"@pieh/friendly-errors-webpack-plugin" [label="@pieh/friendly-errors-webpack-plugin
+1.7.0-chalk-2"]
+		"@polymer/app-route" [label="@polymer/app-route
+3.0.2"]
+		"@polymer/iron-collapse" [label="@polymer/iron-collapse
+3.0.1"]
+		"@polymer/iron-flex-layout" [label="@polymer/iron-flex-layout
+3.0.1"]
+		"@polymer/iron-icon" [label="@polymer/iron-icon
+3.0.1"]
+		"@polymer/iron-iconset-svg" [label="@polymer/iron-iconset-svg
+3.0.1"]
+		"@polymer/iron-location" [label="@polymer/iron-location
+3.0.1"]
+		"@polymer/iron-meta" [label="@polymer/iron-meta
+3.0.1"]
+		"@polymer/iron-resizable-behavior" [label="@polymer/iron-resizable-behavior
+3.0.1"]
+		"@polymer/polymer" [label="@polymer/polymer
+3.2.0"]
+		"@popperjs/core" [label="@popperjs/core
+2.11.5"]
+		"@popperjs/core" [label="@popperjs/core
+2.11.5"]
+		"@popperjs/core" [label="@popperjs/core
+2.11.5"]
+		"@popperjs/core" [label="@popperjs/core
+2.11.5"]
+		"@reach/router" [label="@reach/router
+1.2.1"]
+		"@reach/router" [label="@reach/router
+1.2.1"]
+		"@reach/router" [label="@reach/router
+1.2.1"]
+		"@schematics/angular" [label="@schematics/angular
+13.3.7"]
+		"@schematics/angular" [label="@schematics/angular
+13.3.7"]
+		"@sindresorhus/is" [label="@sindresorhus/is
+0.14.0"]
+		"@sindresorhus/is" [label="@sindresorhus/is
+0.7.0"]
+		"@sindresorhus/is" [label="@sindresorhus/is
+0.14.0"]
+		"@sindresorhus/is" [label="@sindresorhus/is
+0.7.0"]
+		"@sindresorhus/is" [label="@sindresorhus/is
+0.14.0"]
+		"@sindresorhus/is" [label="@sindresorhus/is
+0.7.0"]
+		"@sinonjs/commons" [label="@sinonjs/commons
+1.4.0"]
+		"@sinonjs/formatio" [label="@sinonjs/formatio
+3.2.1"]
+		"@sinonjs/samsam" [label="@sinonjs/samsam
+3.3.1"]
+		"@sinonjs/text-encoding" [label="@sinonjs/text-encoding
+0.7.1"]
+		"@styled-system/background" [label="@styled-system/background
+5.1.2"]
+		"@styled-system/background" [label="@styled-system/background
+5.1.2"]
+		"@styled-system/background" [label="@styled-system/background
+5.1.2"]
+		"@styled-system/border" [label="@styled-system/border
+5.1.2"]
+		"@styled-system/border" [label="@styled-system/border
+5.1.2"]
+		"@styled-system/border" [label="@styled-system/border
+5.1.2"]
+		"@styled-system/color" [label="@styled-system/color
+5.1.2"]
+		"@styled-system/color" [label="@styled-system/color
+5.1.2"]
+		"@styled-system/color" [label="@styled-system/color
+5.1.2"]
+		"@styled-system/core" [label="@styled-system/core
+5.1.2"]
+		"@styled-system/core" [label="@styled-system/core
+5.1.2"]
+		"@styled-system/core" [label="@styled-system/core
+5.1.2"]
+		"@styled-system/css" [label="@styled-system/css
+5.1.4"]
+		"@styled-system/css" [label="@styled-system/css
+5.1.4"]
+		"@styled-system/css" [label="@styled-system/css
+5.1.4"]
+		"@styled-system/flexbox" [label="@styled-system/flexbox
+5.1.2"]
+		"@styled-system/flexbox" [label="@styled-system/flexbox
+5.1.2"]
+		"@styled-system/flexbox" [label="@styled-system/flexbox
+5.1.2"]
+		"@styled-system/grid" [label="@styled-system/grid
+5.1.2"]
+		"@styled-system/grid" [label="@styled-system/grid
+5.1.2"]
+		"@styled-system/grid" [label="@styled-system/grid
+5.1.2"]
+		"@styled-system/layout" [label="@styled-system/layout
+5.1.2"]
+		"@styled-system/layout" [label="@styled-system/layout
+5.1.2"]
+		"@styled-system/layout" [label="@styled-system/layout
+5.1.2"]
+		"@styled-system/position" [label="@styled-system/position
+5.1.2"]
+		"@styled-system/position" [label="@styled-system/position
+5.1.2"]
+		"@styled-system/position" [label="@styled-system/position
+5.1.2"]
+		"@styled-system/shadow" [label="@styled-system/shadow
+5.1.2"]
+		"@styled-system/shadow" [label="@styled-system/shadow
+5.1.2"]
+		"@styled-system/shadow" [label="@styled-system/shadow
+5.1.2"]
+		"@styled-system/should-forward-prop" [label="@styled-system/should-forward-prop
+5.1.4"]
+		"@styled-system/should-forward-prop" [label="@styled-system/should-forward-prop
+5.1.4"]
+		"@styled-system/should-forward-prop" [label="@styled-system/should-forward-prop
+5.1.4"]
+		"@styled-system/space" [label="@styled-system/space
+5.1.2"]
+		"@styled-system/space" [label="@styled-system/space
+5.1.2"]
+		"@styled-system/space" [label="@styled-system/space
+5.1.2"]
+		"@styled-system/typography" [label="@styled-system/typography
+5.1.2"]
+		"@styled-system/typography" [label="@styled-system/typography
+5.1.2"]
+		"@styled-system/typography" [label="@styled-system/typography
+5.1.2"]
+		"@styled-system/variant" [label="@styled-system/variant
+5.1.4"]
+		"@styled-system/variant" [label="@styled-system/variant
+5.1.4"]
+		"@styled-system/variant" [label="@styled-system/variant
+5.1.4"]
+		"@szmarczak/http-timer" [label="@szmarczak/http-timer
+1.1.2"]
+		"@szmarczak/http-timer" [label="@szmarczak/http-timer
+1.1.2"]
+		"@szmarczak/http-timer" [label="@szmarczak/http-timer
+1.1.2"]
+		"@tootallnate/once" [label="@tootallnate/once
+1.1.2"]
+		"@tootallnate/once" [label="@tootallnate/once
+1.1.2"]
+		"@tootallnate/once" [label="@tootallnate/once
+2.0.0"]
+		"@tootallnate/once" [label="@tootallnate/once
+2.0.0"]
+		"@tootallnate/once" [label="@tootallnate/once
+2.0.0"]
+		"@types/abbrev" [label="@types/abbrev
+1.1.2"]
+		"@types/accepts" [label="@types/accepts
+1.3.5"]
+		"@types/are-we-there-yet" [label="@types/are-we-there-yet
+1.1.0"]
+		"@types/argparse" [label="@types/argparse
+2.0.10"]
+		"@types/async" [label="@types/async
+3.2.15"]
+		"@types/atob" [label="@types/atob
+2.1.2"]
+		"@types/babel-types" [label="@types/babel-types
+7.0.11"]
+		"@types/balanced-match" [label="@types/balanced-match
+1.0.2"]
+		"@types/big.js" [label="@types/big.js
+6.1.5"]
+		"@types/bl" [label="@types/bl
+5.0.2"]
+		"@types/body-parser" [label="@types/body-parser
+1.19.2"]
+		"@types/bonjour" [label="@types/bonjour
+3.5.10"]
+		"@types/boolbase" [label="@types/boolbase
+1.0.1"]
+		"@types/bootstrap" [label="@types/bootstrap
+5.2.1"]
+		"@types/bootstrap" [label="@types/bootstrap
+5.2.1"]
+		"@types/brace-expansion" [label="@types/brace-expansion
+1.1.0"]
+		"@types/braces" [label="@types/braces
+3.0.1"]
+		"@types/buffer-from" [label="@types/buffer-from
+1.1.0"]
+		"@types/bytes" [label="@types/bytes
+3.1.1"]
+		"@types/cacache" [label="@types/cacache
+15.0.1"]
+		"@types/call-bind" [label="@types/call-bind
+1.0.1"]
+		"@types/caniuse-lite" [label="@types/caniuse-lite
+1.0.1"]
+		"@types/chardet" [label="@types/chardet
+0.8.1"]
+		"@types/chownr" [label="@types/chownr
+1.0.0"]
+		"@types/circular-dependency-plugin" [label="@types/circular-dependency-plugin
+5.0.5"]
+		"@types/cli-spinners" [label="@types/cli-spinners
+1.3.0"]
+		"@types/clone" [label="@types/clone
+2.1.1"]
+		"@types/clone" [label="@types/clone
+0.1.30"]
+		"@types/clone-deep" [label="@types/clone-deep
+4.0.1"]
+		"@types/color-convert" [label="@types/color-convert
+2.0.0"]
+		"@types/color-name" [label="@types/color-name
+1.1.1"]
+		"@types/color-name" [label="@types/color-name
+1.1.1"]
+		"@types/color-name" [label="@types/color-name
+1.1.1"]
+		"@types/color-name" [label="@types/color-name
+1.1.1"]
+		"@types/color-support" [label="@types/color-support
+1.1.1"]
+		"@types/commondir" [label="@types/commondir
+1.0.0"]
+		"@types/compressible" [label="@types/compressible
+2.0.0"]
+		"@types/compression" [label="@types/compression
+1.7.2"]
+		"@types/concat-map" [label="@types/concat-map
+0.0.1"]
+		"@types/configstore" [label="@types/configstore
+2.1.1"]
+		"@types/configstore" [label="@types/configstore
+2.1.1"]
+		"@types/configstore" [label="@types/configstore
+2.1.1"]
+		"@types/connect" [label="@types/connect
+3.4.35"]
+		"@types/connect-history-api-fallback" [label="@types/connect-history-api-fallback
+1.3.5"]
+		"@types/content-disposition" [label="@types/content-disposition
+0.5.5"]
+		"@types/content-type" [label="@types/content-type
+1.1.5"]
+		"@types/convert-source-map" [label="@types/convert-source-map
+1.5.2"]
+		"@types/cookie" [label="@types/cookie
+0.5.1"]
+		"@types/cookie-signature" [label="@types/cookie-signature
+1.0.4"]
+		"@types/core-js" [label="@types/core-js
+2.5.5"]
+		"@types/cross-spawn" [label="@types/cross-spawn
+6.0.2"]
+		"@types/css" [label="@types/css
+0.0.33"]
+		"@types/cssesc" [label="@types/cssesc
+3.0.0"]
+		"@types/debug" [label="@types/debug
+0.0.29"]
+		"@types/debug" [label="@types/debug
+0.0.29"]
+		"@types/debug" [label="@types/debug
+4.1.7"]
+		"@types/debug" [label="@types/debug
+0.0.29"]
+		"@types/decode-uri-component" [label="@types/decode-uri-component
+0.2.0"]
+		"@types/deep-equal" [label="@types/deep-equal
+1.0.1"]
+		"@types/default-gateway" [label="@types/default-gateway
+3.0.1"]
+		"@types/defaults" [label="@types/defaults
+1.0.3"]
+		"@types/define-properties" [label="@types/define-properties
+1.1.3"]
+		"@types/delegates" [label="@types/delegates
+1.0.0"]
+		"@types/depd" [label="@types/depd
+1.1.32"]
+		"@types/destroy" [label="@types/destroy
+1.0.0"]
+		"@types/detect-node" [label="@types/detect-node
+2.0.0"]
+		"@types/dir-glob" [label="@types/dir-glob
+2.0.1"]
+		"@types/dns-packet" [label="@types/dns-packet
+5.2.4"]
+		"@types/ee-first" [label="@types/ee-first
+1.1.0"]
+		"@types/encodeurl" [label="@types/encodeurl
+1.0.0"]
+		"@types/escape-html" [label="@types/escape-html
+1.0.2"]
+		"@types/eslint" [label="@types/eslint
+8.2.2"]
+		"@types/eslint" [label="@types/eslint
+8.4.5"]
+		"@types/eslint-scope" [label="@types/eslint-scope
+3.7.3"]
+		"@types/eslint-scope" [label="@types/eslint-scope
+3.7.4"]
+		"@types/eslint-visitor-keys" [label="@types/eslint-visitor-keys
+1.0.0"]
+		"@types/eslint-visitor-keys" [label="@types/eslint-visitor-keys
+1.0.0"]
+		"@types/eslint-visitor-keys" [label="@types/eslint-visitor-keys
+1.0.0"]
+		"@types/esprima" [label="@types/esprima
+4.0.3"]
+		"@types/estraverse" [label="@types/estraverse
+5.1.1"]
+		"@types/estree" [label="@types/estree
+0.0.50"]
+		"@types/estree" [label="@types/estree
+0.0.51"]
+		"@types/esutils" [label="@types/esutils
+2.0.0"]
+		"@types/etag" [label="@types/etag
+1.8.1"]
+		"@types/events" [label="@types/events
+3.0.0"]
+		"@types/events" [label="@types/events
+3.0.0"]
+		"@types/events" [label="@types/events
+3.0.0"]
+		"@types/events" [label="@types/events
+3.0.0"]
+		"@types/express" [label="@types/express
+4.17.13"]
+		"@types/express-serve-static-core" [label="@types/express-serve-static-core
+4.17.30"]
+		"@types/fill-range" [label="@types/fill-range
+7.0.0"]
+		"@types/finalhandler" [label="@types/finalhandler
+1.1.1"]
+		"@types/find-cache-dir" [label="@types/find-cache-dir
+3.2.1"]
+		"@types/follow-redirects" [label="@types/follow-redirects
+1.14.1"]
+		"@types/forwarded" [label="@types/forwarded
+0.1.0"]
+		"@types/fresh" [label="@types/fresh
+0.5.0"]
+		"@types/function-bind" [label="@types/function-bind
+1.1.7"]
+		"@types/gensync" [label="@types/gensync
+1.0.0"]
+		"@types/get-intrinsic" [label="@types/get-intrinsic
+1.0.0"]
+		"@types/get-port" [label="@types/get-port
+0.0.4"]
+		"@types/get-port" [label="@types/get-port
+0.0.4"]
+		"@types/get-port" [label="@types/get-port
+0.0.4"]
+		"@types/glob" [label="@types/glob
+5.0.36"]
+		"@types/glob" [label="@types/glob
+7.1.1"]
+		"@types/glob" [label="@types/glob
+5.0.36"]
+		"@types/glob" [label="@types/glob
+7.1.1"]
+		"@types/glob" [label="@types/glob
+7.2.0"]
+		"@types/glob" [label="@types/glob
+5.0.36"]
+		"@types/glob" [label="@types/glob
+7.1.1"]
+		"@types/glob-parent" [label="@types/glob-parent
+5.1.1"]
+		"@types/glob-to-regexp" [label="@types/glob-to-regexp
+0.4.1"]
+		"@types/graceful-fs" [label="@types/graceful-fs
+4.1.5"]
+		"@types/has" [label="@types/has
+1.0.0"]
+		"@types/has-symbols" [label="@types/has-symbols
+1.0.0"]
+		"@types/history" [label="@types/history
+4.7.3"]
+		"@types/history" [label="@types/history
+4.7.3"]
+		"@types/history" [label="@types/history
+4.7.3"]
+		"@types/hosted-git-info" [label="@types/hosted-git-info
+3.0.2"]
+		"@types/http-cache-semantics" [label="@types/http-cache-semantics
+4.0.1"]
+		"@types/http-errors" [label="@types/http-errors
+1.8.2"]
+		"@types/http-proxy" [label="@types/http-proxy
+1.17.8"]
+		"@types/http-proxy" [label="@types/http-proxy
+1.17.9"]
+		"@types/humanize-ms" [label="@types/humanize-ms
+1.2.2"]
+		"@types/icss-utils" [label="@types/icss-utils
+5.1.0"]
+		"@types/ignore-walk" [label="@types/ignore-walk
+4.0.0"]
+		"@types/imurmurhash" [label="@types/imurmurhash
+0.1.1"]
+		"@types/inherits" [label="@types/inherits
+0.0.30"]
+		"@types/ini" [label="@types/ini
+1.3.31"]
+		"@types/inquirer" [label="@types/inquirer
+8.2.1"]
+		"@types/ip" [label="@types/ip
+1.1.0"]
+		"@types/is-arguments" [label="@types/is-arguments
+1.0.0"]
+		"@types/is-core-module" [label="@types/is-core-module
+2.2.0"]
+		"@types/is-date-object" [label="@types/is-date-object
+1.0.2"]
+		"@types/is-glob" [label="@types/is-glob
+4.0.2"]
+		"@types/is-number" [label="@types/is-number
+7.0.3"]
+		"@types/is-regex" [label="@types/is-regex
+1.0.0"]
+		"@types/isarray" [label="@types/isarray
+2.0.0"]
+		"@types/isexe" [label="@types/isexe
+2.0.1"]
+		"@types/istanbul" [label="@types/istanbul
+0.4.30"]
+		"@types/istanbul-lib-coverage" [label="@types/istanbul-lib-coverage
+2.0.4"]
+		"@types/istanbul-lib-instrument" [label="@types/istanbul-lib-instrument
+1.7.4"]
+		"@types/jasmine" [label="@types/jasmine
+4.0.3"]
+		"@types/jquery" [label="@types/jquery
+3.5.14"]
+		"@types/jquery" [label="@types/jquery
+3.5.14"]
+		"@types/js-yaml" [label="@types/js-yaml
+4.0.5"]
+		"@types/jsesc" [label="@types/jsesc
+3.0.1"]
+		"@types/json-parse-better-errors" [label="@types/json-parse-better-errors
+1.0.0"]
+		"@types/json-schema" [label="@types/json-schema
+7.0.4"]
+		"@types/json-schema" [label="@types/json-schema
+7.0.11"]
+		"@types/json-schema" [label="@types/json-schema
+7.0.4"]
+		"@types/json-schema" [label="@types/json-schema
+7.0.9"]
+		"@types/json-schema" [label="@types/json-schema
+7.0.4"]
+		"@types/karma" [label="@types/karma
+6.3.3"]
+		"@types/karma-chrome-launcher" [label="@types/karma-chrome-launcher
+3.1.1"]
+		"@types/karma-coverage" [label="@types/karma-coverage
+2.0.1"]
+		"@types/karma-jasmine" [label="@types/karma-jasmine
+4.0.2"]
+		"@types/karma-jasmine-html-reporter" [label="@types/karma-jasmine-html-reporter
+1.7.0"]
+		"@types/kind-of" [label="@types/kind-of
+6.0.0"]
+		"@types/less" [label="@types/less
+3.0.3"]
+		"@types/loader-runner" [label="@types/loader-runner
+2.2.4"]
+		"@types/loader-utils" [label="@types/loader-utils
+2.0.3"]
+		"@types/lodash" [label="@types/lodash
+4.14.182"]
+		"@types/lodash.debounce" [label="@types/lodash.debounce
+4.0.7"]
+		"@types/make-fetch-happen" [label="@types/make-fetch-happen
+10.0.0"]
+		"@types/mdast" [label="@types/mdast
+3.0.3"]
+		"@types/mdast" [label="@types/mdast
+3.0.3"]
+		"@types/mdast" [label="@types/mdast
+3.0.3"]
+		"@types/media-typer" [label="@types/media-typer
+1.1.1"]
+		"@types/merge-descriptors" [label="@types/merge-descriptors
+1.0.1"]
+		"@types/merge-stream" [label="@types/merge-stream
+1.1.2"]
+		"@types/merge2" [label="@types/merge2
+1.3.1"]
+		"@types/methods" [label="@types/methods
+1.1.1"]
+		"@types/micromatch" [label="@types/micromatch
+4.0.2"]
+		"@types/mime" [label="@types/mime
+1.3.2"]
+		"@types/mime" [label="@types/mime
+3.0.0"]
+		"@types/mime-db" [label="@types/mime-db
+1.43.1"]
+		"@types/mime-types" [label="@types/mime-types
+2.1.1"]
+		"@types/minimalistic-assert" [label="@types/minimalistic-assert
+1.0.1"]
+		"@types/minimatch" [label="@types/minimatch
+3.0.3"]
+		"@types/minimatch" [label="@types/minimatch
+3.0.3"]
+		"@types/minimatch" [label="@types/minimatch
+3.0.5"]
+		"@types/minimatch" [label="@types/minimatch
+3.0.3"]
+		"@types/minimist" [label="@types/minimist
+1.2.2"]
+		"@types/minipass" [label="@types/minipass
+3.1.2"]
+		"@types/minizlib" [label="@types/minizlib
+2.1.3"]
+		"@types/mkdirp" [label="@types/mkdirp
+0.3.29"]
+		"@types/mkdirp" [label="@types/mkdirp
+0.3.29"]
+		"@types/mkdirp" [label="@types/mkdirp
+1.0.2"]
+		"@types/mkdirp" [label="@types/mkdirp
+0.3.29"]
+		"@types/modernizr" [label="@types/modernizr
+3.5.3"]
+		"@types/ms" [label="@types/ms
+0.7.31"]
+		"@types/multicast-dns" [label="@types/multicast-dns
+7.2.1"]
+		"@types/mute-stream" [label="@types/mute-stream
+0.0.1"]
+		"@types/needle" [label="@types/needle
+2.5.3"]
+		"@types/negotiator" [label="@types/negotiator
+0.6.1"]
+		"@types/node" [label="@types/node
+13.1.4"]
+		"@types/node" [label="@types/node
+7.10.9"]
+		"@types/node" [label="@types/node
+12.20.41"]
+		"@types/node" [label="@types/node
+13.1.4"]
+		"@types/node" [label="@types/node
+18.6.2"]
+		"@types/node" [label="@types/node
+7.10.9"]
+		"@types/node" [label="@types/node
+13.1.4"]
+		"@types/node" [label="@types/node
+4.2.23"]
+		"@types/node" [label="@types/node
+6.0.116"]
+		"@types/node" [label="@types/node
+7.10.9"]
+		"@types/node-fetch" [label="@types/node-fetch
+2.6.2"]
+		"@types/node-forge" [label="@types/node-forge
+1.0.4"]
+		"@types/node-sass" [label="@types/node-sass
+4.11.3"]
+		"@types/nopt" [label="@types/nopt
+3.0.29"]
+		"@types/normalize-path" [label="@types/normalize-path
+3.0.0"]
+		"@types/npm-package-arg" [label="@types/npm-package-arg
+6.1.1"]
+		"@types/npm-packlist" [label="@types/npm-packlist
+3.0.0"]
+		"@types/npm-registry-fetch" [label="@types/npm-registry-fetch
+8.0.4"]
+		"@types/npmlog" [label="@types/npmlog
+4.1.4"]
+		"@types/num2fraction" [label="@types/num2fraction
+1.2.0"]
+		"@types/object-keys" [label="@types/object-keys
+1.0.1"]
+		"@types/on-finished" [label="@types/on-finished
+2.3.1"]
+		"@types/on-headers" [label="@types/on-headers
+1.0.0"]
+		"@types/once" [label="@types/once
+1.4.0"]
+		"@types/os-tmpdir" [label="@types/os-tmpdir
+1.0.0"]
+		"@types/pacote" [label="@types/pacote
+11.1.5"]
+		"@types/pako" [label="@types/pako
+2.0.0"]
+		"@types/parse-json" [label="@types/parse-json
+4.0.0"]
+		"@types/parse-json" [label="@types/parse-json
+4.0.0"]
+		"@types/parse-json" [label="@types/parse-json
+4.0.0"]
+		"@types/parse-json" [label="@types/parse-json
+4.0.0"]
+		"@types/parse-json" [label="@types/parse-json
+4.0.0"]
+		"@types/parse-node-version" [label="@types/parse-node-version
+1.0.0"]
+		"@types/parse5" [label="@types/parse5
+0.0.31"]
+		"@types/parseurl" [label="@types/parseurl
+1.3.1"]
+		"@types/path-is-absolute" [label="@types/path-is-absolute
+1.0.0"]
+		"@types/path-parse" [label="@types/path-parse
+1.0.19"]
+		"@types/picomatch" [label="@types/picomatch
+2.3.0"]
+		"@types/pify" [label="@types/pify
+5.0.1"]
+		"@types/postcss-gap-properties" [label="@types/postcss-gap-properties
+2.0.1"]
+		"@types/postcss-import" [label="@types/postcss-import
+14.0.0"]
+		"@types/postcss-modules-extract-imports" [label="@types/postcss-modules-extract-imports
+3.0.2"]
+		"@types/postcss-modules-local-by-default" [label="@types/postcss-modules-local-by-default
+4.0.0"]
+		"@types/postcss-modules-scope" [label="@types/postcss-modules-scope
+3.0.0"]
+		"@types/postcss-modules-values" [label="@types/postcss-modules-values
+4.0.0"]
+		"@types/postcss-preset-env" [label="@types/postcss-preset-env
+7.7.0"]
+		"@types/promise-inflight" [label="@types/promise-inflight
+1.0.0"]
+		"@types/promise-retry" [label="@types/promise-retry
+1.1.3"]
+		"@types/prop-types" [label="@types/prop-types
+15.7.3"]
+		"@types/prop-types" [label="@types/prop-types
+15.7.3"]
+		"@types/prop-types" [label="@types/prop-types
+15.7.3"]
+		"@types/proxy-addr" [label="@types/proxy-addr
+2.0.0"]
+		"@types/punycode" [label="@types/punycode
+2.1.0"]
+		"@types/q" [label="@types/q
+1.5.2"]
+		"@types/q" [label="@types/q
+1.5.2"]
+		"@types/q" [label="@types/q
+1.5.2"]
+		"@types/qs" [label="@types/qs
+6.9.7"]
+		"@types/randombytes" [label="@types/randombytes
+2.0.0"]
+		"@types/range-parser" [label="@types/range-parser
+1.2.4"]
+		"@types/reach__router" [label="@types/reach__router
+1.2.6"]
+		"@types/reach__router" [label="@types/reach__router
+1.2.6"]
+		"@types/reach__router" [label="@types/reach__router
+1.2.6"]
+		"@types/react" [label="@types/react
+16.9.17"]
+		"@types/react" [label="@types/react
+16.9.17"]
+		"@types/react" [label="@types/react
+16.9.17"]
+		"@types/readable-stream" [label="@types/readable-stream
+2.3.14"]
+		"@types/regenerate" [label="@types/regenerate
+1.4.1"]
+		"@types/regenerator-runtime" [label="@types/regenerator-runtime
+0.13.1"]
+		"@types/require-directory" [label="@types/require-directory
+2.1.2"]
+		"@types/require-from-string" [label="@types/require-from-string
+1.2.1"]
+		"@types/requires-port" [label="@types/requires-port
+1.0.0"]
+		"@types/resolve" [label="@types/resolve
+1.20.2"]
+		"@types/retry" [label="@types/retry
+0.12.1"]
+		"@types/retry" [label="@types/retry
+0.12.2"]
+		"@types/rimraf" [label="@types/rimraf
+3.0.2"]
+		"@types/run-parallel" [label="@types/run-parallel
+1.1.0"]
+		"@types/safer-buffer" [label="@types/safer-buffer
+2.1.0"]
+		"@types/sass" [label="@types/sass
+1.43.1"]
+		"@types/sass-loader" [label="@types/sass-loader
+8.0.3"]
+		"@types/sax" [label="@types/sax
+1.2.4"]
+		"@types/selfsigned" [label="@types/selfsigned
+2.0.1"]
+		"@types/semver" [label="@types/semver
+7.3.10"]
+		"@types/send" [label="@types/send
+0.17.1"]
+		"@types/serialize-javascript" [label="@types/serialize-javascript
+5.0.2"]
+		"@types/serve-index" [label="@types/serve-index
+1.9.1"]
+		"@types/serve-static" [label="@types/serve-static
+1.15.0"]
+		"@types/shebang-command" [label="@types/shebang-command
+1.2.0"]
+		"@types/signal-exit" [label="@types/signal-exit
+3.0.1"]
+		"@types/sizzle" [label="@types/sizzle
+2.3.3"]
+		"@types/sizzle" [label="@types/sizzle
+2.3.3"]
+		"@types/sockjs" [label="@types/sockjs
+0.3.33"]
+		"@types/source-list-map" [label="@types/source-list-map
+0.1.2"]
+		"@types/source-map" [label="@types/source-map
+0.1.29"]
+		"@types/source-map" [label="@types/source-map
+0.1.29"]
+		"@types/source-map" [label="@types/source-map
+0.1.29"]
+		"@types/source-map" [label="@types/source-map
+0.1.29"]
+		"@types/source-map" [label="@types/source-map
+0.1.29"]
+		"@types/source-map" [label="@types/source-map
+0.1.29"]
+		"@types/source-map" [label="@types/source-map
+0.1.29"]
+		"@types/source-map-support" [label="@types/source-map-support
+0.5.4"]
+		"@types/spdy" [label="@types/spdy
+3.4.5"]
+		"@types/sprintf" [label="@types/sprintf
+0.1.0"]
+		"@types/sprintf-js" [label="@types/sprintf-js
+1.1.2"]
+		"@types/ssri" [label="@types/ssri
+7.1.1"]
+		"@types/statuses" [label="@types/statuses
+2.0.0"]
+		"@types/strip-final-newline" [label="@types/strip-final-newline
+3.0.0"]
+		"@types/stylus" [label="@types/stylus
+0.48.38"]
+		"@types/supports-color" [label="@types/supports-color
+8.1.1"]
+		"@types/tapable" [label="@types/tapable
+1.0.8"]
+		"@types/tar" [label="@types/tar
+6.1.1"]
+		"@types/text-table" [label="@types/text-table
+0.2.2"]
+		"@types/through" [label="@types/through
+0.0.30"]
+		"@types/thunky" [label="@types/thunky
+1.1.0"]
+		"@types/tmp" [label="@types/tmp
+0.0.32"]
+		"@types/tmp" [label="@types/tmp
+0.0.32"]
+		"@types/tmp" [label="@types/tmp
+0.2.3"]
+		"@types/tmp" [label="@types/tmp
+0.0.32"]
+		"@types/to-regex-range" [label="@types/to-regex-range
+5.0.0"]
+		"@types/type-is" [label="@types/type-is
+1.6.3"]
+		"@types/uglify-js" [label="@types/uglify-js
+3.16.0"]
+		"@types/uniq" [label="@types/uniq
+0.0.27"]
+		"@types/unist" [label="@types/unist
+2.0.3"]
+		"@types/unist" [label="@types/unist
+2.0.3"]
+		"@types/unist" [label="@types/unist
+2.0.3"]
+		"@types/util-deprecate" [label="@types/util-deprecate
+1.0.0"]
+		"@types/utils-merge" [label="@types/utils-merge
+0.0.28"]
+		"@types/uuid" [label="@types/uuid
+8.3.4"]
+		"@types/validate-npm-package-name" [label="@types/validate-npm-package-name
+4.0.0"]
+		"@types/vary" [label="@types/vary
+1.1.0"]
+		"@types/vfile" [label="@types/vfile
+3.0.2"]
+		"@types/vfile" [label="@types/vfile
+3.0.2"]
+		"@types/vfile-message" [label="@types/vfile-message
+2.0.0"]
+		"@types/vfile-message" [label="@types/vfile-message
+2.0.0"]
+		"@types/watchpack" [label="@types/watchpack
+2.4.0"]
+		"@types/wcwidth" [label="@types/wcwidth
+1.0.0"]
+		"@types/webpack" [label="@types/webpack
+4.41.32"]
+		"@types/webpack-sources" [label="@types/webpack-sources
+3.2.0"]
+		"@types/which" [label="@types/which
+2.0.1"]
+		"@types/wrap-ansi" [label="@types/wrap-ansi
+8.0.1"]
+		"@types/ws" [label="@types/ws
+8.5.3"]
+		"@types/yallist" [label="@types/yallist
+4.0.1"]
+		"@types/yargs" [label="@types/yargs
+17.0.10"]
+		"@types/yargs-parser" [label="@types/yargs-parser
+21.0.0"]
+		"@typescript-eslint/eslint-plugin" [label="@typescript-eslint/eslint-plugin
+2.15.0"]
+		"@typescript-eslint/eslint-plugin" [label="@typescript-eslint/eslint-plugin
+2.15.0"]
+		"@typescript-eslint/experimental-utils" [label="@typescript-eslint/experimental-utils
+2.15.0"]
+		"@typescript-eslint/experimental-utils" [label="@typescript-eslint/experimental-utils
+2.15.0"]
+		"@typescript-eslint/parser" [label="@typescript-eslint/parser
+2.15.0"]
+		"@typescript-eslint/parser" [label="@typescript-eslint/parser
+2.15.0"]
+		"@typescript-eslint/typescript-estree" [label="@typescript-eslint/typescript-estree
+2.15.0"]
+		"@typescript-eslint/typescript-estree" [label="@typescript-eslint/typescript-estree
+2.15.0"]
+		"@ungap/promise-all-settled" [label="@ungap/promise-all-settled
+1.1.2"]
+		"@ungap/promise-all-settled" [label="@ungap/promise-all-settled
+1.1.2"]
+		"@ungap/promise-all-settled" [label="@ungap/promise-all-settled
+1.1.2"]
+		"@webassemblyjs/ast" [label="@webassemblyjs/ast
+1.8.5"]
+		"@webassemblyjs/ast" [label="@webassemblyjs/ast
+1.11.1"]
+		"@webassemblyjs/ast" [label="@webassemblyjs/ast
+1.11.1"]
+		"@webassemblyjs/ast" [label="@webassemblyjs/ast
+1.8.5"]
+		"@webassemblyjs/floating-point-hex-parser" [label="@webassemblyjs/floating-point-hex-parser
+1.8.5"]
+		"@webassemblyjs/floating-point-hex-parser" [label="@webassemblyjs/floating-point-hex-parser
+1.11.1"]
+		"@webassemblyjs/floating-point-hex-parser" [label="@webassemblyjs/floating-point-hex-parser
+1.11.1"]
+		"@webassemblyjs/floating-point-hex-parser" [label="@webassemblyjs/floating-point-hex-parser
+1.8.5"]
+		"@webassemblyjs/helper-api-error" [label="@webassemblyjs/helper-api-error
+1.8.5"]
+		"@webassemblyjs/helper-api-error" [label="@webassemblyjs/helper-api-error
+1.11.1"]
+		"@webassemblyjs/helper-api-error" [label="@webassemblyjs/helper-api-error
+1.11.1"]
+		"@webassemblyjs/helper-api-error" [label="@webassemblyjs/helper-api-error
+1.8.5"]
+		"@webassemblyjs/helper-buffer" [label="@webassemblyjs/helper-buffer
+1.8.5"]
+		"@webassemblyjs/helper-buffer" [label="@webassemblyjs/helper-buffer
+1.11.1"]
+		"@webassemblyjs/helper-buffer" [label="@webassemblyjs/helper-buffer
+1.11.1"]
+		"@webassemblyjs/helper-buffer" [label="@webassemblyjs/helper-buffer
+1.8.5"]
+		"@webassemblyjs/helper-code-frame" [label="@webassemblyjs/helper-code-frame
+1.8.5"]
+		"@webassemblyjs/helper-code-frame" [label="@webassemblyjs/helper-code-frame
+1.8.5"]
+		"@webassemblyjs/helper-fsm" [label="@webassemblyjs/helper-fsm
+1.8.5"]
+		"@webassemblyjs/helper-fsm" [label="@webassemblyjs/helper-fsm
+1.8.5"]
+		"@webassemblyjs/helper-module-context" [label="@webassemblyjs/helper-module-context
+1.8.5"]
+		"@webassemblyjs/helper-module-context" [label="@webassemblyjs/helper-module-context
+1.8.5"]
+		"@webassemblyjs/helper-numbers" [label="@webassemblyjs/helper-numbers
+1.11.1"]
+		"@webassemblyjs/helper-numbers" [label="@webassemblyjs/helper-numbers
+1.11.1"]
+		"@webassemblyjs/helper-wasm-bytecode" [label="@webassemblyjs/helper-wasm-bytecode
+1.8.5"]
+		"@webassemblyjs/helper-wasm-bytecode" [label="@webassemblyjs/helper-wasm-bytecode
+1.11.1"]
+		"@webassemblyjs/helper-wasm-bytecode" [label="@webassemblyjs/helper-wasm-bytecode
+1.11.1"]
+		"@webassemblyjs/helper-wasm-bytecode" [label="@webassemblyjs/helper-wasm-bytecode
+1.8.5"]
+		"@webassemblyjs/helper-wasm-section" [label="@webassemblyjs/helper-wasm-section
+1.8.5"]
+		"@webassemblyjs/helper-wasm-section" [label="@webassemblyjs/helper-wasm-section
+1.11.1"]
+		"@webassemblyjs/helper-wasm-section" [label="@webassemblyjs/helper-wasm-section
+1.11.1"]
+		"@webassemblyjs/helper-wasm-section" [label="@webassemblyjs/helper-wasm-section
+1.8.5"]
+		"@webassemblyjs/ieee754" [label="@webassemblyjs/ieee754
+1.8.5"]
+		"@webassemblyjs/ieee754" [label="@webassemblyjs/ieee754
+1.11.1"]
+		"@webassemblyjs/ieee754" [label="@webassemblyjs/ieee754
+1.11.1"]
+		"@webassemblyjs/ieee754" [label="@webassemblyjs/ieee754
+1.8.5"]
+		"@webassemblyjs/leb128" [label="@webassemblyjs/leb128
+1.8.5"]
+		"@webassemblyjs/leb128" [label="@webassemblyjs/leb128
+1.11.1"]
+		"@webassemblyjs/leb128" [label="@webassemblyjs/leb128
+1.11.1"]
+		"@webassemblyjs/leb128" [label="@webassemblyjs/leb128
+1.8.5"]
+		"@webassemblyjs/utf8" [label="@webassemblyjs/utf8
+1.8.5"]
+		"@webassemblyjs/utf8" [label="@webassemblyjs/utf8
+1.11.1"]
+		"@webassemblyjs/utf8" [label="@webassemblyjs/utf8
+1.11.1"]
+		"@webassemblyjs/utf8" [label="@webassemblyjs/utf8
+1.8.5"]
+		"@webassemblyjs/wasm-edit" [label="@webassemblyjs/wasm-edit
+1.8.5"]
+		"@webassemblyjs/wasm-edit" [label="@webassemblyjs/wasm-edit
+1.11.1"]
+		"@webassemblyjs/wasm-edit" [label="@webassemblyjs/wasm-edit
+1.11.1"]
+		"@webassemblyjs/wasm-edit" [label="@webassemblyjs/wasm-edit
+1.8.5"]
+		"@webassemblyjs/wasm-gen" [label="@webassemblyjs/wasm-gen
+1.8.5"]
+		"@webassemblyjs/wasm-gen" [label="@webassemblyjs/wasm-gen
+1.11.1"]
+		"@webassemblyjs/wasm-gen" [label="@webassemblyjs/wasm-gen
+1.11.1"]
+		"@webassemblyjs/wasm-gen" [label="@webassemblyjs/wasm-gen
+1.8.5"]
+		"@webassemblyjs/wasm-opt" [label="@webassemblyjs/wasm-opt
+1.8.5"]
+		"@webassemblyjs/wasm-opt" [label="@webassemblyjs/wasm-opt
+1.11.1"]
+		"@webassemblyjs/wasm-opt" [label="@webassemblyjs/wasm-opt
+1.11.1"]
+		"@webassemblyjs/wasm-opt" [label="@webassemblyjs/wasm-opt
+1.8.5"]
+		"@webassemblyjs/wasm-parser" [label="@webassemblyjs/wasm-parser
+1.8.5"]
+		"@webassemblyjs/wasm-parser" [label="@webassemblyjs/wasm-parser
+1.11.1"]
+		"@webassemblyjs/wasm-parser" [label="@webassemblyjs/wasm-parser
+1.11.1"]
+		"@webassemblyjs/wasm-parser" [label="@webassemblyjs/wasm-parser
+1.8.5"]
+		"@webassemblyjs/wast-parser" [label="@webassemblyjs/wast-parser
+1.8.5"]
+		"@webassemblyjs/wast-parser" [label="@webassemblyjs/wast-parser
+1.8.5"]
+		"@webassemblyjs/wast-printer" [label="@webassemblyjs/wast-printer
+1.8.5"]
+		"@webassemblyjs/wast-printer" [label="@webassemblyjs/wast-printer
+1.11.1"]
+		"@webassemblyjs/wast-printer" [label="@webassemblyjs/wast-printer
+1.11.1"]
+		"@webassemblyjs/wast-printer" [label="@webassemblyjs/wast-printer
+1.8.5"]
+		"@xtuc/ieee754" [label="@xtuc/ieee754
+1.2.0"]
+		"@xtuc/ieee754" [label="@xtuc/ieee754
+1.2.0"]
+		"@xtuc/ieee754" [label="@xtuc/ieee754
+1.2.0"]
+		"@xtuc/ieee754" [label="@xtuc/ieee754
+1.2.0"]
+		"@xtuc/long" [label="@xtuc/long
+4.2.2"]
+		"@xtuc/long" [label="@xtuc/long
+4.2.2"]
+		"@xtuc/long" [label="@xtuc/long
+4.2.2"]
+		"@xtuc/long" [label="@xtuc/long
+4.2.2"]
+		"@yarnpkg/lockfile" [label="@yarnpkg/lockfile
+1.1.0"]
+		"@yarnpkg/lockfile" [label="@yarnpkg/lockfile
+1.1.0"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.CloudFormation" [label="AWSSDK.CloudFormation
+3.7.9.14"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.Core" [label="AWSSDK.Core
+1.0.0"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.EKS" [label="AWSSDK.EKS
+3.7.13.24"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.IdentityManagement" [label="AWSSDK.IdentityManagement
+3.7.2.116"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.S3" [label="AWSSDK.S3
+3.7.8.8"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		"AWSSDK.SecurityToken" [label="AWSSDK.SecurityToken
+3.7.1.128"]
+		Accessibility [label="Accessibility
+4.0.0.0"]
+		Accessibility [label="Accessibility
+4.0.0.0"]
+		Accessibility [label="Accessibility
+4.0.0.0"]
+		Accessibility [label="Accessibility
+4.0.0.0"]
+		Accessibility [label="Accessibility
+4.0.0.0"]
+		Accessibility [label="Accessibility
+4.0.0.0"]
+		"Aleph1.Oracle.DataAccess.AllFrameworks.x86" [label="Aleph1.Oracle.DataAccess.AllFrameworks.x86
+122.1.0"]
+		"Aleph1.Oracle.DataAccess.AllFrameworks.x86" [label="Aleph1.Oracle.DataAccess.AllFrameworks.x86
+122.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.Reporting" [label="AspNetCore.Reporting
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"AspNetCore.ReportingServices" [label="AspNetCore.ReportingServices
+2.1.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		"Aspose.Zip" [label="Aspose.Zip
+22.5.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+3.3.0.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		Autofac [label="Autofac
+4.8.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		"Autofac.Integration.Mef" [label="Autofac.Integration.Mef
+3.0.0.0"]
+		Babel [label="Babel
+0.9.6"]
+		Babel [label="Babel
+0.9.6"]
+		Calamari [label="Calamari
+22.7.4"]
+		Calamari [label="Calamari
+25.5.9-hotfix0001"]
+		Calamari [label="Calamari
+25.5.9-hotfix0001"]
+		"Calamari.Aws" [label="Calamari.Aws
+22.7.4"]
+		"Calamari.Aws" [label="Calamari.Aws
+25.5.9-hotfix0001"]
+		"Calamari.Aws" [label="Calamari.Aws
+25.5.9-hotfix0001"]
+		"Calamari.Azure" [label="Calamari.Azure
+22.7.4"]
+		"Calamari.Azure" [label="Calamari.Azure
+25.5.9-hotfix0001"]
+		"Calamari.Azure" [label="Calamari.Azure
+25.5.9-hotfix0001"]
+		"Calamari.CloudAccounts" [label="Calamari.CloudAccounts
+22.7.4"]
+		"Calamari.CloudAccounts" [label="Calamari.CloudAccounts
+25.5.9-hotfix0001"]
+		"Calamari.CloudAccounts" [label="Calamari.CloudAccounts
+25.5.9-hotfix0001"]
+		"Calamari.Common" [label="Calamari.Common
+22.7.4"]
+		"Calamari.Common" [label="Calamari.Common
+25.5.9-hotfix0001"]
+		"Calamari.Common" [label="Calamari.Common
+25.5.9-hotfix0001"]
+		"Calamari.Shared" [label="Calamari.Shared
+22.7.4"]
+		"Calamari.Shared" [label="Calamari.Shared
+25.5.9-hotfix0001"]
+		"Calamari.Shared" [label="Calamari.Shared
+25.5.9-hotfix0001"]
+		"Common.Logging" [label="Common.Logging
+2.1.2; net-4.0.win32; release"]
+		"Common.Logging" [label="Common.Logging
+2.1.2; net-4.0.win32; release"]
+		"Common.Logging" [label="Common.Logging
+2.1.2; net-4.0.win32; release"]
+		"Common.Logging" [label="Common.Logging
+2.1.2; net-4.0.win32; release"]
+		"Common.Logging" [label="Common.Logging
+2.1.2; net-4.0.win32; release"]
+		"Common.Logging" [label="Common.Logging
+2.1.2; net-4.0.win32; release"]
+		"FSharp.Build" [label="FSharp.Build
+4.4.0.0"]
+		"FSharp.Build" [label="FSharp.Build
+4.4.0.0"]
+		"FSharp.Build" [label="FSharp.Build
+4.4.0.0"]
+		"FSharp.Compiler" [label="FSharp.Compiler
+4.4.0.0"]
+		"FSharp.Compiler" [label="FSharp.Compiler
+4.4.0.0"]
+		"FSharp.Compiler" [label="FSharp.Compiler
+4.4.0.0"]
+		"FSharp.Compiler.Interactive.Settings" [label="FSharp.Compiler.Interactive.Settings
+4.4.0.0"]
+		"FSharp.Compiler.Interactive.Settings" [label="FSharp.Compiler.Interactive.Settings
+4.4.0.0"]
+		"FSharp.Compiler.Interactive.Settings" [label="FSharp.Compiler.Interactive.Settings
+4.4.0.0"]
+		"FSharp.Compiler.Server.Shared" [label="FSharp.Compiler.Server.Shared
+4.4.0.0"]
+		"FSharp.Compiler.Server.Shared" [label="FSharp.Compiler.Server.Shared
+4.4.0.0"]
+		"FSharp.Compiler.Server.Shared" [label="FSharp.Compiler.Server.Shared
+4.4.0.0"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Compiler.Tools" [label="FSharp.Compiler.Tools
+4.0.0.1"]
+		"FSharp.Core" [label="FSharp.Core
+4.4.0.0"]
+		"FSharp.Core" [label="FSharp.Core
+4.4.0.0"]
+		"FSharp.Core" [label="FSharp.Core
+4.4.0.0"]
+		GeoIP [label="GeoIP
+0:1.5.0-11.amzn2.0.2"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"IBM:WSDL4J" [label="IBM:WSDL4J
+1.6.3"]
+		"ICSharpCode.NRefactory" [label="ICSharpCode.NRefactory
+5.0.0.0"]
+		"ICSharpCode.NRefactory" [label="ICSharpCode.NRefactory
+5.0.0.0"]
+		"ICSharpCode.NRefactory" [label="ICSharpCode.NRefactory
+5.0.0.0"]
+		"ICSharpCode.NRefactory" [label="ICSharpCode.NRefactory
+5.0.0.0"]
+		"ICSharpCode.NRefactory" [label="ICSharpCode.NRefactory
+5.0.0.0"]
+		"ICSharpCode.NRefactory" [label="ICSharpCode.NRefactory
+5.0.0.0"]
+		"ICSharpCode.NRefactory.CSharp" [label="ICSharpCode.NRefactory.CSharp
+5.0.0.0"]
+		"ICSharpCode.NRefactory.CSharp" [label="ICSharpCode.NRefactory.CSharp
+5.0.0.0"]
+		"ICSharpCode.NRefactory.CSharp" [label="ICSharpCode.NRefactory.CSharp
+5.0.0.0"]
+		"ICSharpCode.NRefactory.CSharp" [label="ICSharpCode.NRefactory.CSharp
+5.0.0.0"]
+		"ICSharpCode.NRefactory.CSharp" [label="ICSharpCode.NRefactory.CSharp
+5.0.0.0"]
+		"ICSharpCode.NRefactory.CSharp" [label="ICSharpCode.NRefactory.CSharp
+5.0.0.0"]
+		JavaPropertiesParser [label="JavaPropertiesParser
+0.2.1"]
+		JavaPropertiesParser [label="JavaPropertiesParser
+0.2.1"]
+		JavaPropertiesParser [label="JavaPropertiesParser
+0.2.1"]
+		"JetBrains:kotlin-stdlib" [label="JetBrains:kotlin-stdlib
+1.7.20-release-201(1.7.20)"]
+		"JetBrains:kotlin-stdlib-common" [label="JetBrains:kotlin-stdlib-common
+1.7.20-release-201(1.7.20)"]
+		"JetBrains:kotlin-stdlib-jdk7" [label="JetBrains:kotlin-stdlib-jdk7
+1.7.20-release-201(1.7.20)"]
+		"JetBrains:kotlin-stdlib-jdk8" [label="JetBrains:kotlin-stdlib-jdk8
+1.7.20-release-201(1.7.20)"]
+		Jinja2 [label="Jinja2
+2.7.2"]
+		Jinja2 [label="Jinja2
+2.7.2"]
+		Markdig [label="Markdig
+0.10.4"]
+		Markdig [label="Markdig
+0.10.4"]
+		Markdig [label="Markdig
+0.10.4"]
+		Markdown [label="Markdown
+2.1.0"]
+		Markdown [label="Markdown
+2.1.0"]
+		Markdown [label="Markdown
+2.1.0"]
+		MarkupSafe [label="MarkupSafe
+0.11"]
+		"Microsoft.Azure.KeyVault" [label="Microsoft.Azure.KeyVault
+3.0.5+99f52a3417df5d3023d10997cb20e7499207e976"]
+		"Microsoft.Azure.KeyVault" [label="Microsoft.Azure.KeyVault
+3.0.5+99f52a3417df5d3023d10997cb20e7499207e976"]
+		"Microsoft.Azure.KeyVault" [label="Microsoft.Azure.KeyVault
+3.0.5+99f52a3417df5d3023d10997cb20e7499207e976"]
+		"Microsoft.Azure.KeyVault.WebKey" [label="Microsoft.Azure.KeyVault.WebKey
+3.0.5+99f52a3417df5d3023d10997cb20e7499207e976"]
+		"Microsoft.Azure.KeyVault.WebKey" [label="Microsoft.Azure.KeyVault.WebKey
+3.0.5+99f52a3417df5d3023d10997cb20e7499207e976"]
+		"Microsoft.Azure.KeyVault.WebKey" [label="Microsoft.Azure.KeyVault.WebKey
+3.0.5+99f52a3417df5d3023d10997cb20e7499207e976"]
+		"Microsoft.Azure.Management.AppService.Fluent" [label="Microsoft.Azure.Management.AppService.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.AppService.Fluent" [label="Microsoft.Azure.Management.AppService.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.AppService.Fluent" [label="Microsoft.Azure.Management.AppService.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.BatchAI.Fluent" [label="Microsoft.Azure.Management.BatchAI.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.BatchAI.Fluent" [label="Microsoft.Azure.Management.BatchAI.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.BatchAI.Fluent" [label="Microsoft.Azure.Management.BatchAI.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Cdn.Fluent" [label="Microsoft.Azure.Management.Cdn.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Cdn.Fluent" [label="Microsoft.Azure.Management.Cdn.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Cdn.Fluent" [label="Microsoft.Azure.Management.Cdn.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Compute.Fluent" [label="Microsoft.Azure.Management.Compute.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Compute.Fluent" [label="Microsoft.Azure.Management.Compute.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Compute.Fluent" [label="Microsoft.Azure.Management.Compute.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ContainerInstance.Fluent" [label="Microsoft.Azure.Management.ContainerInstance.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ContainerInstance.Fluent" [label="Microsoft.Azure.Management.ContainerInstance.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ContainerInstance.Fluent" [label="Microsoft.Azure.Management.ContainerInstance.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ContainerRegistry.Fluent" [label="Microsoft.Azure.Management.ContainerRegistry.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ContainerRegistry.Fluent" [label="Microsoft.Azure.Management.ContainerRegistry.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ContainerRegistry.Fluent" [label="Microsoft.Azure.Management.ContainerRegistry.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ContainerService.Fluent" [label="Microsoft.Azure.Management.ContainerService.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ContainerService.Fluent" [label="Microsoft.Azure.Management.ContainerService.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ContainerService.Fluent" [label="Microsoft.Azure.Management.ContainerService.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.CosmosDB.Fluent" [label="Microsoft.Azure.Management.CosmosDB.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.CosmosDB.Fluent" [label="Microsoft.Azure.Management.CosmosDB.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.CosmosDB.Fluent" [label="Microsoft.Azure.Management.CosmosDB.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Dns.Fluent" [label="Microsoft.Azure.Management.Dns.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Dns.Fluent" [label="Microsoft.Azure.Management.Dns.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Dns.Fluent" [label="Microsoft.Azure.Management.Dns.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.EventHub.Fluent" [label="Microsoft.Azure.Management.EventHub.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.EventHub.Fluent" [label="Microsoft.Azure.Management.EventHub.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.EventHub.Fluent" [label="Microsoft.Azure.Management.EventHub.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Fluent" [label="Microsoft.Azure.Management.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Fluent" [label="Microsoft.Azure.Management.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Fluent" [label="Microsoft.Azure.Management.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Graph.RBAC.Fluent" [label="Microsoft.Azure.Management.Graph.RBAC.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Graph.RBAC.Fluent" [label="Microsoft.Azure.Management.Graph.RBAC.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Graph.RBAC.Fluent" [label="Microsoft.Azure.Management.Graph.RBAC.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.KeyVault.Fluent" [label="Microsoft.Azure.Management.KeyVault.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.KeyVault.Fluent" [label="Microsoft.Azure.Management.KeyVault.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.KeyVault.Fluent" [label="Microsoft.Azure.Management.KeyVault.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Locks.Fluent" [label="Microsoft.Azure.Management.Locks.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Locks.Fluent" [label="Microsoft.Azure.Management.Locks.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Locks.Fluent" [label="Microsoft.Azure.Management.Locks.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Monitor.Fluent" [label="Microsoft.Azure.Management.Monitor.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Monitor.Fluent" [label="Microsoft.Azure.Management.Monitor.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Monitor.Fluent" [label="Microsoft.Azure.Management.Monitor.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Msi.Fluent" [label="Microsoft.Azure.Management.Msi.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Msi.Fluent" [label="Microsoft.Azure.Management.Msi.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Msi.Fluent" [label="Microsoft.Azure.Management.Msi.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Network.Fluent" [label="Microsoft.Azure.Management.Network.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Network.Fluent" [label="Microsoft.Azure.Management.Network.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Network.Fluent" [label="Microsoft.Azure.Management.Network.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.PrivateDns.Fluent" [label="Microsoft.Azure.Management.PrivateDns.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.PrivateDns.Fluent" [label="Microsoft.Azure.Management.PrivateDns.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.PrivateDns.Fluent" [label="Microsoft.Azure.Management.PrivateDns.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Redis.Fluent" [label="Microsoft.Azure.Management.Redis.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Redis.Fluent" [label="Microsoft.Azure.Management.Redis.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Redis.Fluent" [label="Microsoft.Azure.Management.Redis.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ResourceManager.Fluent" [label="Microsoft.Azure.Management.ResourceManager.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ResourceManager.Fluent" [label="Microsoft.Azure.Management.ResourceManager.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ResourceManager.Fluent" [label="Microsoft.Azure.Management.ResourceManager.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Search.Fluent" [label="Microsoft.Azure.Management.Search.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Search.Fluent" [label="Microsoft.Azure.Management.Search.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Search.Fluent" [label="Microsoft.Azure.Management.Search.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ServiceBus.Fluent" [label="Microsoft.Azure.Management.ServiceBus.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ServiceBus.Fluent" [label="Microsoft.Azure.Management.ServiceBus.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.ServiceBus.Fluent" [label="Microsoft.Azure.Management.ServiceBus.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Sql.Fluent" [label="Microsoft.Azure.Management.Sql.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Sql.Fluent" [label="Microsoft.Azure.Management.Sql.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Sql.Fluent" [label="Microsoft.Azure.Management.Sql.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Storage.Fluent" [label="Microsoft.Azure.Management.Storage.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Storage.Fluent" [label="Microsoft.Azure.Management.Storage.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.Storage.Fluent" [label="Microsoft.Azure.Management.Storage.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.TrafficManager.Fluent" [label="Microsoft.Azure.Management.TrafficManager.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.TrafficManager.Fluent" [label="Microsoft.Azure.Management.TrafficManager.Fluent
+1.38.1"]
+		"Microsoft.Azure.Management.TrafficManager.Fluent" [label="Microsoft.Azure.Management.TrafficManager.Fluent
+1.38.1"]
+		"Microsoft.Build" [label="Microsoft.Build
+12.0.40629.0"]
+		"Microsoft.Build" [label="Microsoft.Build
+12.0.40629.0"]
+		"Microsoft.Build" [label="Microsoft.Build
+12.0.40629.0"]
+		"Microsoft.Build.Engine" [label="Microsoft.Build.Engine
+12.0.40629.0"]
+		"Microsoft.Build.Engine" [label="Microsoft.Build.Engine
+12.0.40629.0"]
+		"Microsoft.Build.Engine" [label="Microsoft.Build.Engine
+12.0.40629.0"]
+		"Microsoft.Build.Framework" [label="Microsoft.Build.Framework
+12.0.40629.0"]
+		"Microsoft.Build.Framework" [label="Microsoft.Build.Framework
+12.0.40629.0"]
+		"Microsoft.Build.Framework" [label="Microsoft.Build.Framework
+12.0.40629.0"]
+		"Microsoft.Build.Tasks.v12.0" [label="Microsoft.Build.Tasks.v12.0
+12.0.40629.0"]
+		"Microsoft.Build.Tasks.v12.0" [label="Microsoft.Build.Tasks.v12.0
+12.0.40629.0"]
+		"Microsoft.Build.Tasks.v12.0" [label="Microsoft.Build.Tasks.v12.0
+12.0.40629.0"]
+		"Microsoft.Build.Utilities.v12.0" [label="Microsoft.Build.Utilities.v12.0
+12.0.40629.0"]
+		"Microsoft.Build.Utilities.v12.0" [label="Microsoft.Build.Utilities.v12.0
+12.0.40629.0"]
+		"Microsoft.Build.Utilities.v12.0" [label="Microsoft.Build.Utilities.v12.0
+12.0.40629.0"]
+		"Microsoft.CSharp" [label="Microsoft.CSharp
+3.1.25+f9c64756e86a45a8ebcefda407567ab3eea571b7"]
+		"Microsoft.CSharp" [label="Microsoft.CSharp
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.CSharp" [label="Microsoft.CSharp
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.CodeAnalysis" [label="Microsoft.CodeAnalysis
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis" [label="Microsoft.CodeAnalysis
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis" [label="Microsoft.CodeAnalysis
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis" [label="Microsoft.CodeAnalysis
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis" [label="Microsoft.CodeAnalysis
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis" [label="Microsoft.CodeAnalysis
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.CSharp" [label="Microsoft.CodeAnalysis.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.CSharp" [label="Microsoft.CodeAnalysis.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.CSharp" [label="Microsoft.CodeAnalysis.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.CSharp" [label="Microsoft.CodeAnalysis.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.CSharp" [label="Microsoft.CodeAnalysis.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.CSharp" [label="Microsoft.CodeAnalysis.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Desktop" [label="Microsoft.CodeAnalysis.Desktop
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Desktop" [label="Microsoft.CodeAnalysis.Desktop
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Desktop" [label="Microsoft.CodeAnalysis.Desktop
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Desktop" [label="Microsoft.CodeAnalysis.Desktop
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Desktop" [label="Microsoft.CodeAnalysis.Desktop
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Desktop" [label="Microsoft.CodeAnalysis.Desktop
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting" [label="Microsoft.CodeAnalysis.Scripting
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting" [label="Microsoft.CodeAnalysis.Scripting
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting" [label="Microsoft.CodeAnalysis.Scripting
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting" [label="Microsoft.CodeAnalysis.Scripting
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting" [label="Microsoft.CodeAnalysis.Scripting
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting" [label="Microsoft.CodeAnalysis.Scripting
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting.CSharp" [label="Microsoft.CodeAnalysis.Scripting.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting.CSharp" [label="Microsoft.CodeAnalysis.Scripting.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting.CSharp" [label="Microsoft.CodeAnalysis.Scripting.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting.CSharp" [label="Microsoft.CodeAnalysis.Scripting.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting.CSharp" [label="Microsoft.CodeAnalysis.Scripting.CSharp
+1.0.0.50417"]
+		"Microsoft.CodeAnalysis.Scripting.CSharp" [label="Microsoft.CodeAnalysis.Scripting.CSharp
+1.0.0.50417"]
+		"Microsoft.Extensions.Caching.Abstractions" [label="Microsoft.Extensions.Caching.Abstractions
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Caching.Abstractions" [label="Microsoft.Extensions.Caching.Abstractions
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Caching.Abstractions" [label="Microsoft.Extensions.Caching.Abstractions
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Caching.Memory" [label="Microsoft.Extensions.Caching.Memory
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Caching.Memory" [label="Microsoft.Extensions.Caching.Memory
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Caching.Memory" [label="Microsoft.Extensions.Caching.Memory
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.DependencyInjection.Abstractions" [label="Microsoft.Extensions.DependencyInjection.Abstractions
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.DependencyInjection.Abstractions" [label="Microsoft.Extensions.DependencyInjection.Abstractions
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.DependencyInjection.Abstractions" [label="Microsoft.Extensions.DependencyInjection.Abstractions
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Logging.Abstractions" [label="Microsoft.Extensions.Logging.Abstractions
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Logging.Abstractions" [label="Microsoft.Extensions.Logging.Abstractions
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Logging.Abstractions" [label="Microsoft.Extensions.Logging.Abstractions
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Options" [label="Microsoft.Extensions.Options
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Options" [label="Microsoft.Extensions.Options
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Options" [label="Microsoft.Extensions.Options
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Primitives" [label="Microsoft.Extensions.Primitives
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Primitives" [label="Microsoft.Extensions.Primitives
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.Extensions.Primitives" [label="Microsoft.Extensions.Primitives
+3.1.8+1774c15ac24c65513fa9fc1f4fbb69be9a2a4e25"]
+		"Microsoft.IdentityModel.Clients.ActiveDirectory" [label="Microsoft.IdentityModel.Clients.ActiveDirectory
+4.3.0"]
+		"Microsoft.IdentityModel.Clients.ActiveDirectory" [label="Microsoft.IdentityModel.Clients.ActiveDirectory
+4.3.0"]
+		"Microsoft.IdentityModel.Clients.ActiveDirectory" [label="Microsoft.IdentityModel.Clients.ActiveDirectory
+4.3.0"]
+		"Microsoft.IdentityModel.Logging" [label="Microsoft.IdentityModel.Logging
+401101509.203.ef429be6d7a2f3d05dde6102a6078216e41ff433"]
+		"Microsoft.IdentityModel.Logging" [label="Microsoft.IdentityModel.Logging
+401101509.203.ef429be6d7a2f3d05dde6102a6078216e41ff433"]
+		"Microsoft.IdentityModel.Logging" [label="Microsoft.IdentityModel.Logging
+401101509.203.ef429be6d7a2f3d05dde6102a6078216e41ff433"]
+		"Microsoft.IdentityModel.Tokens" [label="Microsoft.IdentityModel.Tokens
+401101509.203.ef429be6d7a2f3d05dde6102a6078216e41ff433"]
+		"Microsoft.IdentityModel.Tokens" [label="Microsoft.IdentityModel.Tokens
+401101509.203.ef429be6d7a2f3d05dde6102a6078216e41ff433"]
+		"Microsoft.IdentityModel.Tokens" [label="Microsoft.IdentityModel.Tokens
+401101509.203.ef429be6d7a2f3d05dde6102a6078216e41ff433"]
+		"Microsoft.Rest.ClientRuntime" [label="Microsoft.Rest.ClientRuntime
+2.3.24"]
+		"Microsoft.Rest.ClientRuntime" [label="Microsoft.Rest.ClientRuntime
+2.3.24"]
+		"Microsoft.Rest.ClientRuntime" [label="Microsoft.Rest.ClientRuntime
+2.3.24"]
+		"Microsoft.Rest.ClientRuntime.Azure" [label="Microsoft.Rest.ClientRuntime.Azure
+3.3.19"]
+		"Microsoft.Rest.ClientRuntime.Azure" [label="Microsoft.Rest.ClientRuntime.Azure
+3.3.19"]
+		"Microsoft.Rest.ClientRuntime.Azure" [label="Microsoft.Rest.ClientRuntime.Azure
+3.3.19"]
+		"Microsoft.Rest.ClientRuntime.Azure.Authentication" [label="Microsoft.Rest.ClientRuntime.Azure.Authentication
+2.4.1"]
+		"Microsoft.Rest.ClientRuntime.Azure.Authentication" [label="Microsoft.Rest.ClientRuntime.Azure.Authentication
+2.4.1"]
+		"Microsoft.Rest.ClientRuntime.Azure.Authentication" [label="Microsoft.Rest.ClientRuntime.Azure.Authentication
+2.4.1"]
+		"Microsoft.VisualBasic" [label="Microsoft.VisualBasic
+3.1.25+f9c64756e86a45a8ebcefda407567ab3eea571b7"]
+		"Microsoft.VisualBasic" [label="Microsoft.VisualBasic
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.VisualBasic" [label="Microsoft.VisualBasic
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.VisualBasic.Core" [label="Microsoft.VisualBasic.Core
+3.1.25+f9c64756e86a45a8ebcefda407567ab3eea571b7"]
+		"Microsoft.VisualBasic.Core" [label="Microsoft.VisualBasic.Core
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.VisualBasic.Core" [label="Microsoft.VisualBasic.Core
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.Web.XmlTransform" [label="Microsoft.Web.XmlTransform
+2.1.0.0"]
+		"Microsoft.Web.XmlTransform" [label="Microsoft.Web.XmlTransform
+2.1.0.0"]
+		"Microsoft.Web.XmlTransform" [label="Microsoft.Web.XmlTransform
+2.1.0.0"]
+		"Microsoft.Web.XmlTransform" [label="Microsoft.Web.XmlTransform
+2.1.0.0"]
+		"Microsoft.Web.XmlTransform" [label="Microsoft.Web.XmlTransform
+2.1.0.0"]
+		"Microsoft.Web.XmlTransform" [label="Microsoft.Web.XmlTransform
+2.1.0.0"]
+		"Microsoft.Web.XmlTransform" [label="Microsoft.Web.XmlTransform
+3.1.0+5b67dee04d86740575f0f5022b79833213cc024a"]
+		"Microsoft.Web.XmlTransform" [label="Microsoft.Web.XmlTransform
+3.1.0+5b67dee04d86740575f0f5022b79833213cc024a"]
+		"Microsoft.Web.XmlTransform" [label="Microsoft.Web.XmlTransform
+3.1.0+5b67dee04d86740575f0f5022b79833213cc024a"]
+		"Microsoft.Win32.Primitives" [label="Microsoft.Win32.Primitives
+3.1.25+f9c64756e86a45a8ebcefda407567ab3eea571b7"]
+		"Microsoft.Win32.Primitives" [label="Microsoft.Win32.Primitives
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.Win32.Primitives" [label="Microsoft.Win32.Primitives
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.Win32.Registry" [label="Microsoft.Win32.Registry
+3.1.25+f9c64756e86a45a8ebcefda407567ab3eea571b7"]
+		"Microsoft.Win32.Registry" [label="Microsoft.Win32.Registry
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.Win32.Registry" [label="Microsoft.Win32.Registry
+6.0.18+c76ac565499f3e7c657126d46c00b67a0d74832c"]
+		"Microsoft.WindowsAzure.Storage" [label="Microsoft.WindowsAzure.Storage
+9.3.2.0"]
+		"Microsoft.WindowsAzure.Storage" [label="Microsoft.WindowsAzure.Storage
+9.3.2.0"]
+		"Microsoft.WindowsAzure.Storage" [label="Microsoft.WindowsAzure.Storage
+9.3.2.0"]
+		"Mono.CSharp" [label="Mono.CSharp
+4.0.30319.17020"]
+		"Mono.CSharp" [label="Mono.CSharp
+4.0.30319.17020"]
+		"Mono.CSharp" [label="Mono.CSharp
+4.0.30319.17020"]
+		"Mono.CSharp" [label="Mono.CSharp
+4.0.30319.17020"]
+		"Mono.CSharp" [label="Mono.CSharp
+4.0.30319.17020"]
+		"Mono.CSharp" [label="Mono.CSharp
+4.0.30319.17020"]
+		"Mono.Cecil" [label="Mono.Cecil
+0.9.5.0"]
+		"Mono.Cecil" [label="Mono.Cecil
+0.9.5.0"]
+		"Mono.Cecil" [label="Mono.Cecil
+0.9.5.0"]
+		"Mono.Cecil" [label="Mono.Cecil
+0.9.5.0"]
+		"Mono.Cecil" [label="Mono.Cecil
+0.9.5.0"]
+		"Mono.Cecil" [label="Mono.Cecil
+0.9.5.0"]
+		"Newtonsoft.Json" [label="Newtonsoft.Json
+13.0.1+ae9fe44e1323e91bcbd185ca1a14099fba7c021f"]
+		"Newtonsoft.Json" [label="Newtonsoft.Json
+13.0.1+ae9fe44e1323e91bcbd185ca1a14099fba7c021f"]
+		"Newtonsoft.Json" [label="Newtonsoft.Json
+13.0.1+ae9fe44e1323e91bcbd185ca1a14099fba7c021f"]
+		"Newtonsoft.Json" [label="Newtonsoft.Json
+6.0.0.0"]
+		"Newtonsoft.Json" [label="Newtonsoft.Json
+6.0.0.0"]
+		"Newtonsoft.Json" [label="Newtonsoft.Json
+6.0.0.0"]
+		"Newtonsoft.Json" [label="Newtonsoft.Json
+6.0.0.0"]
+		"Newtonsoft.Json" [label="Newtonsoft.Json
+6.0.0.0"]
+		"Newtonsoft.Json" [label="Newtonsoft.Json
+6.0.0.0"]
+		"NuGet.Client" [label="NuGet.Client
+3.5.0"]
+		"NuGet.Client" [label="NuGet.Client
+3.5.0"]
+		"NuGet.Client" [label="NuGet.Client
+3.5.0"]
+		"NuGet.Commands" [label="NuGet.Commands
+3.5.0"]
+		"NuGet.Commands" [label="NuGet.Commands
+3.5.0"]
+		"NuGet.Commands" [label="NuGet.Commands
+3.5.0"]
+		"NuGet.Common" [label="NuGet.Common
+3.5.0-rtm-1996"]
+		"NuGet.Common" [label="NuGet.Common
+3.5.0-rtm-1996"]
+		"NuGet.Common" [label="NuGet.Common
+3.5.0-rtm-1996"]
+		"NuGet.Configuration" [label="NuGet.Configuration
+3.5.0-rtm-1996"]
+		"NuGet.Configuration" [label="NuGet.Configuration
+3.5.0-rtm-1996"]
+		"NuGet.Configuration" [label="NuGet.Configuration
+3.5.0-rtm-1996"]
+		"NuGet.ContentModel" [label="NuGet.ContentModel
+3.5.0"]
+		"NuGet.ContentModel" [label="NuGet.ContentModel
+3.5.0"]
+		"NuGet.ContentModel" [label="NuGet.ContentModel
+3.5.0"]
+		"NuGet.Core" [label="NuGet.Core
+2.14.0-rtm-832"]
+		"NuGet.Core" [label="NuGet.Core
+2.14.0-rtm-832"]
+		"NuGet.Core" [label="NuGet.Core
+2.14.0-rtm-832"]
+		"NuGet.Core" [label="NuGet.Core
+2.14.0-rtm-832"]
+		"NuGet.Core" [label="NuGet.Core
+2.14.0-rtm-832"]
+		"NuGet.Core" [label="NuGet.Core
+2.14.0-rtm-832"]
+		"NuGet.Core" [label="NuGet.Core
+2.14.0-rtm-832"]
+		"NuGet.Core" [label="NuGet.Core
+2.14.0-rtm-832"]
+		"NuGet.Core" [label="NuGet.Core
+2.14.0-rtm-832"]
+		"NuGet.DependencyResolver" [label="NuGet.DependencyResolver
+3.5.0"]
+		"NuGet.DependencyResolver" [label="NuGet.DependencyResolver
+3.5.0"]
+		"NuGet.DependencyResolver" [label="NuGet.DependencyResolver
+3.5.0"]
+		"NuGet.DependencyResolver.Core" [label="NuGet.DependencyResolver.Core
+3.5.0-rtm-1996"]
+		"NuGet.DependencyResolver.Core" [label="NuGet.DependencyResolver.Core
+3.5.0-rtm-1996"]
+		"NuGet.DependencyResolver.Core" [label="NuGet.DependencyResolver.Core
+3.5.0-rtm-1996"]
+		"NuGet.Frameworks" [label="NuGet.Frameworks
+3.5.0-rtm-1996"]
+		"NuGet.Frameworks" [label="NuGet.Frameworks
+3.5.0-rtm-1996"]
+		"NuGet.Frameworks" [label="NuGet.Frameworks
+3.5.0-rtm-1996"]
+		"NuGet.LibraryModel" [label="NuGet.LibraryModel
+3.5.0-rtm-1996"]
+		"NuGet.LibraryModel" [label="NuGet.LibraryModel
+3.5.0-rtm-1996"]
+		"NuGet.LibraryModel" [label="NuGet.LibraryModel
+3.5.0-rtm-1996"]
+		"NuGet.Packaging" [label="NuGet.Packaging
+3.5.0-rtm-1996"]
+		"NuGet.Packaging" [label="NuGet.Packaging
+3.5.0-rtm-1996"]
+		"NuGet.Packaging" [label="NuGet.Packaging
+3.5.0-rtm-1996"]
+		"NuGet.Packaging.Core" [label="NuGet.Packaging.Core
+3.5.0-rtm-1996"]
+		"NuGet.Packaging.Core" [label="NuGet.Packaging.Core
+3.5.0-rtm-1996"]
+		"NuGet.Packaging.Core" [label="NuGet.Packaging.Core
+3.5.0-rtm-1996"]
+		"NuGet.Packaging.Core.Types" [label="NuGet.Packaging.Core.Types
+3.5.0-rtm-1996"]
+		"NuGet.Packaging.Core.Types" [label="NuGet.Packaging.Core.Types
+3.5.0-rtm-1996"]
+		"NuGet.Packaging.Core.Types" [label="NuGet.Packaging.Core.Types
+3.5.0-rtm-1996"]
+		"NuGet.ProjectModel" [label="NuGet.ProjectModel
+3.5.0-rtm-1996"]
+		"NuGet.ProjectModel" [label="NuGet.ProjectModel
+3.5.0-rtm-1996"]
+		"NuGet.ProjectModel" [label="NuGet.ProjectModel
+3.5.0-rtm-1996"]
+		"NuGet.Protocol.Core.Types" [label="NuGet.Protocol.Core.Types
+3.5.0-rtm-1996"]
+		"NuGet.Protocol.Core.Types" [label="NuGet.Protocol.Core.Types
+3.5.0-rtm-1996"]
+		"NuGet.Protocol.Core.Types" [label="NuGet.Protocol.Core.Types
+3.5.0-rtm-1996"]
+		"NuGet.Protocol.Core.v3" [label="NuGet.Protocol.Core.v3
+3.5.0-rtm-1996"]
+		"NuGet.Protocol.Core.v3" [label="NuGet.Protocol.Core.v3
+3.5.0-rtm-1996"]
+		"NuGet.Protocol.Core.v3" [label="NuGet.Protocol.Core.v3
+3.5.0-rtm-1996"]
+		"NuGet.Repositories" [label="NuGet.Repositories
+3.5.0-rtm-1996"]
+		"NuGet.Repositories" [label="NuGet.Repositories
+3.5.0-rtm-1996"]
+		"NuGet.Repositories" [label="NuGet.Repositories
+3.5.0-rtm-1996"]
+		"NuGet.RuntimeModel" [label="NuGet.RuntimeModel
+3.5.0-rtm-1996"]
+		"NuGet.RuntimeModel" [label="NuGet.RuntimeModel
+3.5.0-rtm-1996"]
+		"NuGet.RuntimeModel" [label="NuGet.RuntimeModel
+3.5.0-rtm-1996"]
+		"NuGet.Versioning" [label="NuGet.Versioning
+3.5.0-rtm-1996"]
+		"NuGet.Versioning" [label="NuGet.Versioning
+3.5.0-rtm-1996"]
+		"NuGet.Versioning" [label="NuGet.Versioning
+3.5.0-rtm-1996"]
+		Octodiff [label="Octodiff
+0.0.0"]
+		Octodiff [label="Octodiff
+0.0.0"]
+		Octodiff [label="Octodiff
+0.0.0"]
+		"Octopus.CoreUtilities" [label="Octopus.CoreUtilities
+2.1.449+Branch.main.Sha.23e41b62fc74663e4414cfb1ce5c39f3bdc156b7"]
+		"Octopus.CoreUtilities" [label="Octopus.CoreUtilities
+2.1.449+Branch.main.Sha.23e41b62fc74663e4414cfb1ce5c39f3bdc156b7"]
+		"Octopus.CoreUtilities" [label="Octopus.CoreUtilities
+2.1.449+Branch.main.Sha.23e41b62fc74663e4414cfb1ce5c39f3bdc156b7"]
+		"Octopus.Versioning" [label="Octopus.Versioning
+5.1.155"]
+		"Octopus.Versioning" [label="Octopus.Versioning
+5.1.155"]
+		"Octopus.Versioning" [label="Octopus.Versioning
+5.1.155"]
+		Octostache [label="Octostache
+2.14.0"]
+		Octostache [label="Octostache
+3.3.0"]
+		Octostache [label="Octostache
+3.3.0"]
+		Pillow [label="Pillow
+2.0.0"]
+		Polly [label="Polly
+5.4.0"]
+		Polly [label="Polly
+5.4.0"]
+		Polly [label="Polly
+5.4.0"]
+		PowerArgs [label="PowerArgs
+2.0.4.0"]
+		PowerArgs [label="PowerArgs
+2.0.4.0"]
+		PowerArgs [label="PowerArgs
+2.0.4.0"]
+		PowerArgs [label="PowerArgs
+2.0.4.0"]
+		PowerArgs [label="PowerArgs
+2.0.4.0"]
+		PowerArgs [label="PowerArgs
+2.0.4.0"]
+		"SmallRye:smallrye-reactive-converter-api" [label="SmallRye:smallrye-reactive-converter-api
+3.0.0"]
+		"SmallRye:smallrye-reactive-converter-mutiny" [label="SmallRye:smallrye-reactive-converter-mutiny
+3.0.0"]
+		alternatives [label="alternatives
+0:1.20-2.el9"]
+		alternatives [label="alternatives
+0:1.20-2.el9"]
+		"base-files" [label="base-files
+11.1+deb11u5"]
+		"base-files" [label="base-files
+11.1+deb11u8"]
+		"base-files" [label="base-files
+11.1+deb11u5"]
+		basesystem [label="basesystem
+0:11-13.el9"]
+		basesystem [label="basesystem
+0:11-13.el9"]
+		bash [label="bash
+0:5.1.8-6.el9_1"]
+		bash [label="bash
+0:5.1.8-6.el9_1"]
+		"biz.paluch.logging:logstash-gelf" [label="biz.paluch.logging:logstash-gelf
+1.15.0"]
+		"biz.paluch.logging:logstash-gelf" [label="biz.paluch.logging:logstash-gelf
+1.15.0"]
+		"ca-certificates" [label="ca-certificates
+0:2022.2.54-90.2.el9_0"]
+		"ca-certificates" [label="ca-certificates
+0:2022.2.54-90.2.el9_0"]
+		"com.aayushatharva.brotli4j:brotli4j" [label="com.aayushatharva.brotli4j:brotli4j
+1.12.0"]
+		"com.aayushatharva.brotli4j:brotli4j" [label="com.aayushatharva.brotli4j:brotli4j
+1.8.0"]
+		"com.aayushatharva.brotli4j:native-linux-x86_64" [label="com.aayushatharva.brotli4j:native-linux-x86_64
+1.12.0"]
+		"com.aayushatharva.brotli4j:native-linux-x86_64" [label="com.aayushatharva.brotli4j:native-linux-x86_64
+1.8.0"]
+		"com.aayushatharva.brotli4j:service" [label="com.aayushatharva.brotli4j:service
+1.12.0"]
+		"com.fasterxml.jackson.core:Jackson-annotations" [label="com.fasterxml.jackson.core:Jackson-annotations
+2.15.2"]
+		"com.fasterxml.jackson.core:Jackson-core" [label="com.fasterxml.jackson.core:Jackson-core
+2.15.2"]
+		"com.fasterxml.jackson.core:jackson-annotations" [label="com.fasterxml.jackson.core:jackson-annotations
+2.15.2"]
+		"com.fasterxml.jackson.core:jackson-core" [label="com.fasterxml.jackson.core:jackson-core
+2.15.2"]
+		"com.fasterxml.jackson.core:jackson-core" [label="com.fasterxml.jackson.core:jackson-core
+2.15.2"]
+		"com.fasterxml.jackson.core:jackson-core" [label="com.fasterxml.jackson.core:jackson-core
+2.15.2"]
+		"com.fasterxml.jackson.core:jackson-databind" [label="com.fasterxml.jackson.core:jackson-databind
+2.15.2"]
+		"com.fasterxml.jackson.core:jackson-databind" [label="com.fasterxml.jackson.core:jackson-databind
+2.15.2"]
+		"com.fasterxml.jackson.core:jackson-databind" [label="com.fasterxml.jackson.core:jackson-databind
+2.15.2"]
+		"com.fasterxml.jackson.dataformat:Jackson-dataformat-YAML" [label="com.fasterxml.jackson.dataformat:Jackson-dataformat-YAML
+2.15.2"]
+		"com.fasterxml.jackson.dataformat:jackson-dataformat-cbor" [label="com.fasterxml.jackson.dataformat:jackson-dataformat-cbor
+2.15.2"]
+		"com.fasterxml.jackson.dataformat:jackson-dataformat-yaml" [label="com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+2.15.2"]
+		"com.fasterxml.jackson.datatype:jackson-datatype-jdk8" [label="com.fasterxml.jackson.datatype:jackson-datatype-jdk8
+2.15.2"]
+		"com.fasterxml.jackson.datatype:jackson-datatype-jsr310" [label="com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+2.15.2"]
+		"com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-base" [label="com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-base
+2.15.2"]
+		"com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-json-provider" [label="com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-json-provider
+2.15.2"]
+		"com.fasterxml.jackson.module:Jackson-module-parameter-names" [label="com.fasterxml.jackson.module:Jackson-module-parameter-names
+2.15.2"]
+		"com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations" [label="com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations
+2.15.2"]
+		"com.fasterxml.jackson.module:jackson-module-parameter-names" [label="com.fasterxml.jackson.module:jackson-module-parameter-names
+2.15.2"]
+		"com.fasterxml:ClassMate" [label="com.fasterxml:ClassMate
+1.5.1"]
+		"com.fasterxml:classmate" [label="com.fasterxml:classmate
+1.5.1"]
+		"com.github.ben-manes.caffeine:caffeine" [label="com.github.ben-manes.caffeine:caffeine
+3.1.5"]
+		"com.github.ben-manes:com.github.ben-manes.caffeine" [label="com.github.ben-manes:com.github.ben-manes.caffeine
+3.1.5"]
+		"com.github.java-json-tools:btf" [label="com.github.java-json-tools:btf
+1.3"]
+		"com.github.java-json-tools:jackson-coreutils" [label="com.github.java-json-tools:jackson-coreutils
+2.0"]
+		"com.github.java-json-tools:json-patch" [label="com.github.java-json-tools:json-patch
+1.13"]
+		"com.github.java-json-tools:msg-simple" [label="com.github.java-json-tools:msg-simple
+1.2"]
+		"com.github.ua-parser:uap-java" [label="com.github.ua-parser:uap-java
+1.5.4"]
+		"com.github.waffle:waffle-jna" [label="com.github.waffle:waffle-jna
+3.2.0"]
+		"com.google.guava:guava" [label="com.google.guava:guava
+32.0.0-jre"]
+		"com.google.zxing:core" [label="com.google.zxing:core
+3.4.0"]
+		"com.google.zxing:javase" [label="com.google.zxing:javase
+3.4.0"]
+		"com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer" [label="com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer
+20220608.1"]
+		"com.h2database:h2" [label="com.h2database:h2
+2.2.220"]
+		"com.ibm.async:asyncutil" [label="com.ibm.async:asyncutil
+0.1.0"]
+		"com.microsoft.sqlserver:mssql-jdbc" [label="com.microsoft.sqlserver:mssql-jdbc
+12.2.0.jre11"]
+		"com.opencsv:opencsv" [label="com.opencsv:opencsv
+5.7.1"]
+		"com.oracle.database.nls:orai18n" [label="com.oracle.database.nls:orai18n
+23.2.0.0"]
+		"com.squareup:protoparser" [label="com.squareup:protoparser
+4.0.3"]
+		"com.sun.istack:istack-commons-runtime" [label="com.sun.istack:istack-commons-runtime
+3.0.10"]
+		"com.sun.istack:istack-commons-tools" [label="com.sun.istack:istack-commons-tools
+3.0.10"]
+		"github.com/container-storage-interface/spec" [label="github.com/container-storage-interface/spec
+1.6.0"]
+		"github.com/dgryski/go-jump" [label="github.com/dgryski/go-jump
+0.0.0-20211018200510-ba001c3ffce0"]
+		"github.com/go-logr/logr" [label="github.com/go-logr/logr
+1.2.3"]
+		"github.com/go-openapi/jsonpointer" [label="github.com/go-openapi/jsonpointer
+0.19.6"]
+		"github.com/go-openapi/jsonreference" [label="github.com/go-openapi/jsonreference
+0.20.1"]
+		"github.com/go-openapi/jsonreference" [label="github.com/go-openapi/jsonreference
+0.20.0"]
+		"github.com/go-openapi/jsonreference" [label="github.com/go-openapi/jsonreference
+0.20.0"]
+		"github.com/go-openapi/swag" [label="github.com/go-openapi/swag
+0.22.3"]
+		"github.com/go-openapi/swag" [label="github.com/go-openapi/swag
+0.22.3"]
+		"github.com/go-openapi/swag" [label="github.com/go-openapi/swag
+0.22.3"]
+		"github.com/gobuffalo/flect" [label="github.com/gobuffalo/flect
+1.0.2"]
+		"github.com/google/gnostic" [label="github.com/google/gnostic
+0.6.9"]
+		"github.com/google/gnostic" [label="github.com/google/gnostic
+0.6.9"]
+		"github.com/imdario/mergo" [label="github.com/imdario/mergo
+0.3.11"]
+		"github.com/imdario/mergo" [label="github.com/imdario/mergo
+0.3.11"]
+		"github.com/josharian/intern" [label="github.com/josharian/intern
+1.0.0"]
+		"github.com/kubernetes-csi/csi-lib-utils" [label="github.com/kubernetes-csi/csi-lib-utils
+0.11.0"]
+		"github.com/kubernetes-csi/csi-lib-utils" [label="github.com/kubernetes-csi/csi-lib-utils
+0.11.0"]
+		"github.com/kubernetes-csi/external-snapshotter/client/v6" [label="github.com/kubernetes-csi/external-snapshotter/client/v6
+6.1.0"]
+		"github.com/mailru/easyjson" [label="github.com/mailru/easyjson
+0.7.7"]
+		"github.com/miekg/dns" [label="github.com/miekg/dns
+1.1.48"]
+		"github.com/pelletier/go-toml/v2" [label="github.com/pelletier/go-toml/v2
+2.0.8"]
+		"github.com/prometheus/client_golang" [label="github.com/prometheus/client_golang
+1.12.1"]
+		"github.com/prometheus/common" [label="github.com/prometheus/common
+0.32.1"]
+		"github.com/prometheus/procfs" [label="github.com/prometheus/procfs
+0.10.1"]
+		"github.com/robfig/cron/v3" [label="github.com/robfig/cron/v3
+3.0.1"]
+		"github.com/spf13/cobra" [label="github.com/spf13/cobra
+1.4.0"]
+		"github.com/spf13/cobra" [label="github.com/spf13/cobra
+1.4.0"]
+		"github.com/spf13/viper" [label="github.com/spf13/viper
+1.16.0"]
+		"golang.org/x/net" [label="golang.org/x/net
+0.0.0-20220909164309-bea034e7d591"]
+		"golang.org/x/net" [label="golang.org/x/net
+0.0.0-20220909164309-bea034e7d591"]
+		"golang.org/x/oauth2" [label="golang.org/x/oauth2
+0.0.0-20211104180415-d3ed0bb246c8"]
+		"golang.org/x/oauth2" [label="golang.org/x/oauth2
+0.0.0-20220309155454-6242fa91716a"]
+		"golang.org/x/sys" [label="golang.org/x/sys
+0.0.0-20220919091848-fb04ddd9f9c8"]
+		"golang.org/x/sys" [label="golang.org/x/sys
+0.0.0-20220919091848-fb04ddd9f9c8"]
+		"golang.org/x/time" [label="golang.org/x/time
+0.0.0-20220609170525-579cf78fd858"]
+		"google.golang.org/protobuf" [label="google.golang.org/protobuf
+1.28.1"]
+		"google.golang.org/protobuf" [label="google.golang.org/protobuf
+1.28.1"]
+		"k8s.io/api" [label="k8s.io/api
+0.27.5"]
+		"k8s.io/api" [label="k8s.io/api
+0.25.2"]
+		"k8s.io/api" [label="k8s.io/api
+0.25.2"]
+		"k8s.io/apimachinery" [label="k8s.io/apimachinery
+0.25.2"]
+		"k8s.io/apimachinery" [label="k8s.io/apimachinery
+0.27.5"]
+		"k8s.io/apiserver" [label="k8s.io/apiserver
+0.25.2"]
+		"k8s.io/client-go" [label="k8s.io/client-go
+0.27.5"]
+		"k8s.io/client-go" [label="k8s.io/client-go
+0.25.2"]
+		"k8s.io/client-go" [label="k8s.io/client-go
+0.25.2"]
+		"k8s.io/component-base" [label="k8s.io/component-base
+0.25.2"]
+		"k8s.io/component-base" [label="k8s.io/component-base
+0.27.5"]
+		"k8s.io/component-helpers" [label="k8s.io/component-helpers
+0.25.2"]
+		"k8s.io/csi-translation-lib" [label="k8s.io/csi-translation-lib
+0.25.2"]
+		"k8s.io/kube-openapi" [label="k8s.io/kube-openapi
+0.0.0-20230501164219-8b0f38b5fd1f"]
+		"k8s.io/kube-openapi" [label="k8s.io/kube-openapi
+0.0.0-20220803164354-a70c9af30aea"]
+		"k8s.io/kube-openapi" [label="k8s.io/kube-openapi
+0.0.0-20220803164354-a70c9af30aea"]
+		"k8s.io/sample-controller" [label="k8s.io/sample-controller
+0.27.5"]
+		"k8s.io/utils" [label="k8s.io/utils
+0.0.0-20220728103510-ee6ede2d64ed"]
+		netbase [label="netbase
+6.3"]
+		"sigs.k8s.io/controller-runtime" [label="sigs.k8s.io/controller-runtime
+0.13.0"]
+		"sigs.k8s.io/json" [label="sigs.k8s.io/json
+0.0.0-20220713155537-f223a00ba0e2"]
+		"sigs.k8s.io/json" [label="sigs.k8s.io/json
+0.0.0-20220713155537-f223a00ba0e2"]
+		"sigs.k8s.io/sig-storage-lib-external-provisioner/v8" [label="sigs.k8s.io/sig-storage-lib-external-provisioner/v8
+8.0.0"]
+		"sigs.k8s.io/structured-merge-diff/v4" [label="sigs.k8s.io/structured-merge-diff/v4
+4.2.3"]
+		"sigs.k8s.io/structured-merge-diff/v4" [label="sigs.k8s.io/structured-merge-diff/v4
+4.2.3"]
+		tzdata [label="tzdata
+2021a-1+deb11u5"]
+	}
+}
