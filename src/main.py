@@ -3,48 +3,26 @@ from jsonschema import validate
 import json
 import csv
 import os
+import pandas as pd
 import xml.etree.ElementTree as ET 
 from graphviz import Digraph
 import requests
 from requests.exceptions import ConnectionError
 
-def convert_sbom_to_csv(sbom_json_path, csv_output_path):
-    """
-    Convert SBOM JSON data to a CSV file.
+def convert_sbom_to_csv(sbom_data, csv_output_path):
+    """Convert SBOM data to a CSV file.
 
     Args:
-        sbom_json_path (str): Path to the SBOM JSON file.
-        csv_output_path (str): Path where the CSV output will be saved.
+        sbom_data (dict): The SBOM data in dictionary format.
+        csv_output_path (str): The path where the CSV output will be saved.
     """
-    # Load the SBOM JSON data
-    with open(sbom_json_path, 'r') as file:
-        sbom_data = json.load(file)
 
-    # Extract components
-    components = sbom_data.get('components', [])
-
-    # Open CSV file for writing
-    with open(csv_output_path, mode='w', newline='', encoding='utf-8') as csv_file:
-        fieldnames = ['name', 'version', 'type', 'description', 'licenses']
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-
-        # Write the header
-        writer.writeheader()
-
-        # Write data for each component
-        for component in components:
-            # Extract license information if available
-            licenses = [lic['license']['id'] for lic in component.get('licenses', [])]
-            license_str = ', '.join(licenses)
-
-            # Write the component data
-            writer.writerow({
-                'name': component.get('name', ''),
-                'version': component.get('version', ''),
-                'type': component.get('type', ''),
-                'description': component.get('description', ''),
-                'licenses': license_str
-            })
+    try:
+        df = pd.DataFrame(sbom_data)
+        df.to_csv(csv_output_path, index=False)
+        print(f"CSV file saved as {csv_output_path}")
+    except Exception as e:
+        print(f"Error while converting SBOM to CSV: {e}")
 
 def download_schema(url, file_name):
 
@@ -58,7 +36,7 @@ def download_schema(url, file_name):
             return f"Error: Unable to download the schema. HTTP status code: {response.status_code}"
     except Exception as e:
         return f"Error: {e}"
-
+    
 def process_cyclonedx_sbom(sbom):
     """
     Process CycloneDX SBOM in JSON format
@@ -311,14 +289,14 @@ def main():
     if sbom is not None:
         # Pass both sbom and the format to process_sbom
         dependencies = process_sbom(sbom, args.format)
+        csv_output_path = 'sbom_data.csv'
+        convert_sbom_to_csv(sbom, csv_output_path)
+        print(f"CSV file saved as {csv_output_path}")
+
+        # Check for dependencies and generate dependency tree and vulnerabilities
         if dependencies:
             tree = generate_dependency_tree(dependencies)
             tree.render('dependency_tree.gv', view=True)    # Saves and closes the dependency tree
-
-            # Generate and save the CSV file
-            csv_output_path = 'sbom_data.csv'
-            convert_sbom_to_csv(args.file, csv_output_path)
-            print(f"CSV file saved as {csv_output_path}")
 
             vulnerabilites = check_all_vulnerabilites(dependencies)
             print("Vulnerabilities Report:", vulnerabilites)

@@ -1,6 +1,7 @@
-pandas
 matplotlib
 xmltodict
-graphviz
-requests
-jsonschema
+pandas==1.3.3
+graphviz==0.17
+cyclonedx-bom==1.8.2
+requests==2.26.0
+jsonschema==3.2.0
