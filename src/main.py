@@ -1,5 +1,5 @@
 import argparse
-from jsonschema import validate
+import jsonschema
 import json
 import csv
 import os
@@ -47,71 +47,63 @@ def process_cyclonedx_sbom(sbom):
     """
     dependencies = []
 
-    if 'components' in sbom:
-        for comp in sbom['components']:
-            dep_info = {
-                'type': comp.get('type', 'Unknown'),
-                'name': comp.get('name', 'Unknown'),
-                'version': comp.get('version', 'Unknown'),
-                'group': comp.get('group', ''),
-                'purl': comp.get('purl', ''),
-                'dependencies': [],
-                'pedigree': [],
-                'evidence': []
-            }
+    def process_item(item):
+        if 'components' in item:
+            # print(f"Components found:")
+            # print(item['components'])
 
-            # Process dependencies if available
-            if 'components' in comp:
-                for sub_comp in comp['components']:
-                    dep_info['dependencies'].append({
-                        'type': sub_comp.get('type', 'Unknown'),
-                        'name': sub_comp.get('name', 'Unknown'),
-                        'version': sub_comp.get('version', 'Unknown')
+            for library_item in item['components']:
+                library_name = library_item.get('name', '')
+
+                if library_name:
+                    print(f"Package Name: {library_name}")
+
+                    dependencies.append({
+                        'type': 'library',
+                        'name': library_name,
+                        'version': library_item.get('verson', ''),
+                        'dependencies': []
                     })
+                #library_version = library_item.get('version', '')
+                #library_components = library_item.get('components', [])
 
-            # Process pedigree if available
-            if 'pedigree' in comp:
-                for ancestor in comp['pedigree'].get('ancestors', []):
-                    dep_info['pedigree'].append({
-                        'type': ancestor.get('type', 'Unknown'),
-                        'name': ancestor.get('type', 'Unknown'),
-                        'version': ancestor.get('version', 'Unknown'),
-                        'purl': ancestor.get('purl', '')
-                    })
+                # dep_info = {
+                #     'type': 'library',
+                #     'name': library_name,
+                #     'version': library_version,
+                #     'dependencies': []
+                # }
 
-            # Process occurrences if available
-            if 'evidence' in comp and 'occurrences' in comp['evidence']:
-                for occurrence in comp['evidence']['occurrences']:
-                    dep_info['evidence'].append({
-                        'bom-ref': occurrence.get('bom-ref', ''),
-                        'location': occurrence.get('location', '')
-                    })
-            dependencies.append(dep_info)
-    
-    # Process global dependencies section if available
-    if 'dependencies' in sbom:
-        for dep in sbom['dependencies']:
-            ref = dep.get('ref', '')
-            depends_on = dep.get('dependsOn', [])
-            # Find the corresponding component and add its dependencies
-            for d in dependencies:
-                if d.get('name') == ref or d.get('purl') == ref:
-                    d['dependencies'].extend(depends_on)
+                # for component in library_components:
+                #     dep_info['dependencies'].append({
+                #         'type': 'library',
+                #         'name': component.get('name', ''),
+                #         'version': component.get('version', '')
+                #     })
 
+                # dependencies.append(dep_info)
+
+    def traverse_sbom(sbom_item):
+        if 'items' in sbom_item:
+            for item in sbom_item['items']:
+                process_item(item)
+                traverse_sbom(item)
+
+    traverse_sbom(sbom)
+
+    print("CycloneDX SBOM Processed")
+    # print(dependencies)
     return dependencies
 
 def validate_sbom(sbom, schema_file):
 
-    """
-    Validate SBOM agaisnt its JSON Schema.
-    Args:
-        sbom (dict): SBOM data in dictionary format.
-        schema_file (str): Path to the JSON Schema file.
-    """
-    # with open(schema_file, 'r') as file:
-    #    schema = json.load(file)
-    # validate(instance=sbom, schema=schema)
-    pass
+    with open(schema_file, 'r') as file:
+        schema = json.load(file)
+
+    try:
+        jsonschema.validate(instance=sbom, schema=schema)
+    except jsonschema.exceptions.ValidationError as e:
+        print(f"Validation error: {e}")
 
 def process_sbom(sbom, sbom_format):
     """
@@ -222,11 +214,15 @@ def generate_dependency_tree(sbom):
     return dot
 
 def check_all_vulnerabilites(dependencies):
-    vulnerabilities_report = {}
+    libraries_and_versions = {}
     for dep in dependencies:
-        vulnerabilities = check_vulnerabilities(dep['name'])
-        vulnerabilities_report[dep['name']] = vulnerabilities
-    return vulnerabilities_report
+        name = dep.get('name')
+        version = dep.get('version')
+        if name and version:
+            libraries_and_versions[name] = version
+            check_vulnerabilities(name)
+    print(libraries_and_versions)
+
 
 def check_vulnerabilities(library):
     # Make a request to vulnerability database
@@ -296,10 +292,15 @@ def main():
         # Check for dependencies and generate dependency tree and vulnerabilities
         if dependencies:
             tree = generate_dependency_tree(dependencies)
-            tree.render('dependency_tree.gv', view=True)    # Saves and closes the dependency tree
+            tree.render('dependency_tree.gv', view=True)   
+            
+            check_all_vulnerabilites(dependencies) # Call check_all_vulnerabilites # Saves and closes the dependency tree
+            # Print dependencies to the screen
+            print("Dependencies:")
+            for dependency in dependencies:
+                print(dependency)
 
-            vulnerabilites = check_all_vulnerabilites(dependencies)
-            print("Vulnerabilities Report:", vulnerabilites)
+            # print("Vulnerabilities Report:", vulnerabilites)
         else:
             print("No dependencies found.")
     else:
